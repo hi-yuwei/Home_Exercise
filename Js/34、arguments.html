@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>arguments</title>
+
+</head>
+
+<body>
+	<p id="txt"></p>
+	<p id="txt2"></p>
+	<p id="txt3"></p>
+</body>
+<script>
+	function add(x,y){
+		return arguments.length;
+	}
+	document.getElementById("txt").innerHTML=add(1);
+	document.getElementById("txt2").innerHTML=add(2,4);
+	document.getElementById("txt3").innerHTML=add(5,9,3);
+</script>
+
+</html>

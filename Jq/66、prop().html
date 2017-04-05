@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>66、prop()</title>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("input").prop({
+				"checked": true
+			})
+			alert($("div").prop("class"));
+		})
+	</script>
+</head>
+
+<body>
+	<input type="checkbox" />男
+	<input type="checkbox" />女
+	<div class="box"></div>
+</body>
+
+
+</html>

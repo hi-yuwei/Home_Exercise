@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>添加</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		.box {
+			width: 200px;
+			height: 300px;
+			padding: 10px;
+			margin: 100px auto 10px;
+			border: 1px solid #000;
+		}
+		
+		.box>p {
+			margin-bottom: 10px;
+		}
+		
+		.box .p1 {
+			background: #ccc;
+		}
+		
+		.box .p2 {
+			background: pink;
+		}
+		
+		.add {
+			width: 100px;
+			height: 30px;
+			display: block;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box" id="box">
+		<p id="p1" class="p1">第一数据</p>
+	</div>
+	<button class="add" id="add">添加</button>
+</body>
+<script type="text/javascript">
+	//方法1
+	//	function Add() {
+	//		var box = document.getElementById("box");
+	//		var p2 = document.createElement("p");
+	//		p2.id = "p2";
+	//		p2.className = "p2";
+	//		var txt = document.createTextNode("Js添加的数据");	//创建文本节点
+	//		p2.appendChild(txt);	//将文本节点追加到节点中
+	//		box.appendChild(p2);
+	//	}
+	//方法2
+	function Add() {
+		var box = document.getElementById("p1");
+		var p2 = document.createElement("p");
+		p2.id = "p2";
+		p2.className = "p2";
+		p2.innerHTML = "js添加的数据";
+		p1.parentNode.appendChild(p2); //找到原有子节点的父节点，在末尾追加新的节点
+		document.getElementById("add").setAttribute("disabled", "true"); //设置节点属性
+	}
+	document.getElementById("add").addEventListener("click", Add);
+</script>
+
+</html>

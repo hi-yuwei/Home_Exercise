@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>formRegister</title>
+    <link type="text/css" href="./normalize.css" rel="stylesheet" />
+    <link type="text/css" href="./style.css" rel="stylesheet"/>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="./jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="./jquery-validation-1.14.0/dist/additional-methods.js"></script>
+    <script type="text/javascript" src="./jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#register").validate({
+                degbug:true,
+                success:function(x){
+                    x.html("验证通过").addClass("remind");
+//                    x.parent().find("input").addClass("pass");
+                },
+                errorClass:"error-info",
+                errorElement:"em"
+//                wrapper:"div"
+            });
+        })
+    </script>
+</head>
+<body>
+    <form id="register" class="register-form" method="get" action="">
+        <fieldset>
+            <div>
+            <label for="username">用户名：</label>
+            </div>
+            <div class="box">
+            <input type="text" data-rule-required="true" data-rule-rangelength="3,6" id="username" name="username" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="password">密码：</label>
+            </div>
+            <div class="box">
+            <input type="password" data-rule-required="true" data-rule-rangelength="6,12" id="password" name="password" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="confirmPassWord">确认密码：</label>
+            </div>
+            <div class="box">
+            <input type="password" data-rule-required="true" data-rule-equalto="#password" data-rule-rangelength="6,12" id="confirmPassWord" name="confirmPassWord" />
+                </div>
+        </fieldset>
+        <fieldset>
+            <div>
+        <label for="idcode">身份证：</label>
+            </div>
+            <div class="box">
+        <input type="text" data-rule-required="true" data-rule-idcode="true" id="idcode" name="idcode" />
+                </div>
+         </fieldset>
+        <fieldset>
+            <div>
+            <label for="creditCard">信用卡：</label>
+            </div>
+            <div class="box">
+            <input type="text" data-rule-required="true" data-rule-creditcard="true" id="creditCard" name="creditCard" />
+                </div>
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="sex">性别：</label>
+            </div>
+
+            <select id="sex" name="sex">
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="phone">手机：</label>
+            </div>
+            <input type="text" data-rule-required="true" data-rule-phone="true"  id="phone" name="phone" />
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="email">邮箱：</label>
+            </div>
+            <input type="text" data-rule-required="true" data-rule-email="true" id="email" name="email" />
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="qq">QQ：</label>
+            </div>
+            <input type="text" data-rule-number="true" data-rule-minlength="5" id="qq" name="qq" />
+        </fieldset>
+        <fieldset  >
+            <div>
+            <label>职业：</label>
+            </div>
+            <div class="option">
+            <input type="radio" data-rule-required="true" data-rule-minlength="1" data-msg-minlength="最少选择一个" value="学生" id="student" name="work"/>学生
+            <input type="radio" value="工人"  id="worker" name="work"/>工人
+            <input type="radio" value="白领"  id="ol" name="work"/>白领
+            <input type="radio" value="教师"  id="teacher" name="work"/>教师
+            <!--<input type="radio" value="公务员"  id="civil" name="work"/>公务员-->
+            <!--<input type="radio" value="老板"  id="boss" name="work"/>老板-->
+            <input type="radio" value="无业"  id="unemployed" name="work"/>无业
+            </div>
+        </fieldset>
+        <fieldset class="option">
+            <div>
+            <label>爱好：</label>
+            </div>
+            <div class="option">
+            <input type="checkbox" data-rule-required="true" data-rule-minlength="2" data-msg-minlength="最少选择两个" value="网游" id="game" name="hobby"/>网游
+            <input type="checkbox" value="健身" id="fitness" name="hobby"/>健身
+            <input type="checkbox" value="爬山" id="gohiking" name="hobby"/>爬山
+            <input type="checkbox" value="游泳" id="swimming" name="hobby"/>游泳
+            <input type="checkbox" value="跑步" id="running" name="hobby"/>跑步
+            </div>
+        </fieldset>
+        <div class="btn clearfix">
+                <button class="fl" type="submit">注册</button>
+                <div class="fr" >
+                <input type="checkbox" name="agreement" data-rule-required="true" data-msg-required="还未同意"/> 我同意“不平等条约”
+                </div>
+                </div>
+    </form>
+</body>

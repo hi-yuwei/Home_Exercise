@@ -1,0 +1,33 @@
+{
+  "data": {
+    "avatar": "static/views/vip/src/headimg.png",
+    "userName": "的顶顶顶顶",
+    "levelName": "银象",
+    "levelId": 2,
+    "levelIcon": "./static/views/vip/src/crown-v2.png",
+    "memberProfits": [
+      {
+        "levelProfitId": 5,
+        "levelProfiIcon": "./static/views/vip/src/birthday-icon.png",
+        "levelProfitName": "生日礼"
+      },
+      {
+        "levelProfitId": 6,
+        "levelProfiIcon": "./static/views/vip/src/vipActivity-icon.png",
+        "levelProfitName": "专享标"
+      },
+      {
+        "levelProfitId": 6,
+        "levelProfiIcon": "./static/views/vip/src/vipActivity-icon.png",
+        "levelProfitName": "专享标"
+      },
+      {
+        "levelProfitId": 6,
+        "levelProfiIcon": "./static/views/vip/src/vipActivity-icon.png",
+        "levelProfitName": "专享标"
+      }
+    ],
+    "memberGrowth": 56667
+  },
+  "isSuccess":true
+}

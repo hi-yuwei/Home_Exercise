@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery核心函数3-隐藏表单中所有元素</title>
+	<style type="text/css">
+		p {
+			line-height: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(myform2.elements).hide(); //注：只有表单元素input会被隐藏
+		})
+	</script>
+</head>
+
+<body>
+	<form id="myform1">
+		<p>1</p>
+		<div>2</div>
+		<input type="text" value="3" />
+		<i>4</i>
+	</form>
+	<form id="myform2">
+		<p>5</p>
+		<div>6</div>
+		<input type="text" value="7" />
+		<i>8</i>
+	</form>
+</body>
+
+
+</html>

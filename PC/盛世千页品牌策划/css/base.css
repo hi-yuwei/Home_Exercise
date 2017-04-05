@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Css Reset*/
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,button,fieldset, legend,img { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ font-size:14px; font-weight:normal;}
+fieldset,img{ border:none; }
+img{display:block;}
+ul,ol{list-style:none; }
+textarea{resize:none; }	/*禁止在火狐下可以拖动*/
+table{border-collapse:collapse; }
+body{color:#333; background:#fff; font-size:12px; font-family:微软雅黑;}
+.clearfix:after{content:""; display:block;clear:both;}
+.clearfix{zoom:1;}
+a{ font-size:12px;color:#666; text-decoration:none;}
+a:hover{text-decoration:underline;} 
+input{border:0px; border:1px solid #ADABB8;}
+button{bordr:0px; border:1px solid #ADABB8; background:#fff; width:40px; height:17px; line-height:17px; cursor:pointer; text-align:center;}
+.noMargin{float:right !important; margin-right:0px !important;}
+
+
+
+/*共用*/
+
+.HT h2{
+	font-size:18px;
+	color:#000;
+	height:56px;
+	margin-bottom:24px;
+	line-height:56px;
+	border-bottom:1px solid #ccc;
+	}
+.HT h2 span{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#999;
+	}
+	
+/*共用*/
+
+/*顶部开始*/
+.top{
+	background:#F2F2F2;
+	border-bottom:1px solid #E0E0E0;
+	}
+.inTop{
+	width:1000px;
+	height:30px;
+	margin:0px auto;
+		
+	}
+.inTop ul{
+	/*border:1px solid #000;*/
+	float:left;
+	}
+.inTop ul li{
+	float:left;
+	margin-right:6px;
+	}
+.inTop ul li a{
+	font-size:12px;
+	line-height:30px;
+	}
+.inTop .topSearch{
+	margin-top:6px;
+	/*border:1px solid #000;*/
+	float:right;
+	}
+
+/*去除在IE6中显示边框的问题*/
+.noBorder{
+	border:0px;
+	position:relative;
+	top:3px;
+	}
+
+/*顶部结束*/
+
+
+/*Banner开始*/
+
+.banner{
+	height:501px;
+	background:url(../image/banner.jpg) no-repeat top;
+	position:relative;
+	}
+.banner ul{
+/*	width:100px;
+	height:20px;*/
+	/*border:1px solid #000;*/
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-59px;
+	padding:4px 0px 4px 6px;
+	background:rgba(0,0,0,0.7);
+	border-radius:10px;
+	}
+.banner ul li{
+	
+	}
+.banner li{
+	float:left;
+	width:12px;
+	height:12px;
+	background:#ccc;
+	border-radius:6px;
+	margin-right:10px;
+	cursor:pointer;
+	}
+.banner li.current{
+	background:#E12A26;
+	}
+	
+	
+/*子页面banner*/
+.w202{
+	height:202px;
+	margin:0px auto;
+	background:url(../image/list_banner.jpg) no-repeat top center;
+	}
+/*Banner结束*/
+
+
+
+
+/*导航开始*/
+
+.nav{
+
+	border-bottom:4px solid #E12A26;
+	}
+.nav .inNav{
+	width:1000px;
+	height:90px;
+	margin:0px auto;
+	/*background:blue;*/
+	overflow:hidden;
+	zoom:1;
+	}
+.nav .inNav h1{
+	background:url(../image/logo.jpg) no-repeat;
+	margin:17px 76px 0px 0px;
+	float:left;
+	}
+.nav .inNav h1 a{
+	width:257px;
+	height:55px;
+	display:block;
+	text-indent:-9999em;
+	}
+.nav .inNav ul{
+/*	border:1px solid #000;*/
+	float:left;
+	}
+.nav .inNav ul li{
+	float:left;
+	
+	}
+.nav .inNav li a{
+	display:block;
+	text-align:center;
+	color:#000;
+	padding:30px 18px 26px;
+	font-size:14px;
+	}
+.nav .inNav li a span{
+	display:block;
+	color:#999;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+.nav .inNav li a:hover{
+	background:#E42829;
+	color:#fff;
+	text-decoration:none;
+	
+	}
+.nav .inNav li a:hover span{
+	color:#fff;
+	}
+/*导航结束*/
+
+
+
+/*Footer开始*/
+.footer{
+	
+	background:#DE3232;
+	}
+.footer .inFooter{
+	width:1000px;
+	margin:0px auto;
+	text-align:center;
+	line-height:30px;
+	color:#fff;
+	}
+/*Footer结束*/

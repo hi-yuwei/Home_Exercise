@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax跨域</title>
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+//        $(function(){
+//            var url = 'http://v.juhe.cn/weather/index';
+//            $.ajax(url, {
+//                data: {
+//                    'cityname': '襄阳',
+//                    'dtype': 'jsonp',
+//                    'key': 'xxxx',
+//                    '_': new Date().getTime()
+//                },
+//                dataType: 'jsonp',
+//                crossDomain: true,
+//                success: function(data) {
+//                    if(data && data.resultcode == '200'){
+//                        console.log(data.result.today);
+//                    }
+//                }
+//            }));
+        $(function(){
+            var url = 'http://v.juhe.cn/weather/index';
+            $.ajax(url, {
+                data: {
+                    'cityname': '襄阳',
+                    'dtype': 'jsonp',
+                    'key': 'xxxx',
+                    '_': new Date().getTime()
+                },
+                dataType: 'jsonp',
+                crossDomain: true,
+                success: function(data) {
+                    if(data && data.resultcode == '200'){
+                        console.log(data.result.today);
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

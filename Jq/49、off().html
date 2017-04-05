@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>off()</title>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("p").on("click", function () {
+				alert($(this).html());
+			})
+			$("p").first().on("mouseover", function () {
+				$(this).css("color", "red");
+			})
+
+			$("p").last().off(); //移除多个事件
+			$("p").first().off("mouseover"); //移除一个事件
+		})
+	</script>
+</head>
+
+<body>
+	<p>hello,word</p>
+	<p class="box">1</p>
+	<p>2</p>
+	<p>3</p>
+</body>
+
+
+</html>

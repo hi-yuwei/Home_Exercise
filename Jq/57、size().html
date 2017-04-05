@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>57、size</title>
+	<style>
+		.box {
+			width: 50px;
+			height: 50px;
+			margin-top: 5px;
+			border: 1px solid #000;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("input[name='tj']").click(function () {
+				var num = $(".father-box > input:checked").size();
+				alert(num);
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div class="father-box">
+		<input type="checkbox">红
+		<input type="checkbox">黄
+		<input type="checkbox">蓝
+		<input type="checkbox">绿
+		<input type="checkbox">青
+		<input type="checkbox">紫
+	</div>
+	<input type="button" name="tj" value="统计" />
+</body>
+
+
+</html>

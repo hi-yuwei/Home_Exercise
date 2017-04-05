@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>layer</title>
+	<style type="text/css">
+		.red {
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+	<script>
+		$(function () {
+			$("#btn").on("click", function () {
+				layer.open({
+					type: 1,
+					area: ['600px', '360px'],
+					shadeClose: true,
+					content: '\<div class="red">111\<\div>'
+				});
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<button id="btn">提交</button>
+</body>
+
+</html>

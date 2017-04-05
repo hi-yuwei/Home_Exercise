@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建对象-定义并创建对象的实例</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+		//定义并创建对象的实例
+		var person = new Object();
+		person.firsetName = "yu";
+		person.lastName = "wei";
+		person.age=27;
+		person.say=function(){
+			document.write("姓:"+person.firsetName+"名："+person.lastName+"年龄:"+person.age);
+		}
+		//定义并创建对象的实例-简化写法
+	var person = {
+		firstName: "yu",
+		lastName: "wei",
+		age: 27,
+		say: function () {
+			//两者同理，this指带当前对象
+			document.write("姓:"+this.firstName+"名："+this.lastName+"年龄:"+this.age);
+			document.write("姓:"+person.firstName+"名："+person.lastName+"年龄:"+person.age);
+		}
+	}
+	person.say(); //调用对象的方法
+</script>
+
+</html>

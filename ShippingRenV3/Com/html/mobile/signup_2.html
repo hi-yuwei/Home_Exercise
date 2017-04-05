@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+	<link rel="stylesheet" href="../../Content/mobile/jquery.mobile-1.4.5.min.css">
+	<style>
+		body, input, label, .ui-btn {font-family: microsoft yahei;}
+		#mobile_header {background: #568cce; border: 0 none; color: #fff;}
+		#mobile_header h1 {font-size: 1.2em; font-weight: normal; padding: 0.5em 0;}
+		#mobile_header a {background: #568cce; border: 0 none; top: 0.45em;}
+		#agreeChk {color: #38c;}
+		#btnSignup {color: #fff; background: #568cce;}
+		#mobile_content {padding-top: 0.3em;}
+		#post_1,
+		#post_2 {padding-top: 0.45em; padding-bottom: 0.45em; background: #568cce; color: #fff; font-weight: normal; border: 1px solid #568cce;}
+		#radio_1 label,
+		#radio_2 label,
+		#agreeChk {padding-top: 0.5em; padding-bottom: 0.5em;}
+		#post_out .ui-input-text,
+		#radio_1 .ui-radio {margin: 0 0.3125em 0 0;}
+		#post_1,
+		#radio_2 .ui-radio {margin: 0 0 0 0.3125em;}
+		#radioBox {margin-top: 0.5em;}
+		#mobile_content .errorDom {border-color: red;}
+	</style>
+	<script src="../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="mobile_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>注 册</h1>
+	</div>
+	<div role="main" class="ui-content" id="mobile_content">
+		<form>
+			<input name="phone" id="phone" placeholder="手机号码" value="" type="text">
+			<div class="ui-grid-a">
+				<div id="post_out" class="ui-block-a">
+					<input name="jiaoyanma" id="jiaoyanma" placeholder="手机校验码" value="" type="text">
+				</div>
+				<div class="ui-block-b">
+					<a id="post_1" href="javascript:void(0)" class="ui-btn">发送校验码</a>
+					<!--<div id="post_2" class="ui-btn">59秒</div>-->
+				</div>
+			</div>
+			<div id="radioBox" class="ui-grid-a">
+				<div id="radio_1" class="ui-block-a">
+					<label class="ui-btn-inline">
+						<input class="ui-mini" type="radio" name="zhuShang">货主
+					</label>
+				</div>
+				<div id="radio_2" class="ui-block-b">
+					<label class="ui-btn-inline">
+						<input class="ui-mini" type="radio" name="zhuShang">物流商
+					</label>
+				</div>
+			</div>
+			<input name="password" id="password" placeholder="登录密码" value="" autocomplete="off" type="password">
+			<input name="email" id="email" placeholder="邮箱" value="" type="email">
+			<input name="" id="" placeholder="姓名" value="" type="text">
+			<input name="" id="" placeholder="公司名称" value="" type="text">
+			<input name="" id="" placeholder="邀请码（非必填项）" value="" type="text">
+			<label id="agreeChk">
+				<input type="checkbox">同意 <a class="link" href="http://www.baidu.com" target="_blank">《运去哪服务协议》</a>
+			</label>
+			<a href="javascript:void(0)" id="btnSignup" data-role="button">马上注册</a>
+			
+		</form>
+	</div>
+</div>
+<script>
+	$(function() {
+		$(".ui-input-text, .ui-radio label, #agreeChk, #btnSignup").removeClass("ui-corner-all ui-shadow-inset");
+		$(".ui-input-text input").focus(function() {
+			$(this).parent().removeClass("ui-focus");
+		});
+	});
+</script>
+
+</body>
+</html>

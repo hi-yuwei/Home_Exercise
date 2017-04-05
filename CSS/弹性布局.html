@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>弹性布局</title>
+	<style type="text/css">
+		ul li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		
+		.flex-container {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		
+		.flex-item {
+			width: 600px;
+			height: 200px;
+			flex: 1;
+			margin-left: 5px;
+			background: red;
+		}
+		
+		.flex-item:nth-child(2) {
+			flex: 0 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="flex-container">
+		<li class="flex-item">1</li>
+		<li class="flex-item">1</li>
+		<li class="flex-item">1</li>
+		<li class="flex-item">1</li>
+		<li class="flex-item">1</li>
+		<li class="flex-item">1</li>
+	</ul>
+</body>
+
+</html>

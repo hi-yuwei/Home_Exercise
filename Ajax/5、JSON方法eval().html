@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON方法eval（）</title>
+    <script type="text/javascript">
+        var data= '{['
+                +'{"name":"6101","value":"alert(123)"},'
+                +'{"name":"6102","value":"铜川市"},'
+                +'{"name":"6103","value":"宝鸡市"},'
+                +'{"name":"6104","value":"咸阳市"},'
+                +'{"name":"6105","value":"渭南市"},'
+                +'{"name":"6106","value":"延安市"},'
+                +'{"name":"6107","value":"汉中市"},'
+                +'{"name":"6108","value":"榆林市"},'
+                +'{"name":"6109","value":"安康市"},'
+                +'{"name":"6110","value":"商洛市"}'
+                +']}';
+        var JSONObj=eval(data);
+        alert(JSONObj[0]["value"]);
+//        console.log(JSONObj[0]["value"]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

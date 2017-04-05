@@ -1,0 +1,653 @@
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+.fn-clear {
+  zoom: 1;
+}
+.fn-clear:after {
+  display: block;
+  content: '';
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.dis-block {
+  display: block;
+}
+.dis-none {
+  display: none;
+}
+.dis-inline {
+  display: inline;
+}
+.dis-inblock {
+  display: inline-block;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-left {
+  text-align: left;
+}
+.fz12 {
+  font-size: 12px;
+}
+.fz14 {
+  font-size: 14px;
+}
+.fz16 {
+  font-size: 16px;
+}
+.fz18 {
+  font-size: 18px;
+}
+.fw-b {
+  font-weight: bold;
+}
+.fw-n {
+  font-weight: normal;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt35 {
+  margin-top: 35px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.po-abs {
+  position: absolute;
+}
+.po-rel {
+  position: relative;
+}
+.po-fixed {
+  position: fixed;
+}
+.txt-indent {
+  text-indent: 2em;
+}
+.adefault {
+  color: #0000EE;
+  text-decoration: underline;
+}
+.adefault:visited {
+  color: #551a8b;
+}
+.adefault:hover,
+.adefault:active {
+  color: #ff0000;
+}
+.togray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  zoom: 1;
+  overflow-x: hidden;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+select {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+input,
+select,
+textarea,
+button {
+  border: 1px solid;
+  outline: 0;
+}
+textarea {
+  overflow: auto;
+  resize: both;
+}
+input {
+  line-height: normal;
+}
+input[type="button"] {
+  box-sizing: content-box;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+a {
+  cursor: pointer;
+}
+input[disabled],
+button[disabled],
+input[readonly],
+textarea[readonly] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0;
+  *width: 13px;
+  *height: 13px;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+}
+td,
+th {
+  padding: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+iframe {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+ins,
+a {
+  text-decoration: none;
+  outline: 0;
+}
+ins:active,
+a:active,
+ins:hover,
+a:hover {
+  outline: 0;
+}
+.arial {
+  font-family: "Arial";
+}
+.century {
+  font-family: "Century Gothic";
+}
+.songti {
+  font-family: "\5B8B\4F53", "宋体", "SimSun";
+}
+.yahei {
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+}
+.xihei {
+  font-family: "\534E\6587\7EC6\9ED1", "华文细黑", "STXihei";
+}
+.heiti {
+  font-family: "\9ED1\4F53", "黑体", "SimHei";
+}
+.yahei-arial {
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei", "Arial";
+}
+.icon {
+  position: absolute;
+  left: auto;
+  top: auto;
+  display: block;
+  font-style: normal;
+}
+.icon-phone {
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon/icon-phone.png) left center no-repeat;
+  left: -20px;
+  top: 15px;
+}
+.icon-ask {
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon/icon-ask.png) no-repeat;
+  left: 30px;
+  top: 10px;
+}
+.icon-plus {
+  width: 8px;
+  height: 8px;
+  background: url(../images/icon/plus-icon.png) no-repeat;
+  left: 7px;
+  top: 9px;
+}
+.wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  background: #3b322e;
+  position: absolute;
+  z-index: 1;
+}
+.header ul li {
+  float: left;
+  line-height: 40px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+  font-size: 14px;
+  position: relative;
+}
+.header a {
+  color: #ccc;
+}
+.header .fn-left li {
+  padding: 0 0 0 60px;
+}
+.header .fn-left li:nth-child(1) {
+  padding: 0 22px 0 0;
+}
+.header .fn-left li:nth-child(1) a {
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+.header .fn-right li {
+  padding: 0 0 0 17px;
+}
+.header .fn-right li:nth-child(1) {
+  padding: 0;
+}
+.header .fn-right li:nth-child(1) a {
+  padding-right: 12px;
+  border-right: 1px solid #ccc;
+}
+.nav {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.nav .logo {
+  padding: 22px 53px 0 0;
+  box-sizing: border-box;
+}
+.nav .ui-nav li {
+  float: left;
+  text-align: center;
+  line-height: 90px;
+}
+.nav .ui-nav a {
+  position: relative;
+  display: block;
+  padding: 0 16px;
+  font-size: 18px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+  color: #373737;
+  box-sizing: border-box;
+  transition: all 0.25s linear;
+}
+
+.nav .ui-nav a:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  width:100%;
+  height: 90px;
+  transition: all 0.25s linear;
+}
+
+.nav .ui-nav a.curr,
+.nav .ui-nav a:hover:before {
+  background: #07a4e6;
+  display: block;
+  top:-10px;
+  /*margin-top: -10px;*/
+  color: #fff;
+}
+
+.nav .ui-nav a:hover{
+  color:#fff;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.banner img {
+  max-width: 100%;
+}
+.banner .hd {
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  margin-left: -45px;
+}
+.banner .hd ul li {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #fff;
+  margin-left: 11px;
+  float: left;
+  cursor: pointer;
+}
+.banner .hd ul li.curr {
+  background: #07a4e6;
+}
+.banner .banner-bg {
+  position: absolute;
+  left: 540px;
+  top: 240px;
+}
+.banner .txt-main span {
+  display: block;
+}
+.banner .txt-main .txt-title {
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+  font-weight: bold;
+  font-size: 77px;
+  color: #fff;
+}
+.banner .txt-main .txt-subtitle {
+  font-size: 28px;
+  font-family: "Arial";
+  color: #ff9900;
+  width: 548px;
+  height: 80px;
+  padding-left: 37px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: left;
+  background: url(../images/index/icon-speak.png) no-repeat;
+}
+.banner .txt-main .txt-address {
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+  font-size: 24px;
+  color: #fff;
+  margin: 15px 0 80px 0;
+}
+.banner .txt-main .txt-img {
+  margin-left: 78px;
+}
+.banner .txt-main .txt-img img {
+  float: left;
+  display: block;
+}
+.banner .txt-main .txt-img img:nth-child(1) {
+  margin-right: 20px;
+}
+.banner .txt-item {
+  margin-left: 122px;
+}
+.banner .txt-item span {
+  display: block;
+}
+.banner .txt-item li {
+  float: left;
+  text-align: center;
+  margin-right: 100px;
+}
+.banner .txt-item .txt-num {
+  height: 74px;
+  line-height: 74px;
+  font-size: 100px;
+  color: #fff;
+  font-family: "Arial";
+  font-weight: bold;
+}
+.banner .txt-item .txt-content {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.banner .banner-content {
+  position: absolute;
+  left: 357px;
+  bottom: 0;
+  width: 1200px;
+  height: 120px;
+  background: #fff;
+}
+.banner .banner-content span {
+  display: block;
+}
+.banner .banner-content .content-item {
+  width: 703px;
+  overflow: hidden;
+  padding: 30px 47px 0 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #272727;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+}
+.banner .banner-content .item-main {
+  width: 400px;
+  height: 80px;
+  background: #ff9900;
+  margin: 20px 50px 0 0;
+}
+.banner .banner-content .content-time {
+  width: 138px;
+  height: 88px;
+  margin: -4px;
+  background: url(../images/index/time-kuang.png) no-repeat;
+  font-size: 12px;
+  color: #ff9900;
+  padding: 13px 0 0 13px;
+  box-sizing: border-box;
+}
+.banner .banner-content .time-detail {
+  height: 30px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  font-style: normal;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "微软雅黑", "Microsoft YaHei";
+  padding-right: 6px;
+}
+.banner .banner-content .content-zhuce {
+  padding: 6px 0 0 8px;
+  box-sizing: border-box;
+}
+.banner .banner-content .zhuce-title {
+  line-height: 40px;
+  font-size: 28px;
+  color: #fff;
+}
+.banner .banner-content .zhuce-subtitle {
+  font-size: 14px;
+  color: #fff;
+  line-height: 24px;
+}
+.index-main .index-title {
+  border-bottom: 1px solid #eeeeee;
+}
+.index-main .index-about {
+  width: 690px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.index-main .title {
+  font-size: 20px;
+  color: #07a4e6;
+  display: inline-block;
+  line-height: 40px;
+  border-bottom: 2px solid #07a4e6;
+  padding-bottom: 8px;
+}
+.index-main .subtitle {
+  font-size: 16px;
+  color: #bbbbbb;
+  padding-left: 9px;
+}
+.index-main .about-share {
+  padding: 26px 0 9px 20px;
+}
+.index-main .share-weibo {
+  padding-left: 9px;
+}
+.index-main .weibo-logo {
+  display: inline-block;
+  width: 71px;
+  height: 9px;
+  background: url(../images/icon/UXPAChina-1.png) no-repeat;
+}
+.index-main .weibo-V {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: url(../images/icon/V.png) no-repeat;
+}
+.index-main .weibo-address {
+  font-size: 12px;
+  color: #999999;
+}
+.index-main .weibo-guanzhu {
+  width: 65px;
+  height: 25px;
+  background: #ed2033;
+  margin-top: 7px;
+  line-height: 25px;
+  text-align: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.index-main .weibo-guanzhu a {
+  color: #fff;
+  font-size: 12px;
+}
+.index-main .share-item li {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #f1f1f1;
+}
+.index-main .index-news {
+  width: 400px;
+  overflow: hidden;
+}

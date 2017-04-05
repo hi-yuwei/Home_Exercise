@@ -1,0 +1,933 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>现金券</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="../../Content/global.css" />
+	<link rel="stylesheet" href="../../Content/page.css" />
+	<script>!window.jQuery && document.write('<script src="../../Scripts/jquery-1.11.2.min.js"><\/script >');</script>
+	<link rel="stylesheet" href="../../plugin/autocomplete/css/jquery.ui.autocomplete.css">
+	<script src="../../plugin/autocomplete/js/jquery.ui.autocomplete.min.js"></script>
+</head>
+
+<body>
+<div id="fixedBar">
+	<div class="wrap">
+		<div class="leftSide">
+			<a class="login" href="javascript:void(0)">亲，请登录</a>
+			<a class="register" href="javascript:void(0)">免费注册</a>
+			<span class="welcome">欢迎来到汇航！</span>
+		</div>
+		<div class="rightSide">
+			<a class="tab attention" href="javascript:void(0)">关注</a>
+			<a class="tab collection" href="javascript:void(0)">收藏</a>
+			<a class="tab suggestion" href="javascript:void(0)">建议</a>
+			<a class="tab help" href="javascript:void(0)">帮助</a>
+		</div>
+	</div>
+</div>
+<div class="topWrap">
+	<div class="wrap">
+		<a class="logo" href="javascript:void(0)">运去哪</a>
+		<span class="zheng">100%有货必达</span>
+		<div class="web_SR_search">
+			<div class="web_search_selType">
+				<div class="textBox">
+					<span class="text" mid="0">拼箱</span>
+					<em class="arrow"></em>
+				</div>
+				<ul class="showBox">
+					<li>
+						<a mid="1" href="javascript:void(0)">整箱</a>
+					</li>
+				</ul>
+			</div>
+			<div class="web_search_selPort">
+				<span class="text">起始港</span>
+				<em class="line"></em>
+				<input class="input inputJsTip" type="text" vtext="请选择起始港" />
+			</div>
+			<div class="web_search_selPort">
+				<span class="text">目的港</span>
+				<em class="line"></em>
+				<input class="input inputJsTip" type="text" vtext="请选择目的港" />
+			</div>
+		</div>
+		<span class="call">客服电话</span>
+	</div>
+</div>
+<div class="navWrap">
+	<div class="wrap">
+		<div id="categoryAll">
+			<div class="HD">
+				<ul class="HD_title">
+					<li>
+						<span class="text">全部航线分类</span>
+						<em class="icon"></em>
+					</li>
+				</ul>
+			</div>
+			<div id="category_SR">
+				<div class="listBox">
+					<ul>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">加勒比航线</a>，
+									<a class="aLink" href="javascript:void(0)">加勒比航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">加勒比航线 Caribbean Airlines+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">黑海航线</a>，
+									<a class="aLink" href="javascript:void(0)">黑海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">欧洲航线</a>，
+									<a class="aLink" href="javascript:void(0)">欧洲航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">欧洲航线European route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">红海航线</a>，
+									<a class="aLink" href="javascript:void(0)">红海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">红海航线The red sea route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">近洋航线</a>，
+									<a class="aLink" href="javascript:void(0)">近洋航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">近洋航线ear-sea shipping line+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">澳新航线</a>，
+									<a class="aLink" href="javascript:void(0)">澳新航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">澳新航线ANZ route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">地中海航线</a>，
+									<a class="aLink" href="javascript:void(0)">地中海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">地中海航线The Mediterranean good health+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">中南美航线</a>，
+									<a class="aLink" href="javascript:void(0)">中南美航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">中南美航线South America Line+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<ul class="navMenu">
+			<li>
+				<a class="current" href="javascript:void(0)">首页</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">我的物流</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">货盘市场</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">物流市场</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">订单跟踪</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">物流资讯</a>
+			</li>
+		</ul>
+		<div class="navReleasePH">
+			<ul>
+				<li class="p_price">
+					<a href="javascript:void(0)">发布运价</a>
+				</li>
+				<li class="p_pallet">
+					<a href="javascript:void(0)">发布货盘</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="adminSide">
+		<div class="adminMenu">
+			<ul>
+				<li>
+					<dl>
+						<dt>
+							<a class="current" href="javascript:void(0)">
+								<strong class="buyer_cent"></strong>
+								<span>买家中心</span>
+								<em></em>
+							</a>
+						</dt>
+						<dd><a class="current" href="javascript:void(0)">我的货盘</a></dd>
+						<dd><a href="javascript:void(0)">感兴趣航线</a></dd>
+						<dd><a href="javascript:void(0)">我的收藏</a></dd>
+						<dd><a href="javascript:void(0)">我的供应商</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="supplier_cent"></strong>
+								<span>卖家中心</span>
+								<em></em>
+							</a>
+						</dt>
+						<dd><a href="javascript:void(0)">我的运费</a></dd>
+						<dd><a href="javascript:void(0)">运费管理</a></dd>
+						<dd><a href="javascript:void(0)">我的客户</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="myEntrust"></strong>
+								<span>我的委托</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="evaluation"></strong>
+								<span>评价管理</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="cashCP"></strong>
+								<span>现金券</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="inviteFriends"></strong>
+								<span>邀请好友</span>
+								<div class="songXianjin"></div>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="tools"></strong>
+								<span>实用工具</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="adminMenu">
+			<ul>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="myPallet"></strong>
+								<span>我的货盘</span>
+								<em></em>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="interesting"></strong>
+								<span>感兴趣航线</span>
+								<em></em>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="collection"></strong>
+								<span>我的收藏</span>
+								<em></em>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="mySupplier"></strong>
+								<span>我的供应商</span>
+								<em></em>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="myEntrust"></strong>
+								<span>我的委托</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="evaluation"></strong>
+								<span>评价管理</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a class="current" href="javascript:void(0)">
+								<strong class="cashCP"></strong>
+								<span>现金券</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="inviteFriends"></strong>
+								<span>邀请好友</span>
+								<div class="songXianjin"></div>
+							</a>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>
+							<a href="javascript:void(0)">
+								<strong class="tools"></strong>
+								<span>实用工具</span>
+							</a>
+						</dt>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div class="adminSideSecret">
+			<div class="title">
+				<h3>发布货盘秘籍</h3>
+				<a href="javascript:void(0)">更多</a>
+			</div>
+			<ul class="list">
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货？</a>
+				</li>
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货盘如何发布货盘？</a>
+				</li>
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货？</a>
+				</li>
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货？</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="adminMain">
+		<div class="cashCoupon clearfix">
+			<div class="cellA">
+				<p class="lineA">现金券</p>
+				<div class="lineB">
+					<strong class="number">314000<em>.29元</em></strong>
+					<span class="TXSpan" style="display: none;">提 现</span>
+					<a class="TXLink" href="javascript:void(0)">提 现</a>
+					<!--<a class="TXRule" href="javascript:void(0)">提现规则详情</a>-->
+				</div>
+				<p class="lineC">您当前可提1000000000元<a class="act" href="javascript:void(0)">活动说明</a></p>
+			</div>
+			<dl class="cellB">
+				<dt>
+					<div class="AA"></div>
+					<div class="BB" style="height: 43px;"></div>
+					<div class="CC"></div>
+					<div class="DD">80%</div>
+				</dt>
+				<dd class="ddA">已击败了80%的同行</dd>
+				<dd class="ddB">您总共邀请了10000000位货主</dd>
+				<dd class="ddC">他们已经将您置顶为供应商</dd>
+				<dd class="ddD"><a href="javascript:void(0)">立刻邀请</a></dd>
+			</dl>
+			<dl class="cellB">
+				<dt>
+					<div class="AA"></div>
+					<div class="BB" style="height: 21px;"></div>
+					<div class="CC"></div>
+					<div class="DD">30%</div>
+				</dt>
+				<dd class="ddA">已击败了30%的同行</dd>
+				<dd class="ddB">您总共邀请了10000000位物流商</dd>
+				<dd class="ddC">他们已在您的潜在客户里</dd>
+				<dd class="ddD"><a href="javascript:void(0)">立刻邀请</a></dd>
+			</dl>
+		</div>
+		<div class="cashRecord">
+			<h2 class="tit">交易记录</h2>
+			<div class="cont clearfix">
+				<h4 class="text">起止日期：</h4>
+				<div class="date">2015.04.30</div>
+				<span class="zhi">—</span>
+				<div class="date">2015.05.20</div>
+				<a class="btnDefault ml30" href="javascript:void(0)">搜索</a>
+			</div>
+		</div>
+		<div class="cashRecordList">
+			<div class="title clearfix">
+				<h3 class="text">现金券记录</h3>
+				<div class="tabs">
+					<a href="javascript:void(0)">奖励记录</a>
+					<span>|</span>
+					<a class="current" href="javascript:void(0)">提现明细</a>
+				</div>
+			</div>
+			<ul class="list clearfix">
+				<li>
+					<div class="cell" style="width: 150px;">2015.05.20</div>
+					<div class="cell" style="width: 230px;">账号注册</div>
+					<div class="cell" style="width: 200px;"><b>+5.00</b></div>
+					<div class="cell" style="width: 260px;">奖励成功</div>
+				</li>
+				<li>
+					<div class="cell" style="width: 150px;">2015.05.20</div>
+					<div class="cell" style="width: 230px;">提现现金券50元</div>
+					<div class="cell" style="width: 200px;"><b style="color: red;">-50.00</b></div>
+					<div class="cell" style="width: 260px;">提现成功</div>
+				</li>
+				<li>
+					<div class="cell" style="width: 150px;">2015.05.20</div>
+					<div class="cell" style="width: 230px;">名片认证</div>
+					<div class="cell" style="width: 200px;"><b>+20.00</b></div>
+					<div class="cell" style="width: 260px;">奖励成功</div>
+				</li>
+				<li>
+					<div class="cell" style="width: 150px;">2015.05.20</div>
+					<div class="cell" style="width: 230px;">账号注册</div>
+					<div class="cell" style="width: 200px;"><b>+5.00</b></div>
+					<div class="cell" style="width: 260px;">奖励成功</div>
+				</li>
+			</ul>
+			<div style="margin-top: 20px;">
+				分页区域
+			</div>
+		</div>
+		
+		<div class="cashDialog">
+			<div id="CDBankWrap">
+				<div class="titBox clearfix">
+					<h3 class="tit">
+						<span class="left">当前可提现金额</span>
+						<em class="balance">余额：<b>3000</b> 元</em>
+					</h3>
+					<a class="close" href="javascript:void(0)">Close</a>
+				</div>
+				<div class="contBox">
+					<div class="CDBank clearfix">
+						<div class="list">
+							<span class="inputTit">姓名：</span>
+							<div class="inputBox">
+								<input type="text" />
+							</div>
+						</div>
+						<!--<div class="list">
+							<span class="inputTit">开户银行：</span>
+							<div class="inputBox">
+								<span id="CDBankArea" class="text">中国工商银行</span>
+							</div>
+							<div class="CDSelBankBox">
+								<span id="CDSelBank" class="CDSelBank">选择银行</span>
+								<ul id="CDSelBankShow" class="CDSelBankShow">
+									<li class="bk_1" vid="1">
+										<input class="radio" name="bank" checked="checked" type="radio" />
+										<span class="image">中国工商银行</span>
+									</li>
+									<li class="bk_2" vid="2">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">招商银行</span>
+									</li>
+									<li class="bk_3" vid="3">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中国建设银行</span>
+									</li>
+									<li class="bk_4" vid="4">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中国银行</span>
+									</li>
+									<li class="bk_5" vid="5">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中国农业银行</span>
+									</li>
+									<li class="bk_6" vid="6">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">交通银行</span>
+									</li>
+									<li class="bk_7" vid="7">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">浦发银行</span>
+									</li>
+									<li class="bk_8" vid="8">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">广发银行</span>
+									</li>
+									<li class="bk_9" vid="9">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中信银行</span>
+									</li>
+									<li class="bk_10" vid="10">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中国光大银行</span>
+									</li>
+									<li class="bk_11" vid="11">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">兴业银行</span>
+									</li>
+									<li class="bk_12" vid="12">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">平安银行</span>
+									</li>
+									<li class="bk_13" vid="13">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中国民生银行</span>
+									</li>
+									<li class="bk_14" vid="14">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">杭州银行</span>
+									</li>
+									<li class="bk_15" vid="15">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">上海银行</span>
+									</li>
+									<li class="bk_16" vid="16">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">宁波银行</span>
+									</li>
+									<li class="bk_17" vid="17">
+										<input class="radio" name="bank" type="radio" />
+										<span class="image">中国邮政储蓄银行</span>
+									</li>
+								</ul>
+							</div>
+							<span class="tipTxt">无需填写支行即可到账</span>
+						</div>-->
+						<div class="list">
+							<span class="inputTit">支付宝账号：</span>
+							<div class="inputBox">
+								<input class="inputJsTip" vtext="邮箱地址/手机号码" type="text" />
+							</div>
+						</div>
+						<div class="list">
+							<span class="inputTit">提现金额：</span>
+							<div class="inputBox">
+								<input type="text" />
+							</div>
+							<span class="inputSpan ml5">元</span>
+						</div>
+					</div>
+				</div>
+				<div class="btnBox clearfix">
+					<a class="btnMiddleOrange btnNext" href="javascript:void(0)">下一步</a>
+				</div>
+			</div>
+			<div id="CDCardWrap">
+				<div class="titBox clearfix">
+					<h3 class="tit">
+						<span class="left">上传名片</span>
+					</h3>
+					<a class="close" href="javascript:void(0)">Close</a>
+				</div>
+				<div class="contBox">
+					<div class="CDCard clearfix">
+						<div class="list">
+							<span class="title">名片：</span>
+							<div class="CDCardUploadBox">
+								<div class="CDCardUpload">
+									<img class="image" alt="上传名片" src="../../images/v1.3/CDCardUpload.png" />
+								</div>
+								<p class="tip">请上传名片正面</p>
+							</div>
+						</div>
+						<div class="list">
+							<span class="title">示例：</span>
+							<div class="CDCardExam">
+								<img alt="上传名片示例" src="../../images/v1.3/CDCardExam.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btnBox clearfix">
+					<a class="btnMiddleOrange btnPrev" href="javascript:void(0)">上一步</a>
+					<a class="btnMiddleOrange btnNext" href="javascript:void(0)">下一步</a>
+				</div>
+			</div>
+			<div id="CDIDWrap">
+				<div class="titBox clearfix">
+					<h3 class="tit">
+						<span class="left">上传身份证</span>
+					</h3>
+					<a class="close" href="javascript:void(0)">Close</a>
+				</div>
+				<div class="contBox">
+					<div class="CDCard clearfix">
+						<div class="list">
+							<span class="title">身份证：</span>
+							<div class="CDCardUploadBox">
+								<div class="CDCardUpload">
+									<img class="image" alt="上传身份证" src="../../images/v1.3/CDIDUpload.png" />
+								</div>
+								<p class="tip">请上传身份证正面</p>
+							</div>
+						</div>
+						<div class="list">
+							<span class="title">示例：</span>
+							<div class="CDCardExam">
+								<img alt="上传身份证示例" src="../../images/v1.3/CDIDExam.png" />
+							</div>
+						</div>
+					</div>
+					<div class="CDAgree clearfix">
+						<label class="chk left">
+							<input type="checkbox" />我已阅读并同意<a href="##" target="_blank">《运去哪付款协议》</a>
+						</label>
+					</div>
+				</div>
+				<div class="btnBox clearfix">
+					<a class="btnMiddleOrange btnSubmit" href="javascript:void(0)">提交</a>
+				</div>
+			</div>
+			<div id="CDCompleteWrap">
+				<div class="titBox clearfix">
+					<h3 class="tit">
+						<span class="left">提交完成</span>
+					</h3>
+					<a class="close" href="javascript:void(0)">Close</a>
+				</div>
+				<div class="contBox">
+					<div class="CDComplete clearfix">
+						<em class="icon"></em>
+						<span class="text">感谢您的提交，我们将在三个工作日内汇到您指定的银行卡号。</span>
+					</div>
+				</div>
+				<div class="btnBox clearfix">
+					<a class="btnMiddleOrange btnDetermine" href="javascript:void(0)">确定</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="wrap">
+		<div class="footerInfo">
+			<ul>
+				<li class="cell cellFirst">
+					<h3 class="title">
+						<b>帮助中心</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_question_1.html" target="_blank">注册和密码相关</a></dd>
+						<dd><a href="help/help_question_2.html" target="_blank">我是物流商</a></dd>
+						<dd><a href="help/help_question_3.html" target="_blank">我是货主</a></dd>
+						<dd><a href="help/help_question_4.html" target="_blank">其它</a></dd>
+					</dl>
+				</li>
+				<li class="cell">
+					<h3 class="title">
+						<b>行业相关</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_related_1.html" target="_blank">货代行业关键词</a></dd>
+						<dd><a href="help/help_related_2.html" target="_blank">集装箱运输</a></dd>
+						<dd><a href="help/help_related_3.html" target="_blank">贸易术语</a></dd>
+						<dd><a href="help/help_related_4.html" target="_blank">报关</a></dd>
+					</dl>
+				</li>
+				<li class="cell">
+					<h3 class="title">
+						<b>运去哪</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_yunquna_1.html" target="_blank">关于我们</a></dd>
+						<dd><a href="help/help_yunquna_2.html" target="_blank">人才招聘</a></dd>
+						<dd><a href="help/help_yunquna_3.html" target="_blank">服务条款</a></dd>
+						<dd><a href="help/help_yunquna_4.html" target="_blank">联系我们</a></dd>
+					</dl>
+				</li>
+				<li class="cell cellTools">
+					<div class="WeChat">
+						<h3 class="title">
+							<b>官方微信</b>
+						</h3>
+						<div class="text">用手机扫一扫，有惊喜！</div>
+						<div class="image">微信扫一扫</div>
+					</div>
+					<a class="weibo" href="javascript:void(0)">微博weibo</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="foot_copyright">© Copyright 2012-2020 <a href="http://www.shippingren.com">ShippingRen</a>&nbsp;&nbsp;&nbsp;&nbsp;版权所有&nbsp;著作权与商标声明</div>
+<a class="backToTop" href="javascript:void(0)">返回顶部-Top</a>
+
+<script src="../../Scripts/global.js"></script>
+<script src="../../Scripts/page.js"></script>
+</body>
+</html>

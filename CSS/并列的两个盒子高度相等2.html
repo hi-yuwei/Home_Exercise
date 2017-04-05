@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>并列的两个盒子高度相等2</title>
+<!--	并列两个盒子，一个盒子根据内容撑高，另一个盒子的高度与第一个盒子相同。-->
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.fatherBox {
+			display: table-row;
+			width: 100%;
+		}
+		
+		.box1,
+		.box2 {
+			display: table-cell;
+			width: 100px;
+			background: red;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="fatherBox">
+		<!--注意：用数字,英文其不会自动换行-->
+		<div class="box1">的撒范德萨发生的多岁的的撒范德萨发生的多岁的的撒范德萨发生的多岁的的撒范德萨发生的多岁的</div>
+		<div class="box2"></div>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>携程网</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="search clearfix">
+            <div class="search-fram">
+                <span>搜索：目的地/酒店/景点/航班</span>
+            </div>
+            <a href="javascript:void(0)" class="my-icon">
+                <span>我 的</span>
+            </a>
+        </section>
+    </header>
+    <section class="banner">
+        <div id="content">
+            <div id="focus" class="focus">
+                <div class="hd">
+                    <ul></ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <a href="#"><img _src="./img/1.png" src="./img/1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img _src="./img/2.jpg" src="./img/2.jpg" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img _src="./img/3.jpg" src="./img/3.jpg" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                TouchSlide({
+                    slideCell: "#focus",
+                    titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                    mainCell: ".bd ul",
+                    effect: "left",
+                    autoPlay: true, //自动播放
+                    autoPage: true, //自动分页
+                    switchLoad: "_src" //切换加载，真实图片路径为"_src" 
+                });
+            </script>
+
+    </section>
+    <main>
+        <section class="nav">
+            <ul class="list hotel clearfix">
+                <li>
+                    <p>酒店</p>
+                </li>
+                <li>
+                    <p>海外酒店</p>
+                </li>
+                <li>
+                    <p>团购</p>
+                </li>
+                <li>
+                    <p>特惠酒店</p>
+                </li>
+                <li>
+                    <p>客栈 公寓</p>
+                </li>
+            </ul>
+            <ul class="list plane clearfix">
+                <li>
+                    <p>机票</p>
+                </li>
+                <li>
+                    <p>火车票</p>
+                </li>
+                <li>
+                    <p>汽车票</p>
+                </li>
+                <li>
+                    <p>接送用车</p>
+                </li>
+                <li>
+                    <p>自驾 专车</p>
+                </li>
+            </ul>
+            <ul class="list travel clearfix">
+                <li>
+                    <p>旅游</p>
+                </li>
+                <li>
+                    <p>门票 玩乐</p>
+                </li>
+                <li>
+                    <p>游轮</p>
+                </li>
+                <li>
+                    <p>周末游</p>
+                </li>
+                <li>
+                    <p>签证</p>
+                </li>
+            </ul>
+            <ul class="list strategy clearfix">
+                <li>
+                    <p>攻略 身边</p>
+                </li>
+                <li>
+                    <p>出境WiFi</p>
+                </li>
+                <li>
+                    <p>美食购物</p>
+                </li>
+                <li>
+                    <p>礼品卡</p>
+                </li>
+                <li>
+                    <p>更多</p>
+                </li>
+            </ul>
+        </section>
+        <section class="activity clearfix">
+            <div>
+                <img src="./img/salead01.png" alt="" />
+            </div>
+            <div>
+                <img src="./img/app_home_ad.png" alt="" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="function">
+            <div>
+                <p>电话预定</p>
+            </div>
+            <div>
+                <p>下载客户端</p>
+            </div>
+            <div>
+                <p>我的</p>
+            </div>
+        </section>
+        <section class="copyright">
+            <ul class="copyright-list clearfix">
+                <li>
+                    <a href="javascript:void(0)">网站地图</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">ENGLISH</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">电脑版</a>
+                </li>
+            </ul>
+            <p>&copy2015携程旅游</p>
+        </section>
+    </footer>
+</body>
+
+</html>

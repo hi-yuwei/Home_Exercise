@@ -1,0 +1,635 @@
+﻿/*初始化*/
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,button,fieldset, legend,img { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ font-size:14px; font-weight:normal;}
+fieldset,img{ border:none; }
+img{display:block;}
+ul,ol{list-style:none; }
+textarea{resize:none; }	/*禁止在火狐下可以拖动*/
+table{border-collapse:collapse; }
+body{color:#333; background:#fff; font-size:12px; font-family:微软雅黑;}
+.clearfix:after{content:""; display:block;clear:both;}
+.clearfix{zoom:1;}
+a{ font-size:12px;color:#666; text-decoration:none;}
+a:hover{text-decoration:underline;} 
+
+.case,.designers
+{
+	padding:50px 0px;
+	}
+
+/*header开始*/
+.header
+{
+	width:1110px;
+	height:87px;
+	margin:0px auto;
+	padding-top:26px;
+	}
+.header h1
+{
+	width:242px;
+	float:left;
+	background:url(../image/logo.gif) no-repeat;
+	margin-right:90px;
+	}
+.header h1 a
+{
+	height:75px;
+	display:block;
+	text-indent:-9999em;
+	/*background:blue;*/
+	}
+
+.header ul
+{
+	height:68px;
+	}
+.header ul li
+{
+	width:68px;
+	height:68px;
+	padding:0px 20px;
+	text-align:center;
+	float:left;
+	color:#656565;
+	}
+.header li span
+{
+	color:#FE3700;
+	}
+.header li a
+{
+	display:block;
+	padding-top:22px;
+	padding-bottom:13px;
+	}
+.header li a:hover
+{
+	text-decoration:none;
+	border-bottom:2px solid #FE3700;
+	}
+/*header结束*/
+
+/*banner开始*/
+.banner
+{
+	height:458px;
+	background:url(../image/banner.jpg) no-repeat top center;
+	position:relative;
+	}
+	
+.banner .inBanner
+{
+	width:391px;
+	height:289px;
+	background:blue;
+	position:absolute;
+	top:45px;
+	left:50%;
+	margin-left:-65px;
+	background:url(../image/banner_image.png) no-repeat;
+	}
+
+.banner .inBanner a
+{
+	width:191px;
+	height:47px;
+	display:block;
+	text-align:center;
+	line-height:49px;
+	margin:0px auto;
+	color:#fff;
+	background:#FF7A23;
+	font-size:18px;
+	border-bottom:2px solid #F85700;
+	margin:182px auto 12px auto;
+	}
+.banner  .bannerBtn
+{
+	height:10px;
+	width:68px;
+	margin:0px auto;
+	padding:10px 0px;
+	}
+	
+.banner .bannerBtn li
+{
+	width:10px;
+	height:10px;
+	float:left;
+	margin-right:7px;
+	background:#000;
+	cursor:pointer;
+	border-radius:5px;
+	_display:inherit;
+	}
+	
+.banner .bannerBtn li.current
+{
+	background:#FF7A23;
+	}
+/*banner结束*/
+
+/*案例展示开始*/
+.caseTitle
+{
+	margin-bottom:50px;
+	}
+ .caseTitle p, .caseTitle h2
+{
+	width:1110px;
+	margin:0px auto;
+	text-align:center;
+	}
+ .caseTitle p
+{
+	font-size:24px;
+	font-family:Arial;
+	color:#949494;
+	}
+ .caseTitle h2
+{
+	font-size:30px;
+	color:#D80000;
+	}
+	
+.caseInfo
+{
+	width:1110px;
+	/*height:500px;*/
+	margin:0px auto;
+	}
+.caseInfo .caseNav
+{
+	margin:0px 0px 42px 0px;
+	overflow:hidden;
+	zoom:1;
+	}
+.caseInfo .caseNav li
+{
+	float:left;
+	width:120px;
+	height:38px;
+	text-align:center;
+	border:1px solid #ccc;
+	line-height:38px;
+	margin-right:18px;
+	}
+	
+.caseInfo .caseNav li.liNoMargin
+{
+	float:right;
+	margin-right:0px;
+	}
+.caseInfo .caseNav li.caseCurrent{
+	background:#C10909;
+	}
+.caseInfo .caseNav li.caseCurrent a{
+	color:#fff;
+	}
+	
+.caseInfo .caseImageList
+{
+	margin:0px auto;
+	}
+.caseInfo .caseImageList li{
+	float:left;
+	margin:0px 25px 25px 0px;
+	}
+.caseInfo li.imgRight{
+	float:right;
+	margin-right:0px;
+	}
+	
+.caseTable
+{
+	width:1110px;
+	height:172px;
+	background:#F7F7F7;
+	}
+.caseTable a
+{
+	float:left;
+	}
+.caseTable .inCaseTable
+{
+	float:right;
+	width:835px;
+	height:148px;
+	/*background:yellow;*/
+	padding:12px 0px;
+	}
+.caseTable .inCaseTable p
+{
+	color:#FF4141;
+	font-size:14px;
+	}
+	
+.inCaseTable table td
+{	
+	width:300px;
+	height:30px;
+
+	}
+.inCaseTable table .tdTxt
+{
+	width:60px;
+	text-align:left;
+	}
+.inCaseTable table .tdLink
+{
+	width:190px;
+	}
+.inCaseTable table td a
+{
+	width:161px;
+	height:39px;
+	background:#FF4141;
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	line-height:18px;
+	line-height:39px;
+	}
+	
+.inCaseTable table .inputTxt
+{
+	color:#ccc;
+	}
+/*案例展示结束*/
+
+
+/*设计师团队开始*/
+.designers
+{
+	background:#F6F6F6;
+	position:relative;
+	}
+	
+.designers .inDesigner
+{
+	width:1110px;
+	margin:0px auto;
+	position:relative;
+	}
+ .inDesigner  .overLi
+ {
+	width:1037px;
+	margin:0px auto;
+	overflow:hidden;
+	zoom:1;
+ 	}
+.designers .inDesigner ul
+{
+	/*width:1037px;*/
+	width:2000px;
+	}
+.designers .inDesigner li
+{
+	width:212px;
+	height:283px;
+	margin-right:27px;
+	float:left;
+	border:1px solid #ccc;
+	font-size:14px;
+	color:#999;
+	line-height:28px;
+	padding:4px 8px 13px 17px;
+	}
+	
+.designers .inDesigner li img
+{
+	margin:0px auto;
+	}
+	
+.designers .inDesigner li a
+{
+	color:Red;
+	font-size:16px;
+	}
+	
+.inDesigner .btnLeft,.inDesigner .btnRight
+{
+	width:27px;
+	height:56px;
+	position:absolute;
+	top:114px;
+	cursor:pointer;
+	}
+.inDesigner .btnLeft
+{
+		background:url(../image/btnLeft.gif) no-repeat;
+		left:0px;
+	}
+.inDesigner .btnRight
+{
+		background:url(../image/btnRight.gif) no-repeat;
+		right:0px;
+	}
+/*设计师团队结束*/
+
+/*客户见证开始*/
+.client
+{
+	margin:30px 0px;
+	background:#fff url(../image/clientCase_image.jpg) no-repeat top center;
+	}
+.clientBanner
+{
+	width:1110px;
+	height:179px;
+	padding:25px 0px;
+
+	color:#fff;
+	margin:0px auto;
+	}
+.clientBanner h2
+{
+	font-size:27px;
+	margin-bottom:20px;
+	}
+.clientBanner p
+{
+	line-height:30px;
+	font-size:16px;
+	}
+.clientBanner a
+{
+	width:125px;
+	height:30px;
+	border:2px solid #fff;
+	text-align:center;
+	line-height:30px;
+	display:block;
+	color:#fff;
+	font-size:16px;
+	margin-top:20px;
+	}
+.client .clientCase 
+{
+	width:1110px;
+	margin:0px auto;
+
+	}
+.clientCase .hd
+{
+		border-bottom:2px solid #ccc;
+		padding:12px 0px;
+		margin:30px 0px;
+	}
+.clientCase .hd h2
+{
+	float:left;
+	font-size:20px;
+	color:Red;
+	background:url(../image/ClientCase_icon.gif) no-repeat left;
+	padding-left:20px;
+
+	}
+.clientCase .hd h2 span
+{
+	color:#B0AEAF; 
+	}
+.clientCase .hd a
+{
+	font-size:16px;
+	font-family:Arial;
+	color:Red;
+	float:right;
+	}
+.clientCase ul li
+{
+	width:329px;
+	height:395px;
+	padding:2px;
+	border:1px solid #ccc;
+	float:left;
+	margin-right:52px;
+	}
+.clientCase ul li.ClinenoMargin
+{
+	float:right;
+	margin-right:0;
+	}
+.clientCase ul li h3
+{
+	text-align:center;
+	font-size:18px;
+	color:#505050;
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	}
+	
+.clientCase ul li p
+{
+	font-size:14px;
+	text-indent:2em;
+	line-height:30px;
+	}
+.clientCase ul li p a
+{
+	color:#E01912;
+	font-size:14px;
+	}
+/*客户见证结束*/
+
+/*关于我们开始*/
+.aboutUs
+{
+	/*height:1000px;*/
+	background:#F6F6F6;
+	padding:40px 0px;
+	}
+.aboutUs .inAboutUs
+{
+	width:1110px;
+	margin:0px auto;
+	}
+.aboutUs .inAboutUs .company
+{
+	background:#fff;
+	height:290px;
+	padding:20px;
+	}
+.inAboutUs p
+{
+	font-size:24px;
+	font-family:Arial;
+	color:#949494;
+	text-align:center;
+	}
+.inAboutUs h2
+{
+	font-size:30px;
+	color:#D80000;
+	text-align:center;
+	}
+.company
+{
+	margin:32px 0px;
+	}
+.company img
+{
+	float:left;
+	}
+.company .companyInfo
+{
+	width:500px;
+	float:right;
+	}
+.company .companyInfo p
+{
+	font-size:12px;
+	text-align:left;
+	text-indent:2em;
+	font-family:微软雅黑;
+	line-height:34px;
+	}
+.company .companyInfo strong
+{
+
+	font-size:14px;
+	color:#333;
+	border-bottom:3px solid #D80000;
+	}
+.company .companyInfo p a
+{
+	color:#D80000;
+	text-decoration:none;
+	}
+.inAboutUs .guideNes
+{
+	width:522px;
+	height:281px;
+	background:#fff;
+	border:1px solid #000;
+	float:left;
+	}
+	
+.inAboutUs .gh
+	{
+		padding:13px 10px;
+		border-bottom:1px solid #ccc;
+		}
+.inAboutUs .gh h3
+{
+	background:url(../image/guideNes_icon.gif) no-repeat left center;
+	padding-left:20px;
+	font-size:20px;
+	color:#D80000;
+	float:left;
+	}
+.inAboutUs .gh h3 span
+{
+	color:#ABABAB;
+	font-size:14px;
+	}
+.inAboutUs .gh a
+{
+	font-size:12px;
+	color:#D80000;
+	float:right;
+	margin-top:7px;
+	}
+.guideNes ul li
+{
+	line-height:33px;
+	overflow:hidden;
+	zoom:1;
+	padding:0px 10px;
+	font-size:14px;
+	}
+.guideNes ul li a
+{
+	font-size:14px;
+	color:#666;
+	float:left;
+	}
+.guideNes ul li span
+{
+	float:right;
+	color:#999;
+	}
+	
+.inAboutUs .excitNes
+{
+	width:537px;
+	height:282px;
+	background:#fff;
+	float:right;
+	border:1px solid #000;
+	}
+.inAboutUs .excitNes .excitNesInfo
+{
+	padding:26px 27px 32px 25px;
+	}
+.inAboutUs .excitNes .excitNesInfo img
+{
+	float:left;
+	}
+.inAboutUs .excitNes .excitNesInfo p
+{
+	width:250px;
+	font-size:14px;
+	text-align:left;
+	float:right;
+	line-height:28px;
+	font-family:微软雅黑;
+	}
+ .excitNes .excitNesInfo p strong
+{
+	font-size:16px;
+	color:Red;
+	}
+ .excitNes .excitNesInfo p a
+ {
+ 	color:Red;
+ 	text-decoration:none;
+ 	font-size:14px;
+ 	}
+/*关于我们结束*/
+
+/*footer开始*/
+.footer
+{
+	height:171px;
+	background:#323232;
+	}
+.footer .inFooter
+{
+	width:1110px;
+	margin:0px auto;
+	}
+.footer .inFooter img
+{
+	float:left;
+	}
+.footer .inFooter .inFooterNav
+{
+	float:left;
+	color:#c3c3c3;
+	margin-left:90px;
+	padding:30px 0px;
+
+	}
+.footer .inFooter .inFooterNav ul
+{
+		margin-bottom:40px;
+	}
+.footer .inFooter .inFooterNav ul li
+{
+	float:left;
+	padding-right:48px;
+	}
+.footer .inFooter .inFooterNav p
+{
+	font-size:12px;
+	line-height:24px;
+	}
+.footer .inFooter .inFooterNav ul li a
+{
+	color:#c3c3c3;
+	font-size:16px;
+	}
+/*footer结束*/
+

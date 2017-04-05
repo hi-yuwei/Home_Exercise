@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>删除节点</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		.box {
+			width: 200px;
+			height: 300px;
+			padding: 10px;
+			margin: 100px auto 10px;
+			border: 1px solid #000;
+		}
+		
+		.box>p {
+			margin-bottom: 10px;
+			background: #ccc;
+		}
+		
+		.del {
+			width: 100px;
+			height: 30px;
+			display: block;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box" id="box">
+		<p id="p1" class="p1">第一数据</p>
+		<p id="p1" class="p2">第二数据</p>
+		<p id="p1" class="p3">第三数据</p>
+		<p id="p1" class="p4">第四数据</p>
+		<p id="p1" class="p5">第五数据</p>
+	</div>
+	<button class="del" id="del">删除</button>
+</body>
+<script type="text/javascript">
+	function Del() {
+		var box = document.getElementById("box");
+		var num = box.getElementsByTagName("p");
+		if (num.length == 1) {
+			delNode();
+			document.getElementById("del").setAttribute("disabled", true);
+		} else {
+			delNode()
+		}
+
+		function delNode() {
+
+			box.removeChild(num[num.length - 1]);
+		}
+	}
+	document.getElementById("del").addEventListener("click", Del);
+</script>
+
+</html>

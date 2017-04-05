@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 5px 0;
+        }
+
+        .box {
+            padding: 20px;
+        }
+
+        .box ul li span {
+            padding: 0 10px;
+        }
+    </style>
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.js"></script>
+    <script>
+        $(function () {
+            $.get('./js/data.json', function (data) {
+                if (data.isScuess) {
+                    var str = "<ul>";
+                    for (var i = 0; i < data.data.length; i++) {
+                        str += "<li><span>姓名:" + data.data[i].name + "</span><span>,年龄" + data.data[i].age + "</span><span>,身高" + data.data[i].age + "</span><span>,体重" + data.data[i].age + "</span></li>";
+                    }
+                    str += "</ul>";
+                    $(".box").append(str);
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

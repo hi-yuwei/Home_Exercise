@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style1.css" />
+</head>
+<body>
+<div id="imageShow">
+    <ul class="imagebg" id="imagebg">
+        <li data-sPic='./images/15-1.jpg'>
+            <!--每个li里添加了title属性，文字都插入在这里。-->
+            <!--如果你们是用Img标签，可以把文字添加在alt属性中-->
+            <a href="#" target='_blank' title="李1111111111111111111111" class="bannerbg_main" style='background:url(./images/15-1.jpg) 50% 50% no-repeat;' ></a>
+        </li>
+        <li data-sPic='./images/15-2.jpg'>
+            <a href="#" target='_blank' title="清" class="bannerbg_main" style='background:url(./images/15-2.jpg) 50% 50% no-repeat;' ></a>
+        </li>
+        <li data-sPic='./images/15-3.jpg'>
+            <a href="#" target='_blank' title="慧" class="bannerbg_main" style='background:url(./images/15-3.jpg) 50% 50% no-repeat;' ></a>
+        </li>
+        <li data-sPic='./images/15-4.jpg'>
+            <a href="#" target='_blank' title="宝" class="bannerbg_main" style='background:url(./images/15-4.jpg) 50% 50% no-repeat;' ></a>
+        </li>
+        <li data-sPic='./images/15-5.jpg'>
+            <a href="#" target='_blank' title="贝" class="bannerbg_main" style='background:url(./images/15-5.jpg) 50% 50% no-repeat;' ></a>
+        </li>
+    </ul>
+    <div class="scrollbg">
+        <div class="scroll">
+            <!-- 左边点击 -->
+            <a id="left_img_btn" class="s_pre" href="javascript:void(0)"></a>
+            <!-- 当前最后一个小div -->
+            <div class="current" id="current"></div>
+            <div class="outScroll_pic">
+                <ul class="scroll_pic cls" id="small_pic"></ul>
+            </div>
+            <!-- 右边按钮 -->
+            <a id="right_img_btn" class="s_next" href="javascript:void(0)"></a>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="./js/imgSlider.js"></script>
+<script type="text/javascript">
+    img.init();
+</script>
+</body>
+</html>
+
+
+
+
+

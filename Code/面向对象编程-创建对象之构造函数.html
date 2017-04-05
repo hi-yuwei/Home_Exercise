@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象编程-创建对象之构造函数</title>
+    <script type="text/javascript">
+        //利用构造函数创建对象模板
+        function Student(name,height,age,school){
+            this.name=name;
+            this.height=height;
+            this.age=age;
+            this.school=school;
+            this.say=function(){    //注意：此处为"="，而不是":"
+                console.log("姓名："+this.name+"体重："+this.height+"年龄："+this.age+"学校："+this.school);
+            }
+        }
+
+        //new一个实例，传入需要的参数
+        var xiaoming=new Student("小明",1.2,27,"清华");
+        console.log("姓名："+xiaoming.name);
+        console.log("体重："+xiaoming.height);
+        console.log("年龄："+xiaoming.age);
+        console.log("学校："+xiaoming.school);
+        xiaoming.say();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+
+//common function
+
+//float
+.fn-left{
+	float:left;
+}
+.fn-right{
+	float:right;
+}
+.fn-clear{	
+	zoom:1;
+    //overflow:auto;
+	&:after{
+		display:block;
+		content:'';
+        height:0;
+		visibility:hidden;
+		clear:both;
+		font-size:0;
+		line-height:0;
+        overflow:hidden;
+	}
+}
+
+//display
+.dis-block{
+    display:block;
+}
+.dis-none{
+    display:none;
+}
+.dis-inline{
+    display:inline;
+}
+.dis-inblock{
+    display:inline-block;
+}
+
+//text-align
+.txt-center{
+    text-align:center;
+}
+.txt-right{
+    text-align:right;
+}
+.txt-left{
+    text-align:left;
+}
+
+//font-size
+.fz12{
+    font-size:12px;
+}
+.fz14{
+    font-size:14px;
+}
+.fz16{
+    font-size:16px;
+}
+.fz18{
+    font-size:18px;
+}
+
+//font-weight
+.fw-b{
+    font-weight:bold;
+}
+
+.fw-n{
+    font-weight:normal;
+}
+
+//margin
+//mt
+.mt5{
+    margin-top:5px;
+}
+.mt10{
+    margin-top:10px;
+}
+.mt15{
+    margin-top:15px;
+}
+.mt20{
+    margin-top:20px;
+}
+.mt25{
+    margin-top:25px;
+}
+.mt30{
+    margin-top:30px;
+}
+.mt35{
+    margin-top:35px;
+}
+.mt40{
+    margin-top:40px;
+}
+
+//mr
+.mr10{
+    margin-right:10px;
+}
+.mr30{
+    margin-right:30px;
+}
+//mb
+.mb10{
+    margin-bottom:10px;
+}
+.mb20{
+    margin-bottom:20px;
+}
+.mb30{
+    margin-bottom:30px;
+}
+//ml
+.ml5{
+    margin-left:5px;
+}
+.ml10{
+    margin-left:10px;
+}
+.ml15{
+    margin-left:15px;
+}
+.ml20{
+    margin-left:20px;
+}
+
+//padding
+//pt
+.pt20{
+    padding-top:20px;
+}
+//pb
+.pb10{
+    padding-bottom:10px;
+}
+
+//position
+.po-abs{
+    position:absolute;
+}
+.po-rel{
+    position:relative;
+}
+.po-fixed{
+    position:fixed;
+}
+
+//text-indent
+.txt-indent{
+    text-indent:2em;
+}
+
+.adefault{
+    color:#0000EE;
+    text-decoration:underline;
+    &:visited{
+        color:#551a8b;
+    }
+    &:hover,&:active{
+        color:#ff0000;
+    }
+}
+
+.togray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;            
+}
+
+ .ellipsis{
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
+

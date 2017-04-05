@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>拖车服务</title>
+	<link rel="stylesheet" href="../../../content/mobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../../../content/mobile/mobile.css">
+	<style>
+	.ui-selectmenu.ui-popup .ui-input-search {
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.ui-selectmenu.ui-dialog .ui-content {
+		padding-top: 0;
+	}
+	.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+		margin-top: 0;
+	}
+	.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+		border-top-width: 1px;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+	.ui-selectmenu.ui-dialog .ui-header {
+		border-bottom-width: 1px;
+	}
+	</style>
+	<script src="../../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="JQM_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>运去哪</h1>
+	</div>
+	
+	<div role="main" class="ui-content">
+		<form>
+			<select name="QIYUNGANG" id="QIYUNGANG" data-native-menu="false">
+				<option>起运港（英文）</option>
+			    <optgroup label="A">
+					<option value="AABENRAA">AABENRAA</option>
+					<option value="AAGOTNES">AAGOTNES</option>
+					<option value="AAHEIM">AAHEIM</option>
+					<option value="AAIUN">AAIUN</option>
+					<option value="AAKRA">AAKRA</option>
+					<option value="AAKREHAMN">AAKREHAMN</option>
+					<option value="AALBORG">AALBORG</option>
+					<option value="AALESUND">AALESUND</option>
+					<option value="AANDALSNES">AANDALSNES</option>
+			    </optgroup>
+			    <optgroup label="B">
+					<option value="B.I.KHOMEINI">B.I.KHOMEINI</option>
+					<option value="BA NGOI">BA NGOI</option>
+					<option value="BAA">BAA</option>
+			    </optgroup>
+				<optgroup label="C">
+					<option value="C1">C1</option>
+					<option value="C2">C2</option>
+			    </optgroup>
+				<optgroup label="D">
+					<option value="D11">D11</option>
+					<option value="D22">D22</option>
+			    </optgroup>
+			</select>
+			<input type="date" name="date" placeholder="预计装箱时间">
+			<textarea placeholder="委托内容（选填）"></textarea>
+			<div class="ui-grid-a">
+				<div id="post_out" class="ui-block-a">
+					<input name="jiaoyanma" id="jiaoyanma" placeholder="手机校验码" value="" type="text">
+				</div>
+				<div class="ui-block-b">
+					<a id="post_1" href="javascript:void(0)" class="ui-btn">发送校验码</a>
+					<!--<div id="post_2" class="ui-btn">59秒</div>-->
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="btnPostForm" class="ui-btn">发送委托</a>
+		</form>
+	</div>
+</div>
+
+<script>
+/* 起运港--弹出层添加search功能 */
+$.mobile.document
+    .on( "listviewcreate", "#QIYUNGANG-menu", function( e ) {
+        var input,
+            listbox = $( "#QIYUNGANG-listbox" ),
+            form = listbox.jqmData( "filter-form" ),
+            listview = $( e.target );
+        if ( !form ) {
+            input = $( "<input data-type='search'></input>" );
+            form = $( "<form></form>" ).append( input );
+            input.textinput();
+            $( "#QIYUNGANG-listbox" )
+                .prepend( form )
+                .jqmData( "filter-form", form );
+        }
+        listview.filterable({ input: input });
+    })
+    .on( "pagebeforeshow pagehide", "#QIYUNGANG-dialog", function( e ) {
+        var form = $( "#QIYUNGANG-listbox" ).jqmData( "filter-form" ),
+            placeInDialog = ( e.type === "pagebeforeshow" ),
+            destination = placeInDialog ? $( e.target ).find( ".ui-content" ) : $( "#QIYUNGANG-listbox" );
+        form
+            .find( "input" )
+            .textinput( "option", "inset", !placeInDialog )
+            .end()
+            .prependTo( destination );
+    });
+	
+/* 去除input表框等效果 */
+$(function() {
+	$(".ui-corner-all, .ui-shadow, .ui-shadow-inset").removeClass("ui-corner-all ui-shadow ui-shadow-inset");
+	$(".ui-input-text input").focus(function() {
+		$(this).parent().removeClass("ui-focus");
+	});
+	$("textarea").focus(function() {
+		$(this).removeClass("ui-focus");
+	});
+});
+</script>
+</body>
+</html>

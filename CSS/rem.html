@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rem</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	html,body {
+		/*默认是字号是16px,也可以将字号写成100%；*/
+		font-size: 16px;
+	}
+	.box {
+/*		rem的计算方式: rem=px/字号大小
+		如：我们的width原本是200px，现在我们要将它换算为rem,就用200/16得到的结果就是换算后的rem值12.5rem*/
+		margin: 6.25rem auto;	
+		width: 12.5rem;
+		height: 12.5rem;
+		background: red;
+	}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

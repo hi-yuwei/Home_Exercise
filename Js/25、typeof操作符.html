@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>typeof操作符</title>
+
+</head>
+
+<body>
+
+
+</body>
+<script>
+	var result = "";
+	var x = 1;
+	document.write("x：\t" + typeof x + ";</br>" + "1:\t" + typeof 1 + ";</br></br>");
+	var y = "Hi";
+	document.write("y：\t" + typeof y + ";</br>" + "Hi:\t" + typeof "Hi" + ";</br></br>");
+	var z = [1, 2, 3, 4];
+	document.write("z：\t" + typeof z + ";</br>" + "[1,2,3,4]:\t" + typeof [1, 2, 3, 4] + ";</br></br>");
+	var a = {
+		name: "beck",
+		age: 27,
+		sex: "男"
+	};
+	document.write("a：\t" + typeof a + ";</br>");
+	document.write("{name:\"beck\",age:27}：\t" + typeof {
+		name: "beck",
+		age: 27
+	} + ";</br></br>");
+
+	var b = true;
+	document.write("b：\t" + typeof b + ";</br>" + "true:\t" + typeof true + ";</br></br>");
+	var c = undefined;
+	document.write("c：\t" + typeof c + ";</br>" + "undefined:\t" + typeof undefined + ";</br></br>");
+	var f = null;
+	document.write("f：\t" + typeof f + ";</br>" + "null:\t" + typeof null + ";</br></br>");
+</script>
+
+</html>

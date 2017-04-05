@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>countdown</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		/*自定义字体*/
+		
+		@font-face {
+			font-family: 'fontName-num';
+			src: url('./font/font-num-webfont.eot');
+			src: url('./font/font-num-webfont.eot?#iefix') format('embedded-opentype'), url('./font/font-num-webfont.woff2') format('woff2'), url('./font/font-num-webfont.woff') format('woff'), url('./font/font-num-webfont.ttf') format('truetype'), url('./font/font-num-webfont.svg#fontName-num') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		ul li {
+			list-style: none;
+		}
+		
+		.countdown-box {
+			width: 500px;
+			height: 300px;
+			margin: 100px auto;
+		}
+		
+		.countdown-box span {
+			float: left;
+			margin: 0 5px;
+			line-height: 41px;
+		}
+		
+		.countdown-box div {
+			float: left;
+		}
+		
+		.countdown-box div li {
+			float: left;
+			width: 33px;
+			height: 41px;
+			line-height: 41px;
+			margin-left: 5px;
+			text-align: center;
+			font-family: fontName-num;
+			font-size: 32px;
+			color: #fff;
+			background: gray;
+		}
+		
+		.countdown-box div li:first-child {
+			margin-left: 0;
+		}
+	</style>
+	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var startTime = "2016/06/26 16:02:00";
+			var timer;
+			if (startTime) {
+				//计算时间
+				var showTimer = function () {
+					var totalTime = getTime(); //当前时间的毫秒数
+					var ms = initialDate(startTime); //开始时间毫秒数
+					totalTime = (ms - totalTime) / 1000; //一共多少秒
+					if (totalTime > 0) {
+						var hour = Math.floor(totalTime / 3600);
+						var minute = Math.floor(totalTime % 3600 / 60);
+						var second = Math.floor(totalTime % 3600 % 60);
+						dispose(hour, ".countdown-hour li");
+						dispose(minute, ".countdown-minute li");
+						dispose(second, ".countdown-second li");
+					}
+				};
+
+				//处理DOM
+				var dispose = function (time, element) {
+					if (time < 10) {
+						$(element).eq(0).text(0);
+						$(element).eq(1).text(time);
+					} else {
+						$(element).eq(0).text(Math.floor(time / 10));
+						$(element).eq(1).text(time % 10);
+					}
+				};
+
+				//初始化日期格式
+				function initialDate(time) {
+					time = time.replace(new RegExp("-", "gm"), "/");
+					return new Date(time).getTime();
+				}
+
+				//获得服务器当前时间
+				function getTime() {
+					var http_request;
+					if (window.XMLHttpRequest) {
+						http_request = new XMLHttpRequest();
+					} else {
+						http_request = new ActiveXObject('Microsoft.XMLHTTP');
+					}
+					http_request.open('HEAD', window.location.href + "?" + Math.random(1, 10), false);
+					http_request.send(null);
+					console.log(http_request.getResponseHeader('Date'));
+					return new Date(http_request.getResponseHeader('Date')).getTime();
+				}
+
+				clearInterval(timer);
+				timer = setInterval(showTimer, 1000)
+			} else {
+				//当开始时间为无效值
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<div class="countdown-box">
+		<div class="countdown-hour">
+			<ul>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</div>
+		<span>小时</span>
+		<div class="countdown-minute">
+			<ul>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</div>
+		<span>分</span>
+		<div class="countdown-second">
+			<ul>
+				<li>0</li>
+				<li>0</li>
+			</ul>
+		</div>
+		<span>秒</span>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <link type="text/css" rel="stylesheet" href="../Scss/tab.css"/>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript">
+        //使用自定义属性操作dom的好处：当我们修改了类名时，只要对应的修改自定义属性里的类名，不再需要修改Jq
+        $(function(){
+            $("[data-tab-heade]").each(function(){
+                var data=$(this).data();    //将当前对象中的自定义属性组成一个对象
+                $(data.tabHeade).on(data.tabEvent,function(){   //为每个Li绑定事件
+                    //删除每个li的选中样式（即使没有也删除），返回当前被点击的li的索引值
+                    var index=$(data.tabHeade).removeClass(data.tabSelect).index(this);
+                    $(this).addClass(data.tabSelect);   //为当前被点击的Li添加选中样式
+                    $(data.tabCon).hide().eq(index).show(); //先将div全部隐藏，再将与li对应的div显示
+                })
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="tab-div" data-tab-heade=".tab-div ul li" data-tab-event="click" data-tab-select="on" data-tab-con=".tab-div div div">
+        <ul class="clear tab">
+            <li class="on">红</li>
+            <li>黄</li>
+            <li>蓝</li>
+            <li>绿</li>
+        </ul>
+        <div>
+            <div style="display: block;"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

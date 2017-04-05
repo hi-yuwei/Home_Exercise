@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>函数递归</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	function add(x) {
+		if ((x === 0) || (x === 1)) {
+			return 1;
+		} else {
+			return (x * add(x - 1));
+		}
+	}
+	var num = add(3);
+	document.write(num);
+</script>
+
+</html>

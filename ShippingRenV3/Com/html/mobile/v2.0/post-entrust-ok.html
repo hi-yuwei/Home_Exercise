@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+	<link rel="stylesheet" href="../../../Content/mobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../../../content/mobile/mobile.css">
+	<script src="../../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="JQM_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>运去哪</h1>
+	</div>
+	<div role="main" class="ui-content" id="mobile_content">
+		<section class="postEntrustOK">
+			<h1 class="titleMT">发送委托成功</h1>
+			<p>运去哪客服将在12小时内致电给您，确认委托的详细要求，请您保持手机畅通。</p>
+			<p class="textMT">您所有的委托进度，都可在下方菜单中的“我的订单”内看到。</p>
+		</section>
+	</div>
+</div>
+<script>
+$(function() {
+	$(".ui-corner-all, .ui-shadow, .ui-shadow-inset").removeClass("ui-corner-all ui-shadow ui-shadow-inset");
+	$(".ui-input-text input").focus(function() {
+		$(this).parent().removeClass("ui-focus");
+	});
+	$("textarea").focus(function() {
+		$(this).removeClass("ui-focus");
+	});
+});
+</script>
+
+</body>
+</html>

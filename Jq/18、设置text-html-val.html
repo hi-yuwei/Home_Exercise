@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>18、设置text-html-value值</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(".box").click(function () {
+				$(this).html("<p>通过html()方法设置</p>")
+			})
+			$(".txt").click(function () {
+				$(this).text(" 通过text()方法修改")
+			})
+			$("#btn").click(function () {
+				$(this).val("通过val()方法修改")
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div class="box">click me
+	</div>
+	<p class="txt">文本内容</p>
+	<input type="button" id="btn" value="click me" />
+</body>
+
+</html>

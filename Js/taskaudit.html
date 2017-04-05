@@ -1,0 +1,139 @@
+<admintpl file="header" />
+<script src="__ROOT__/statics/js/jquery.js"></script>
+<script src="__ROOT__/statics/layer-v2.0/layer/layer.js"></script>
+<script src="__ROOT__/tpl_admin/simpleboot/JS/jsMethod.js"></script>
+<script>
+function seetask(taskid)
+{
+	var requestData = {"id":taskid};
+	AjaxSuccess("index.php/admin/moneyRushTask/auditbyid", requestData, successData)
+	function successData(data)
+	{
+		layer.tab({
+			area: ['800px', '400px'],
+			tab: [{
+				title: data.tasktitle, 
+				content: '<table class="qx table table-bordered table-hover"><tr><th>任务类型</th><td>'+data.tasktype+'</td></tr><tr><th>任务标题</th><td>'+data.tasktitle+'</td></tr><tr><th>任务总数</th><td>'+data.taskallcount+'</td></tr><tr><th>任务状态</th><td>'+data.taskexamine+'</td></tr><tr><th>试玩或试看时间</th><td>'+data.taskplaytime+'</td></tr><tr><th>任务最小价格(分)</th><td>'+data.task_price_min+'</td></tr><tr><th>任务最大价格(分)</th><td>'+data.task_price_max+'</td></tr><tr><th>任务总奖励(分)</th><td>'+data.task_price_total+'</td></tr></table>'		  
+			}]
+		});
+
+	}
+}
+function  auditopt(id,audit)
+{
+ 	var audit = audit;
+ 	var id= id;
+ 	layer.confirm('请您谨慎操作！', {
+	btn: ['确定','取消'] //按钮
+	}, function(){
+		$.post("{:U('admin/MoneyRushTask/requestaudit')}", {audit: audit, id: id }, function(data){
+			if(data.code == '10311')
+			{
+				alert('任务唯一标示符已存在');	
+			}else if(data.code == '10312')
+			{
+				alert('appid已经存在');
+			}
+		    else if(data.code == '0')
+		    {
+		    	if(data.request_type == 'yes')
+		    	{
+		    		$('#yes_'+id).addClass('btn-danger').removeAttr('onclick');
+		    		$('#no_'+id).addClass('btn-large disabled').removeAttr('onclick');
+		    	}
+		    	else if(data.request_type == 'no'){
+		    		$('#no_'+id).addClass('btn-danger').removeAttr('onclick');
+		    		$('#yes_'+id).addClass('btn-large disabled').removeAttr('onclick');
+		    	}
+		    }
+		    else{
+		    	layer.msg('操作失败！内部数据错误，请检查数据库', {shift: 3});
+		    }
+		},'json');
+
+	}, function(){
+	    layer.msg('取消', {shift: 1});
+	});
+};
+</script>
+    </head>
+    <style>
+		.qx{
+			margin:10px 0;
+			width:747px;
+		}
+		.qx th{
+			width:100px;
+		}
+		input{
+			margin-left: 10px;
+		}
+		footer{
+			position: relative;
+			top:70px;
+		}
+    </style>
+    <body class="J_scroll_fixed">
+    <div class="wrap J_check_wrap">
+    	<form class="J_ajaxForm" action="" method="post">
+    		<table class="table table-hover table-bordered table-list">
+    		<ul class="nav nav-tabs">
+    			<li class="active">
+    				<a href="#">任务审核</a>
+    			</li>
+    		</ul>
+			    <thead>
+				    <tr>
+				    	<th>任务名称</th>
+				    	<th width="180" style="text-align: center">任务标题</th>
+				    	<th width="180" style="text-align: center">操作人</th>
+				    	<th width="180" style="text-align: center">请求时间</th>
+				    	<th width="180" style="text-align: center">操作</th>
+				    	<th width="180" style="text-align: center">审核</th>
+				    </tr>
+			    </thead>
+			    <php>if(!empty($datas)){</php>
+			    <tbody class="tb">
+			    <foreach name="datas" item="data" >
+			    	<tr>
+
+			    		<td>
+			    			<label>{$data.tasktitle}</label>
+			    		</td>
+			    		<td style="text-align: center">
+			    			<php>$tasktitle=array(1=>'下载任务', 2=>'游戏试玩', 3=>'观看视频')</php>
+			    			<label><php>echo $tasktitle[$data['tasktype']]</php></label>
+			    		</td>
+			    		<td>
+			    			<label style="text-align: center">{$data.optname}</label>
+			    		</td>
+			    		<td style="text-align: center">
+			    			<label style="text-align: center">{$data.opttime|date="Y-m-d H:i:s", ###}</label>
+			    		</td>
+			    		<td style="text-align: center">
+			    			<php>$taskopt=array(1=>'添加', 2=>'删除', 3=>'修改')</php>	
+			    			<label style="text-align: center"><php>echo $taskopt[$data['opt']]</php></label>
+			    		</td>
+			    		<td>
+			    			<input type="button" value="查看" onClick="seetask({$data.id})">
+			    			<input type="button" value="同意" id="yes_{$data.id}" onClick="auditopt({$data.id},1)" class="buttonOne btn btn-small J_ajax_submit_btn">
+			    			<input type="button" value="拒绝" id="no_{$data.id}" onClick="auditopt({$data.id},2)" class="buttonTwo btn btn-small J_ajax_submit_btn">
+			    		</td>
+			    	</tr>
+			    </foreach>
+			    </tbody>
+			    <tfoot>
+			    	<tr>
+			    		<td colspan="6">{$page}</td>
+					</tr>
+			    </tfoot>
+		    </table>
+	    </form>
+	</div>
+	  <php>
+			    }else{
+			    echo "<footer>","暂无要审核的任务！！",'</footer>';
+			    }
+		 </php>
+    </body>
+</html>

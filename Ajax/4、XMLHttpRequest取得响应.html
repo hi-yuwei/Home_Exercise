@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XMLHttpRequest取得响应</title>
+    <script type="text/javascript">
+        var request;
+        if(window.XMLHttpRequest){
+            request=new XMLHttpRequest();
+        }
+        else{
+            request=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        request.open("GET","get.php?id=1",true);
+        request.send();
+        request.onreadystatechange=function(){
+            if(request.readyState===4&&request.status===200){
+                //响应成功
+            }else{
+                //响应失败
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

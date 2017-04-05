@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq选择元素index()问题</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .box{
+            display: table;
+            margin:100px auto;
+            width:200px;
+
+        }
+        .box label{
+            display: block;
+            margin-top:10px;
+        }
+        .pay{
+            display: table-cell;
+            vertical-align: middle;
+
+            padding:10px;
+            width:200px;
+            height: 50px;
+            border:1px solid #aaaaaa;
+        }
+    </style>
+
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".box .lab").on("click",function(){
+                alert($(this).index());
+//                此处有bug，当点击“连连支付”他的index是1,点击"京东"index是2。
+//                bug原因：虽然$(".box .lab")指明了选中.box下的.lab元素，但它其实把
+//                 "<input type="hidden" id="port" name="port" />"也选进来了，当我们用length查看时它显示的还是2，所以我们很难
+//                发觉这个bug。
+//                解决办法：给两个label元素外再包一层标签，就从他们的“顶头上司”处开始选择$(".labs .lab")
+        })});
+    </script>
+</head>
+<body>
+    <section class="box">
+        <input type="hidden" id="port" name="port" />
+       <!--<div class="labs">-->
+        <label for="llwap" class="lab">
+            <div class="pay">
+                <input type="radio" id="llwap" name="pay" checked="checked" />
+                <span>连连支付</span>
+            </div>
+        </label>
+
+        <label for="jdwap" class="lab">
+            <div class="pay">
+                <input type="radio" id="jdwap" name="pay" />
+                <span>京东支付</span>
+            </div>
+        </label>
+       <!--</div>-->
+    </section>
+</body>
+</html>

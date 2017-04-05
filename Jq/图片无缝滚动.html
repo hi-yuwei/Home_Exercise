@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>图片无缝滚动</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        ul li{
+            list-style: none;
+        }
+        .clearfix:after,.clearfix:before{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .mm{
+            position: relative;
+            zoom:1;
+            overflow: hidden;
+            margin:100px auto;
+            width:500px;
+            height: 200px;
+            border:1px solid #8D8D8D;
+        }
+        .mm ul{
+            position: absolute;
+            top:24px;
+            left:0;
+            width:1600px;
+        }
+        .mm li{
+            float: left;
+            margin-left:10px;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var dis= 0,timer;
+
+            $(".imgList li").clone().prependTo(".imgList");
+
+            var roll=function(){
+                dis-=30;
+                dis=dis<-750?0:dis;
+                $(".imgList").css("left",dis);
+            }
+            timer=setInterval(roll,300);
+
+
+        })
+    </script>
+</head>
+<body>
+    <div class="mm">
+        <ul class="imgList clearfix">
+            <li><img src="./image/MM1.jpg" /></li>
+            <li><img src="./image/MM2.jpg" /></li>
+            <li><img src="./image/MM3.jpg" /></li>
+            <li><img src="./image/MM4.jpg" /></li>
+            <li><img src="./image/MM5.jpg" /></li>
+        </ul>
+    </div>
+</body>
+</html>

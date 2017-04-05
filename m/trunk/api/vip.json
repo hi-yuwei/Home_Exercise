@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "levelProfitId": 1,
+      "levelProfiIcon": "./static/views/vip/src/birthday-icon.png",
+      "levelProfitName": "生日礼"
+    },
+    {
+      "levelProfitId": 2,
+      "levelProfiIcon": "./static/views/vip/src/vipActivity-icon.png",
+      "levelProfitName": "专享标"
+    },
+    {
+      "levelProfitId": 3,
+      "levelProfiIcon": "./static/views/vip/src/birthday-icon.png",
+      "levelProfitName": "专享标"
+    },
+    {
+      "levelProfitId": 4,
+      "levelProfiIcon": "./static/views/vip/src/vipActivity-icon.png",
+      "levelProfitName": "生日礼"
+    },
+    {
+      "levelProfitId": 5,
+      "levelProfiIcon": "./static/views/vip/src/birthday-icon.png",
+      "levelProfitName": "专享标"
+    }
+  ],
+  "isSuccess":true
+}

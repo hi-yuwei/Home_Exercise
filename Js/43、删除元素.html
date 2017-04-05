@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>删除元素</title>
+
+</head>
+
+<body>
+	<div class="box" id="box">
+		<p class="con" id="con1">第一个段落</p>
+		<p class="con" id="con2">第二个段落</p>
+		<p class="con" id="con3">第三个段落</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var box=document.getElementById("box");	//找到父节点
+	var con=document.getElementById("con1");	//找到子节点
+	box.removeChild(con);	//父元素通过removeChild方法删除子节点
+</script>
+
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>订单详情</title>
+	<link rel="stylesheet" href="../../../content/mobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../../../content/mobile/mobile.css">
+	<script src="../../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="JQM_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>运去哪</h1>
+	</div>
+	
+	<div role="main" class="ui-content">
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<h4>当前状态：</h4>
+				<h2 class="staticCurrent">已进港</h2>
+			</div>
+			<div class="ui-block-b staticIcon">
+				<img style="text-align: right;" alt="" src="../../../images/mobile/v2.0/trailer.png" />
+			</div>
+		</div>
+		<h4>跟踪记录：</h4>
+		<ul class="orderListRecord">
+			<li>2015-12-14 15:30  提交委托</li>
+			<li>2015-12-14 15:30  接受委托成功</li>
+			<li>2015-12-14 15:30  已安排车队</li>
+			<li class="red">2015-12-14 15:30  放箱失败</li>
+			<li>2015-12-14 15:30  放箱成功</li>
+		</ul>
+		<h4>订单基本信息：</h4>
+		<ul class="orderListInfo cf">
+			<li>
+				<span class="cellLeft">起运港</span>
+				<span class="cellRight">DALIAN</span>
+			</li>
+			<li>
+				<span class="cellLeft">中转港</span>
+				<span class="cellRight">VIORJIGIA</span>
+			</li>
+			<li>
+				<span class="cellLeft">船名</span>
+				<span class="cellRight">VIRGUBT</span>
+			</li>
+			<li>
+				<span class="cellLeft">主提单号</span>
+				<span class="cellRight">JIAFOIIHWEN3892774</span>
+			</li>
+			<li>
+				<span class="cellLeft">毛重</span>
+				<span class="cellRight">549KGS</span>
+			</li>
+			<li>
+				<span class="cellLeft">尺寸</span>
+				<span class="cellRight">19099419099419099419099419099419099419099419099941909</span>
+			</li>
+			<li>
+				<span class="cellLeft">提箱详细地址</span>
+				<span class="cellRight">提箱详细地址提箱详细地址提箱详细地址</span>
+			</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

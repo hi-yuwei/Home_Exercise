@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>subString()</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	var str="hello,word";
+	document.write(str.substring(1)+"</br>");	//如果省略第二个参数，subString()方法会从开始下标开始一直截取到字符串末尾。
+	document.write(str.substring(2,5)+"</br>");	//注意：subString()截取是不包括第5个索引的值，实际长度为sotp-start
+	document.write(str.substring(7,3)+"</br>");	//当start的值大于stop的值时，subString()方法会将其对换位置
+</script>
+
+</html>

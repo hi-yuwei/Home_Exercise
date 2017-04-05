@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>状态切换</title>
+	<script type="text/javascript" src="./jquery.js" ></script>
+	<style type="text/css">
+	
+		.current{
+			background: red;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("input[type='button']").click(function(){
+					if(!$(this).hasClass("current")){
+						$(this).addClass("current").siblings().removeClass("current");
+					}
+			})
+		})
+	</script>
+</head>
+
+<body>
+<input type="button" value="同意" id="yes" />
+<input type="button" value="拒绝" id="no" />
+</body>
+
+
+</html>

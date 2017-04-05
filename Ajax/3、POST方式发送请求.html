@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POST方式发送请求</title>
+    <script type="text/javascript">
+        var request;
+        if(window.XMLHttpRequest){
+            request=new XMLHttpRequest();
+        }
+        else{
+            request=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        request.open("POST","get.php",true); //POST方式异步请求get.php页面
+        //注意Content-type有两种方式，如果不是提取文件等，使用以下方法
+        request.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        request.send("name=shinyhz&password=123456"); //POST请求需要在send方法中以参数形式提交请求内容
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+html {
+    font-size: 68.8%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 94% !important;
+    }
+}
+
+@media only screen and (min-width: 561px) {
+    html {
+        font-size: 109% !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 125% !important;
+    }
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], input {
+    -webkit-appearance: none;
+    resize: none;
+}
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    -webkit-tap-highlight-color: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto \9;
+    vertical-align: middle;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Helvetica, Microsoft Yahei, SimSun;
+    color: #555;
+    background-color: #F7F7F7;
+}
+
+em, i {
+    font-style: normal;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #969696;
+    font-family: Helvetica, Microsoft Yahei, SimSun;
+}
+
+a:hover {
+    color: #FED503;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-family: Helvetica, Microsoft Yahei, SimSun;
+}
+
+.active {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.active p {
+    text-indent: 2em;
+}

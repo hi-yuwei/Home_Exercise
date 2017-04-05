@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>满座网</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+</head>
+ <link rel="stylesheet" type="text/css" href="css/ressas.css">
+ <style type="text/css">
+		header{
+			height: 44px;
+			width: 100%;
+			background-color: #36c3f7;
+			padding:7px 10px 7px 50px;
+			box-sizing:border-box;
+			position: relative;
+		}
+		header a{
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			text-decoration: none;
+			color: white;
+			font-family: 微软雅黑;
+			font-size: 14px;
+		}
+		header>div{
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			border-radius:5px;
+			position: relative;
+			padding: 2px 30px;
+			box-sizing:border-box;
+		}
+			header>div::before{
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			width: 8px;
+			height: 8px;
+			border-radius:50%;
+			border:2px solid #aaa;
+		}
+		header>div::after{
+			content: "";
+			position: absolute;
+			top:19px;
+			left:17px;
+			width: 6px;
+			height: 2px;
+	     	background-color: #aaa;
+	     	transform:rotate(40deg);
+     	}
+		header>div input[type="text"]{
+			width: 100%;
+			border:none;
+			outline: none;
+			color: #aaa;
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		.swipe {
+		  overflow: hidden;
+		  visibility: hidden;
+		  position: relative;
+		  width: 100%;
+		}
+		.swipe img{
+			width: 100%;
+		}
+		.swipe-wrap {
+		  overflow: hidden;
+		  position: relative;
+		}
+		.swipe-wrap > div {
+		  	float:left;
+		  	width:100%;
+		  	position: relative;
+		}
+		.xiaoyuandian{
+			width: 60px;
+			height: 8px;
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			left: 50%;
+			transform:translate(50%,0);
+		}
+		.xiaoyuandian ul{
+			list-style: none;
+		}
+		.xiaoyuandian ul li{
+			float: left;
+			width: 6px;
+			height: 6px;
+			border:1px solid white;
+			margin-right: 6px;
+			border-radius:50%;
+		}
+		.xiaoyuandian ul li.cur{
+			background:red;
+		}
+		nav{
+			padding: 6px;
+		}
+
+		nav ul li{
+			width: 25%;
+			height:38px;
+			float: left;
+			margin-bottom: 6px;
+			position: relative;
+			padding-top: 50px;
+			text-align: center;
+		}
+		nav ul li img{
+			background-size: 44px 44px;
+			width: 44px;
+			height: 44px;
+			position: absolute;
+			top: 15px;
+			left: 50%;
+			transform:translateX(-50%);
+		}
+		nav ul li a{
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			line-height: 40px;
+			color:#c2c2c2;
+			font-size: 14px;
+			margin:100px auto;
+
+		}
+		.cl {
+			clear: both;
+		}
+
+		.tuan{
+			width: 100%;
+			height: 40px;
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			margin-top: 4px;
+		}
+		.tuan a{
+			display: block;
+			height: 100%;
+			line-height: 250%;
+			text-decoration: none;
+			color: #000;
+			padding-left: 10px;
+		}
+		.tuanlis{
+			width: 100%;
+			height: 100%;
+			margin-top: 4px;
+			padding-left: 6px;
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			border-bottom: 1px solid #ccc;
+			position: relative;
+		}
+		.tuanlis img{
+			width: 40%;
+			height: auto;
+			border: 1px solid #ddd;
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+		.tuanlis s{
+			width:60%;
+			height: 100%;
+			position: absolute;
+			text-decoration: none;
+			left: 40%;
+			padding-left: 4%;
+			padding-top: 2%;
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+		.tuanlis s u{
+			text-decoration: none;
+			font-size: 14px;
+			color: red;
+		}
+
+		.di{
+			padding: 6px;
+		}
+		.di img{
+			width: 50%;
+			float: left;
+			border:1px solid #ccc;
+			box-sizing:border-box;
+		}
+		.di a:nth-child(2) img{
+			border-left: none;
+		}
+
+		footer section.tools{
+			width: 100%;
+			height: 53px;
+			margin-top: 6px;
+			border-top: 1px solid #e8e8e8;
+			border-bottom:1px solid #c2c2c2;
+		}
+
+		footer section.tools ul li{
+			float: left;
+			width: 33.33%;
+			text-align: center;
+			line-height: 70px;
+		}
+		footer section.tools ul li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			font-size: 14px;
+			color: #333;
+			position: relative;
+		}
+		footer section.tools ul li a::before{
+			content:"";
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: 6px;
+			left: 50%;
+			-webkit-transform:translateX(-50%);
+			transform:translateX(-50%);
+			background: url(images/icons.png) no-repeat -60px -155px;
+			background-size: 90px 260px;
+		}
+		footer section.tools ul li:nth-child(2) a::before{
+			background-position: -60px -175px;
+		}
+		footer section.tools ul li:nth-child(3) a::before{
+			background-position: -60px -195px;
+		}
+		footer section.version{
+			text-align: center;
+		}
+		footer section.version a{
+			padding: 0 5px;
+			text-decoration: none;
+			color: #333;
+			font-size: 12px;
+		}
+		footer section.version span{
+			color: #ccc;
+		}
+		footer section.copyright{
+			text-align: center;
+			color: #333;
+			font-size: 12px;
+			line-height: 130%;
+			margin-top: 10px;
+		}
+ </style>
+<body>
+	<header>
+		<a href="">广州</a>
+		<div>
+		<input type="text" placeholder="火锅" />
+		</div>
+	</header>
+	<div id="huadonglunbo" class="swipe">
+		<div class='swipe-wrap'>
+			<div><img src="images/b1.jpg" /></div>
+			<div><img src="images/b2.jpg" /></div>
+			<div><img src="images/b3.jpg" /></div>
+			<div><img src="images/b4.jpg" /></div>	 
+		</div>
+		<div class="xiaoyuandian">
+			<ul>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/swipe1.js"></script>
+	<script type="text/javascript">
+		var haha = document.getElementById('huadonglunbo');
+		var $lisss = $(".xiaoyuandian ul li")
+		window.mySwipe = Swipe(
+			haha, 
+			{	
+				startSlide: 0,		//表示轮播开始的图片编号
+				auto: 500,         //表示自动轮播的间隔
+				continuous: true,   //表示是否再来一轮
+				disableScroll: true,  //表示是否在上面阻止默认的滚轮事件，不用改
+				stopPropagation: true,   //表示是否阻止冒泡，不用改。
+				callback: function(index, element) {
+					//写小圆点的业务
+					$lisss.eq(index).addClass("cur").siblings().removeClass("cur");
+				}
+			}
+		);
+
+		//小圆点的点击业务
+		$(".xiaoyuandian ul li").click(
+			function(){
+				mySwipe.slide($(this).index(),1000);
+			}
+		);
+	</script>
+
+	<nav>
+		<ul>
+			<li><img src="images/food.png"><a href="">美食</a></li>
+			<li><img src="images/disport.png"><a href="">电影</a></li>
+			<li><img src="images/life.png"><a href="">KTV</a></li>
+			<li><img src="images/hotel.png"><a href="">酒店</a></li>
+			<li><img src="images/ticket.png"><a href="">生活</a></li>
+			<li><img src="images/beauty.png"><a href="">旅游</a></li>
+			<li><img src="images/makeup.png"><a href="">门票</a></li>
+			<li><img src="images/liren.png"><a href="">丽人</a></li>
+		</ul>
+	</nav>
+	<div class="cl"></div>
+	<div class="di">
+		<a href=""><img src="images/a1.jpg"></a>
+		<a href=""><img src="images/a2.jpg"></a>
+	</div>
+	<div class="cl"></div>
+	<div class="tuan">
+		<a href="#">优质团购</a>
+	</div>
+	<div class="tuanlis">
+		<a href="#"><img src="images/ms1.jpg"></a>
+		<s>
+			<p>名店推荐</p>
+			<u>美味海鲜<br />
+			特惠价￥：38/份</u>
+		</s>
+	</div>
+	<div class="tuanlis">
+		<a href="#"><img src="images/ms2.jpg"></a>
+		<s>
+			<p>神户牛柳</p>
+			<u>曼国西餐<br />
+			特惠价￥：38/份</u>
+		</s>
+	</div>
+
+	<div class="cl"></div>
+	<footer>
+		<section class="tools">
+			<ul>
+				<li>
+					<a href="#">电话预定</a>
+				</li>
+				<li>
+					<a href="#">下载客户端</a>
+				</li>
+				<li>
+					<a href="#">登录</a>
+				</li>
+			</ul>
+		</section>
+		<section class="version">
+			<a href="#">首页</a><span>|</span>
+			<a href="#">我的满座</a><span>|</span>
+			<a href="#">切换城市</a><span>|</span>
+			<a href="#">客户端</a><span>|</span>
+			<a href="#">电脑版</a>
+		</section>
+		<section class="copyright">
+			&copy;客服：4006-858-666（08:30-21:30）<br/>
+        ©2014 manzuo.com
+		</section>
+	</footer>
+</body>
+</html>

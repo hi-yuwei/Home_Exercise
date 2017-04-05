@@ -1,0 +1,42 @@
+<!--成长值记录 start-->
+<section id="vip-page" class="vip-wrap vip-page record-wrap">
+        <div class="record" v-if="list.length>0">
+            <div class="details clearfix mothInfo"><span class="fl month">总计</span><span
+                    class="fr money"><strong>{{sum}}</strong></span>
+            </div>
+            <div class="details">
+                <ul>
+                    <li class="clearfix" v-for="info in list">
+                        <div class="fl history">
+                            <p>{{info.reason}}</p>
+                            <span>{{info.dateCreated|formatDate}}</span>
+                        </div>
+                        <div class="fr deal">
+                            <p>{{info.growthAffect<=0?info.growthAffect:'+'+info.growthAffect}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!--提醒模块 start-->
+    <table class="tableA">
+        <tbody v-show="show">
+        <tr class="noData">
+            <td colspan="3">暂无数据</td>
+        </tr>
+        </tbody>
+        <tbody v-show="loading">
+        <tr class="loadinfo">
+            <td colspan="3">努力加载中...</td>
+        </tr>
+        </tbody>
+        <tbody v-show="nodata">
+        <tr class="noload">
+            <td colspan="3">没有更多数据了。</td>
+        </tr>
+        </tbody>
+    </table>
+    <!--提醒模块 end-->
+    <a href="javascript:;" v-show="stillMore" show-btn="loadData" vip-visibled="loadMore"  v-on:click="loadData" class="button_b page_button vip_load">加载更多</a>
+</section>
+<!--成长值记录 end-->

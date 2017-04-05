@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大图版心</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        img{
+            /*width:100%;*/
+            vertical-align: middle;
+        }
+        .wrapper{
+            width:100%;
+            min-width: 1200px;
+            overflow: hidden;
+        }
+        .main{
+            width:1920px;
+            position: relative;
+            top:0;
+            left:50%;
+            margin-left:-960px;
+        }
+        .img1{
+            /*min-width:1200px;*/
+            height: 245px;
+            background:url("./images/img1.jpg") no-repeat center;
+        }
+        .img2{
+            height: 297px;
+            background:url("./images/img2.jpg") no-repeat center;
+        }
+        .box{
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="main">
+        <div><img src="./images/img1.jpg"/></div>
+        <div><img src="./images/img2.jpg"/></div>
+    </div>
+</div>
+<!--<div class="img1"></div>-->
+<!--<div class="img2"></div>-->
+<!--<div class="box"></div>-->
+</body>
+</html>

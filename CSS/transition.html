@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tranisiton</title>
+	<style type="text/css">
+		input {
+			width: 100px;
+			height: 25px;
+			padding: 2px 10px;
+			box-sizing: border-box;
+			margin: 100px;
+			border: 1px solid #ccc;
+			outline: none;
+			transition: all 0.5s linear 0s;
+		}
+		input:focus {
+			box-shadow: 0px 5px 4px #ccc;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			-webkit-animation: haha 2s linear 0s infinite;
+		}
+		@-webkit-keyframes haha {
+			from{
+				-webkit-transform: rotate(0deg);
+				background: red;
+			}
+			to{
+				-webkit-transform: rotate(180deg);
+				background: yellow;
+			}
+		}
+		.shadow {
+			width: 200px;
+			height: 500px;
+			border: 1px solid #ccc;
+			box-shadow: 1px 0px 5px red;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="请输入您需要查询的内容" autofocus />
+	<div class="box"></div>
+	<div class="shadow"></div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery validata</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            font:12px/22px Helvetica,"Microsoft YaHei","Heiti","SC";
+        }
+        .login{
+            margin:100px auto;
+            width:380px;
+            height: 414px;
+            padding:14px;
+        }
+        .login fieldset{
+            padding:9px 5px;
+            height:40px;
+            border:1px solid #9ea190;
+            border-top:0;
+        }
+        .login fieldset:first-child{
+            border-top:1px solid #9ea190;
+        }
+        .login fieldset label{
+            display: inline-block;
+            width:60px;
+            height:20px;
+        }
+        .login fieldset input{
+            display: inline-block;
+            height: 20px;
+        }
+        .login fieldset input[type=radio]{
+            position: relative;
+            top:6px;
+            margin-left:10px;
+        }
+        .btn{
+            display: block;
+            margin:10px auto;
+            width:200px;
+            height: 30px;
+        }
+       .login label.error{
+           padding-left:25px;
+            /*width:100px;*/
+            color:crimson;
+            background:url(./image/error.png) no-repeat 5px center;
+        }
+    </style>
+    <script type="text/javascript" src="./validation/lib/jquery.js"></script>
+    <script type="text/javascript" src="./validation/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./validation/dist/additional-methods.js"></script>
+    <script type="text/javascript" src="./validation/dist/localization/messages_zh.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#login").validate({
+                degbug:true
+            });
+        })
+    </script>
+</head>
+<body>
+    <form id="login" class="login" method="get" action="">
+        <fieldset>
+            <label for="username">用户名：</label>
+            <input type="text" data-rule-required="true" id="username" name="username" />
+        </fieldset>
+        <fieldset>
+            <label for="password">密码：</label>
+            <input type="text" data-rule-required="true" data-rule-rangelength="5,10" id="password" name="password" />
+        </fieldset>
+        <fieldset>
+            <label for="confirmPassword">确认密码：</label>
+            <input type="text" data-rule-required="true" data-rule-rangelength="5,10" data-rule-equalto="#password" id="confirmPassword" name="confirmPassword" />
+        </fieldset>
+        <fieldset>
+            <label for="idCode">身份证：</label>
+            <input type="text" data-rule-required="true" data-rule-idCode="true" id="idCode" name="idCode" />
+        </fieldset>
+        <fieldset>
+            <label for="sex">性别：</label>
+            <input type="radio" id="sex" name="sex" />男
+            <input type="radio" id="sex" name="sex" />女
+        </fieldset>
+        <fieldset>
+            <label for="age">年龄：</label>
+            <input type="text" data-rule-number="true" id="age" name="age" />
+        </fieldset>
+        <fieldset>
+            <label for="address">住址：</label>
+            <input type="text" id="address" name="address" />
+        </fieldset>
+        <fieldset>
+            <label for="phone">手机：</label>
+            <input type="text" data-rule-required="true" id="phone" name="phone" />
+        </fieldset>
+        <fieldset>
+            <label for="email">邮箱：</label>
+            <input type="text" data-rule-required="true" id="email" name="email" />
+        </fieldset>
+        <fieldset>
+            <label for="qq">QQ：</label>
+            <input type="text" data-rule-number="true" id="qq" name="qq" />
+        </fieldset>
+        <fieldset>
+            <label for="username">爱好：</label>
+            <input type="checkbox" value="跑步" />跑步
+            <input type="checkbox" value="音乐" />音乐
+            <input type="checkbox" value="篮球" />篮球
+            <input type="checkbox" value="健身" />健身
+        </fieldset>
+        <button type="submit" class="btn">注册</button>
+    </form>
+</body>
+</html>

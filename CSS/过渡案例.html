@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过渡案例</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		ul li{list-style:none;}
+		i{font-style:initial;float:left;width:39px;height:30px;background:url(./tingicos.png) -76px -764px;margin:9px 10px 0 10px;transition:all 0.4s ease 0s;}
+		ul li{
+			margin:50px auto;
+			width:100px;
+			height:49px;
+			background:#000;
+			color:#fff;
+			line-height:49px;
+			transition:all 0.4s ease 0s;
+			cursor:pointer;
+		}
+		ul li:hover i{
+			background-position: -76px -734px;
+		}
+		ul li:hover{
+			border-bottom:2px solid red;
+			height:47px;
+			background:#fff;
+			color:#000;
+
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<i></i>电台
+		</li>
+	</ul>
+</body>
+</html>

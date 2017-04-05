@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/css.css">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<header>
+		<div>
+			<input type="text" placeholder="搜索" />
+		</div>
+	</header>
+	<div id="banner" class="banner">
+		<div class='banner-wrap'>
+			<div><img src="images/b1.jpg" /></div>
+			<div><img src="images/b2.jpg" /></div>
+			<div><img src="images/b3.jpg" /></div> 
+			<div><img src="images/b4.jpg" /></div> 
+		</div>
+		<div class="circles">
+			<ul>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/swipe2.js"></script>
+	<script type="text/javascript">
+		var banner = document.getElementById('banner');
+		var $circlesLis = $(".circles ul li");
+
+		window.mySwipe = Swipe(
+			banner, 
+			{	
+				startSlide: 0,		//表示轮播开始的图片编号
+				auto: 1000,         //表示自动轮播的间隔
+				continuous: true,   //表示是否再来一轮
+				disableScroll: true,  //表示是否在上面阻止默认的滚轮事件，不用改
+				stopPropagation: true,   //表示是否阻止冒泡，不用改。
+				callback: function(index, element) {
+					//写小圆点的业务
+					$circlesLis.eq(index).addClass("cur").siblings().removeClass("cur");
+				}
+			}
+		);
+
+		//小圆点的点击业务
+		$(".circles ul li").click(
+			function(){
+				mySwipe.slide($(this).index(),1000);
+			}
+		);
+	</script>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="">
+					<img src="images/nav1.jpg" />
+					<span>商品分类</span>
+				</a>
+				<a href="">
+					<img src="images/nav2.jpg" />
+					<span>我的订单</span>
+				</a>
+				<a href="">
+					<img src="images/nav3.jpg" />
+					<span>彩票</span>
+				</a>
+				<a href="">
+					<img src="images/nav4.jpg" />
+					<span>购物车</span>
+				</a>
+				<a href="">
+					<img src="images/nav5.jpg" />
+					<span>我的易购</span>
+				</a>
+				<a href="">
+					<img src="images/nav6.jpg" />
+					<span>物流查询</span>
+				</a>
+				<a href="">
+					<img src="images/nav7.jpg" />
+					<span>易付宝充值</span>
+				</a>
+				<a href="">
+					<img src="images/nav8.jpg" />
+					<span>客户端下载</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="cl"></div>
+	<div class="advertisement">
+		<a href="#"><img src="images/ad1.jpg" alt=""></a>
+		<a href="#"><img src="images/ad2.jpg" alt=""></a>
+		<a href="#"><img src="images/ad3.jpg" alt=""></a>
+	</div>
+	<div class="cl"></div>
+	<div class="pro1">
+		<div class="wenzi">家装梦想家</div>
+		<a href="#"><img src="images/jiazhuang.jpg" alt=""></a>
+	</div>
+	<div class="pro2">
+		<ul>
+			<li><a href="#"><img src="images/pro1.jpg" alt=""></a></li>
+			<li>
+				<a href="#"><img src="images/pro2.jpg" alt=""></a>
+				<a href="#"><img src="images/pro3.jpg" alt=""></a>
+			</li>
+		</ul>
+	</div>
+	<div class="cl"></div>
+	<div class="pro3">
+		<a href="#"><img src="images/pro4.jpg" alt=""></a>
+		<a href="#"><img src="images/pro5.jpg" alt=""></a>
+	</div>
+	<div class="cl"></div>
+	<div class="jingxuan">
+		<div class="wenzi">热门精选<a href="">更多</a></div>
+		<ul>
+			<li>
+				<a href=""><img src="images/jingxuan1.jpg" /></a>
+				<a href=""><img src="images/jingxuan2.jpg" /></a>
+			</li>
+			<li>
+				<a href=""><img src="images/jingxuan3.jpg" /></a>
+				<a href=""><img src="images/jingxuan4.jpg" /></a>
+			</li>
+			<li>
+				<a href=""><img src="images/jingxuan5.jpg" /></a>
+				<a href=""><img src="images/jingxuan6.jpg" /></a>
+			</li>
+			<li>
+				<a href=""><img src="images/jingxuan7.jpg" /></a>
+				<a href=""><img src="images/jingxuan8.jpg" /></a>
+			</li>
+			<li>
+				<a href=""><img src="images/jingxuan9.jpg" /></a>
+				<a href=""><img src="images/jingxuan10.jpg" /></a>
+			</li>
+		</ul>
+	</div>
+	<div class="cl"></div>
+	<footer>
+		<ul>
+			<li>
+				<a class="foot1" href="#">登录</a>
+				<a class="foot2" href="#">注册</a>
+				<a class="foot3" href="#">购物车</a>
+			</li>
+			<li>
+				<a class="foot4" href="#">电脑版</a>
+				<a class="foot5" href="#">客户端</a>
+			</li>
+		</ul>
+		<section class="copyright">
+			Copyright&copy; 2002-2015 m.suning.com
+		</section>
+	</footer>
+</body>
+</html>

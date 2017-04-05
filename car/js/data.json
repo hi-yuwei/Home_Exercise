@@ -1,0 +1,29 @@
+{
+      "markOne": [1, 2, 3, 4],
+      "markTwo": [1, 2, 3, 4],
+      "markThree": [1, 2, 3, 4],
+      "text": [
+            "<div class='carImg'><img src='images/carJeep.png' alt='吉普-牧马人' /></div><h2>吉普-牧马人</h2><p>牧云九州，信马由缰，翻山越岭，驰骋人生</p>",
+            "<div class='carImg'><img src='images/carHummer.png' alt='悍马-H2' /></div><h2>悍马-H2</h2><p>以越野之名，车行天下</p>",
+            "<div class='carImg'><img src='images/carBenz.png' alt='奔驰-G55' /></div><h2>奔驰-G55</h2><p>续写越野传奇，硬汉智选座驾</p>",
+            "<div class='carImg'><img src='images/carLand.png' alt='路虎-揽胜' /></div><h2>路虎-揽胜</h2><p>大道至简，揽胜无疆</p>",
+            "<div class='carImg'><img src='images/carPorsche.png' alt='保时捷-911' /></div><h2>保时捷-911</h2><p>创造经典，止于至善，保时捷，无可取代</p>",
+            "<div class='carImg'><img src='images/carMcLaren.png' alt='迈凯伦-P1 ' /></div><h2>迈凯伦-P1</h2><p>灵魂超跑，速度传说</p>",
+            "<div class='carImg'><img src='images/carFerrari.png' alt='法拉利-恩佐' /></div><h2>法拉利-恩佐</h2><p>终极性能，王者声浪</p>",
+            "<div class='carImg'><img src='images/carMercedes.png' alt='梅赛德斯-迈巴赫S级' /></div><h2>梅赛德斯-迈巴赫S级</h2><p>奢华移动堡垒，低调荣耀人生</p>",
+            "<div class='carImg'><img src='images/carBentley.png' alt='宾利-欧陆' /></div><h2>宾利-欧陆</h2><p>优雅与野性，邂逅穿着西装的野兽</p>",
+            "<div class='carImg'><img src='images/carRollsRoyce.png' alt='劳斯莱斯-幻影' /></div><h2>劳斯莱斯-幻影</h2><p>皇室奢荣，无畏一切</p>"
+      ],
+      "name": [
+            "吉普-牧马人",
+            "悍马-H2",
+            "奔驰-G55",
+            "路虎-揽胜",
+            "保时捷-911",
+            "迈凯伦-P1",
+            "法拉利-恩佐",
+            "梅赛德斯-迈巴赫S级",
+            "宾利-欧陆",
+            "劳斯莱斯-幻影"
+      ]
+}

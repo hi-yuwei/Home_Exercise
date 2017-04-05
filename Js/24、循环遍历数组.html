@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>循环遍历数组</title>
+
+</head>
+
+<body>
+	<p id="txt"></p>
+
+</body>
+<script>
+	var arry = [1, 2, 3, 4, 5];
+	var txt = 0;
+	for (var x in arry) {
+		txt += arry[x];
+	}
+	document.getElementById("txt").innerHTML = txt;
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie</title>
+    <style>
+        *{
+            margin:0;
+            paddding:0;
+        }
+        html,body{
+            height:100%;
+        }
+    </style>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script>
+//        function setColor(){
+//            if(!$.cookie('color')){
+//                $.cookie('color','red');
+//            }else{
+//                var color=$.cookie('color');
+//                $('body').css('background',color);
+//            }
+//        }
+
+        function setColor() {
+            if($.cookie('color')){
+                $.cookie('color','purple');
+                var xxx = $.cookie('color')
+                $('body').css('background',xxx);
+            }
+            else {
+                alert('没有cookie')
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="setColor()">按钮</button>
+</body>
+</html>

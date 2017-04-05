@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>32、width()和height()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				var w = $(".box").width();	//内容区域的宽
+				var h = $(".box").height();	//内容区域的高
+				$(".box").text("宽:" + w + "px\n" + "高:" + h + "px");
+			})
+		})
+	</script>
+	<style type="text/css">
+		.box {
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			margin: 20px;
+			border: 1px solid #000;
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+
+	</div>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

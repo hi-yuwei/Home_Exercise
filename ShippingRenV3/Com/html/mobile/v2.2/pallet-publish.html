@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>发布货盘</title>
+	<link rel="stylesheet" href="../../../Content/mobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../../../content/mobile/mobile.css">
+	<script src="../../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="JQM_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>运去哪</h1>
+	</div>
+	<div role="main" class="ui-content" id="mobile_content">
+		<ul class="ulModel cf palletTabs">
+			<li>
+				<a class="ui-btn ui-btn-active" href="javascript:void(0)">海运整箱</a>
+			</li>
+			<li>
+				<a class="ui-btn" href="javascript:void(0)">海运拼箱</a>
+			</li>
+			<li>
+				<a class="ui-btn" href="javascript:void(0)">空运</a>
+			</li>
+		</ul>
+		<ul class="ulModel cf registerForm">
+			<li>
+				<span class="inputTit"><em>*</em>起始港</span>
+				<div class="cellRight">
+					<input type="text">
+				</div>
+			</li>
+			<li>
+				<span class="inputTit"><em>*</em>目的港</span>
+				<div class="cellRight">
+					<input type="password">
+				</div>
+			</li>
+			<li>
+				<span class="inputTit"><em>*</em>货盘信息</span>
+				<div class="cellRight">
+					<textarea></textarea>
+				</div>
+			</li>
+			<li>
+				<span class="inputTit"><em>*</em>货盘量</span>
+				<div class="cellRight" style="width: 40%;">
+					<input type="text">
+				</div>
+				<span class="inputTxt" style="width: 24%; margin-left: 3%;">20'GP</span>
+			</li>
+			<li>
+				<span class="inputTit">&nbsp;</span>
+				<div class="cellRight" style="width: 40%;">
+					<input type="text">
+				</div>
+				<span class="inputTxt" style="width: 24%; margin-left: 3%;">40'GP</span>
+			</li>
+			<li>
+				<span class="inputTit">&nbsp;</span>
+				<div class="cellRight" style="width: 40%;">
+					<input type="text">
+				</div>
+				<span class="inputTxt" style="width: 24%; margin-left: 3%;">40'HQ</span>
+			</li>
+			<li>
+				<span class="inputTit"><em>*</em>出运日期</span>
+				<div class="cellRight">
+					<input type="date" name="date" placeholder="预计装箱时间">
+				</div>
+			</li>
+			<li>
+				<span class="inputTit"><em>*</em>货盘类型</span>
+				<div class="cellRight">
+					<select data-native-menu="false">
+						<option>货盘类型</option>
+						<option>普货</option>
+						<option>危险品</option>
+						<option>框架货</option>
+						<option>罐箱</option>
+					</select>
+				</div>
+			</li>
+		</ul>
+		<div class="registerBtnBox">
+			<a class="ui-btn btnModel" href="javascript:void(0)">确认发布</a>
+		</div>
+	</div>
+</div>
+<script>
+$(function() {
+	$(".ui-corner-all, .ui-shadow, .ui-shadow-inset").removeClass("ui-corner-all ui-shadow ui-shadow-inset");
+	$(".ui-input-text input").focus(function() {
+		$(this).parent().removeClass("ui-focus");
+	});
+	$("textarea").focus(function() {
+		$(this).removeClass("ui-focus");
+	});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>vue</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			text-align: center;
+		}
+		input{
+			outline: none;
+			border: none;
+			border: 1px solid #333;
+		}
+		.box{
+			display: inline-block;
+		}
+		input[type='number'],input[type='text']{
+			padding: 5px 10px;
+			line-height: 2;
+			margin-top: 10px;
+		}
+		input[type='button']{
+			padding: 5px 10px;
+			margin-top: 10px;
+			background: #999;
+			color: #fff;
+		}
+		input[disabled]{
+			background: red;
+		}
+	</style>
+	<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+	<script src="./vue.min.js"></script>
+</head>
+<body>
+	<div id="vue" class='box'>
+		<input type="text" v-model='login.username' v-on:keyUp='show'/><br/><input type="text" v-model='login.password' v-on:keyUp='show'/><br/>
+		<input type="button" class="js-btn" v-bind:disabled="flg" value='提交' v-on:click="submitInfo"/>
+	</div>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: '#vue',
+			data: {
+				login:{'username':'','password':''},
+				flg:false,
+				emoji:''
+			},
+			methods:{
+				check:function(){
+
+					var that=this;
+					for(var i in this.login){
+						if(that.login[i].length==0){
+							return true;
+						}
+					}
+					return false;
+				},
+				show:function(){
+/*					var that=this;
+					that.flg=that.check();*/
+					
+				},isEmojiCharacter:function(substring) {  
+					for ( var i = 0; i < substring.length; i++) {  
+						var hs = substring.charCodeAt(i);  
+						if (0xd800 <= hs && hs <= 0xdbff) {  
+							if (substring.length > 1) {  
+								var ls = substring.charCodeAt(i + 1);  
+								var uc = ((hs - 0xd800) * 0x400) + (ls - 0xdc00) + 0x10000;  
+								if (0x1d000 <= uc && uc <= 0x1f77f) {  
+									return true;  
+								}  
+							}  
+						} else if (substring.length > 1) {  
+							var ls = substring.charCodeAt(i + 1);  
+							if (ls == 0x20e3) {  
+								return true;  
+							}  
+						} else {  
+							if (0x2100 <= hs && hs <= 0x27ff) {  
+								return true;  
+							} else if (0x2B05 <= hs && hs <= 0x2b07) {  
+								return true;  
+							} else if (0x2934 <= hs && hs <= 0x2935) {  
+								return true;  
+							} else if (0x3297 <= hs && hs <= 0x3299) {  
+								return true;  
+							} else if (hs == 0xa9 || hs == 0xae || hs == 0x303d || hs == 0x3030  
+								|| hs == 0x2b55 || hs == 0x2b1c || hs == 0x2b1b  
+								|| hs == 0x2b50) {  
+								return true;  
+							}  
+						}  
+					}  
+				},
+				submitInfo:function(){
+					for(var i in this.login){
+
+						if(this.isEmojiCharacter(this.login[i])){
+								this.emoji=true;
+								break;
+						}
+					}
+
+					if(this.emoji){
+						alert('有表情！');
+					}else{
+						alert('没有表情');
+					}
+
+				}
+			}
+		});
+
+	</script>
+</body>
+</html>

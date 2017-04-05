@@ -1,0 +1,720 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>品牌物流商</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="../../Content/global.css" />
+	<link rel="stylesheet" href="../../Content/page.css" />
+	<script>!window.jQuery && document.write('<script src="../../Scripts/jquery-1.11.2.min.js"><\/script >');</script>
+	<link rel="stylesheet" href="../../plugin/autocomplete/css/jquery.ui.autocomplete.css">
+	<script src="../../plugin/autocomplete/js/jquery.ui.autocomplete.min.js"></script>
+	
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8wjff0MxU8yO9GiwoSNEeyGd"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+</head>
+
+<body>
+<div id="fixedBar">
+	<div class="wrap">
+		<div class="leftSide">
+			<a class="login" href="javascript:void(0)">亲，请登录</a>
+			<a class="register" href="javascript:void(0)">免费注册</a>
+			<span class="welcome">欢迎来到汇航！</span>
+		</div>
+		<div class="rightSide">
+			<a class="tab attention" href="javascript:void(0)">关注</a>
+			<a class="tab collection" href="javascript:void(0)">收藏</a>
+			<a class="tab suggestion" href="javascript:void(0)">建议</a>
+			<a class="tab help" href="javascript:void(0)">帮助</a>
+		</div>
+	</div>
+</div>
+<div class="topWrap">
+	<div class="wrap">
+		<a class="logo" href="javascript:void(0)">运去哪</a>
+		<span class="zheng">100%有货必达</span>
+		<div class="web_SR_search">
+			<div class="web_search_selType">
+				<div class="textBox">
+					<span class="text" mid="0">拼箱</span>
+					<em class="arrow"></em>
+				</div>
+				<ul class="showBox">
+					<li>
+						<a mid="1" href="javascript:void(0)">整箱</a>
+					</li>
+				</ul>
+			</div>
+			<div class="web_search_selPort">
+				<span class="text">起始港</span>
+				<em class="line"></em>
+				<input class="input inputJsTip" type="text" vtext="请选择起始港" />
+			</div>
+			<div class="web_search_selPort">
+				<span class="text">目的港</span>
+				<em class="line"></em>
+				<input class="input inputJsTip" type="text" vtext="请选择目的港" />
+			</div>
+		</div>
+		<span class="call">客服电话</span>
+	</div>
+</div>
+<div class="navWrap">
+	<div class="wrap">
+		<div id="categoryAll">
+			<div class="HD">
+				<ul class="HD_title">
+					<li>
+						<span class="text">全部航线分类</span>
+						<em class="icon"></em>
+					</li>
+				</ul>
+			</div>
+			<div id="category_SR">
+				<div class="listBox">
+					<ul>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">加勒比航线</a>，
+									<a class="aLink" href="javascript:void(0)">加勒比航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">加勒比航线 Caribbean Airlines+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">黑海航线</a>，
+									<a class="aLink" href="javascript:void(0)">黑海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">欧洲航线</a>，
+									<a class="aLink" href="javascript:void(0)">欧洲航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">欧洲航线European route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">红海航线</a>，
+									<a class="aLink" href="javascript:void(0)">红海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">红海航线The red sea route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">近洋航线</a>，
+									<a class="aLink" href="javascript:void(0)">近洋航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">近洋航线ear-sea shipping line+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">澳新航线</a>，
+									<a class="aLink" href="javascript:void(0)">澳新航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">澳新航线ANZ route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">地中海航线</a>，
+									<a class="aLink" href="javascript:void(0)">地中海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">地中海航线The Mediterranean good health+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">中南美航线</a>，
+									<a class="aLink" href="javascript:void(0)">中南美航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">中南美航线South America Line+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<ul class="navMenu">
+			<li>
+				<a class="current" href="javascript:void(0)">首页</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">我的物流</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">货盘市场</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">物流市场</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">订单跟踪</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">物流资讯</a>
+			</li>
+		</ul>
+		<div class="navReleasePH">
+			<ul>
+				<li class="p_price">
+					<a href="javascript:void(0)">发布运价</a>
+				</li>
+				<li class="p_pallet">
+					<a href="javascript:void(0)">发布货盘</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="brandLogWrap">
+	<div class="topImg">品牌物流商banner</div>
+	<div class="wrap">
+		<div class="brandLogSrch" style="background-image: url(../../images/v1.3/brandLogistics/search_1.gif);" src_1="../../images/v1.3/brandLogistics/search_1.gif" src_2="../../images/v1.3/brandLogistics/search_2.gif">
+			<input class="input" type="text" />
+			<a class="button" href="javascript:void(0)">Search</a>
+		</div>
+		<div class="brandLogList">
+			<ul>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="广州民泽国际货运代理有限公司中山分公司" src="../../images/v1.3/brandLogistics/logo_big/01.png" /></a>
+					<p class="company"><a href="javascript:void(0)">广州民泽国际货运代理有限公司中山分公司</a></p>
+					<p class="address">
+						<span class="addrText">中山市西区富华道10号富华阁D座</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0760-88222075</p>
+					<p class="business">非洲航线/南美航线</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="骏高国际货运（中国）有限公司" src="../../images/v1.3/brandLogistics/logo_big/02.png" /></a>
+					<p class="company"><a href="javascript:void(0)">骏高国际货运（中国）有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市虹口区四川北路1361号壹丰广场1502室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-63250077</p>
+					<p class="business">MCC吉大港，东南亚航线，海运整箱拼箱，达卡空运</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳纵横物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/03.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳纵横物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">深圳市罗湖区深南东路3016号银都大厦五层5B</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0755-25154863</p>
+					<p class="business">中东 红海 欧地黑 南北美</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海戈洋国际货运代理有限公司" src="../../images/v1.3/brandLogistics/logo_big/04.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海戈洋国际货运代理有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市杨浦区宁国路218号郡江大厦1209室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-31605816</p>
+					<p class="business">非洲中东印巴东南亚</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海恒道国际物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/05.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海恒道国际物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市杨浦区宁国路228号郡江国际22楼</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-51286528</p>
+					<p class="business">亚洲、非洲、中东、印巴、红海、 南美洲</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳市巡洋国际物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/06.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳市巡洋国际物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">深圳市福田区彩田南路澳新亚大厦2301室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0755-83462553</p>
+					<p class="business">中南美，加勒比海运空运</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海帕鲁国际货物运输代理有限公司" src="../../images/v1.3/brandLogistics/logo_big/07.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海帕鲁国际货物运输代理有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市浦东新区施湾八路1026号3号楼229室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-51374092</p>
+					<p class="business">空运 BR东南亚 AC南北美</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳市九方国际货运代理有限公司" src="../../images/v1.3/brandLogistics/logo_big/08.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳市九方国际货运代理有限公司</a></p>
+					<p class="address">
+						<span class="addrText">深圳市罗湖区春风路3007号桂都大厦2405B-2406单元</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0755-33385990</p>
+					<p class="business">东南亚 中东 印巴 红海</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海靖航国际物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/09.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海靖航国际物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市虹口区物华路73号1号楼8910室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-51087680</p>
+					<p class="business">全航线</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海双鑫国际货物运输代理有限公司" src="../../images/v1.3/brandLogistics/logo_big/10.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海双鑫国际货物运输代理有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海虹口区临平北路55号3楼I座</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-65220371</p>
+					<p class="business">近洋，中东印巴，欧地线，中南美</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="天津海天嘉运国际物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/11.png" /></a>
+					<p class="company"><a href="javascript:void(0)">天津海天嘉运国际物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">天津市河西区大沽南路501号恒华大厦2号楼802室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">022-59657073</p>
+					<p class="business">全航线</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳市丛驿货运有限公司" src="../../images/v1.3/brandLogistics/logo_big/12.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳市丛驿货运有限公司</a></p>
+					<p class="address">
+						<span class="addrText">深圳市罗湖区嘉宾路1019号粤鹏大厦14楼BC单元</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0755-88863189</p>
+					<p class="business">中东，印巴，红海，东南亚，南美加勒比</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海克运物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/13.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海克运物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市吴淞路258号耀江国际广场1101室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-65958488</p>
+					<p class="business">美国、欧洲、南美</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳市星高国际货运代理有限公司-上海分公司" src="../../images/v1.3/brandLogistics/logo_big/14.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳市星高国际货运代理有限公司-上海分公司</a></p>
+					<p class="address">
+						<span class="addrText">上海市东大名路815号高阳商务中心主楼2层B1、B2座</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-55136570</p>
+					<p class="business">东南亚、中东整箱. 泰国自拼箱</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳市巡航星辰国际物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/15.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳市巡航星辰国际物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">深圳市福田区新天世纪商务中心A座2201室(福田区委西邻)</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0755-83074755</p>
+					<p class="business">澳新、非洲、东南亚、中港物流</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海彼洋国际物流有限公司" src="../../images/v1.3/brandLogistics/logo_big/16.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海彼洋国际物流有限公司</a></p>
+					<p class="address">
+						<span class="addrText">大连路950号8号楼301</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-65135656</p>
+					<p class="business">南美，项目</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海平海国际货运代理有限公司" src="../../images/v1.3/brandLogistics/logo_big/17.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海平海国际货运代理有限公司</a></p>
+					<p class="address">
+						<span class="addrText">天目中路585号11楼H</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-52162850</p>
+					<p class="business">直客</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="天津渤涛国际货运代理有限公司" src="../../images/v1.3/brandLogistics/logo_big/18.png" /></a>
+					<p class="company"><a href="javascript:void(0)">天津渤涛国际货运代理有限公司</a></p>
+					<p class="address">
+						<span class="addrText">天津市河西区大沽南路恒华大厦B座-608</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">022-58881661</p>
+					<p class="business">全球航线、专业运输服务</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="深圳市大泰供应链有限公司" src="../../images/v1.3/brandLogistics/logo_big/19.png" /></a>
+					<p class="company"><a href="javascript:void(0)">深圳市大泰供应链有限公司</a></p>
+					<p class="address">
+						<span class="addrText">深圳市宝安区兴围社区福兴达物流园C栋402室</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">0755-29982223</p>
+					<p class="business">欧美、中东、非洲、中南美</p>
+				</li>
+				<li>
+					<a class="image" href="javascript:void(0)"><img alt="上海冠畅国际货运有限公司" src="../../images/v1.3/brandLogistics/logo_big/20.png" /></a>
+					<p class="company"><a href="javascript:void(0)">上海冠畅国际货运有限公司</a></p>
+					<p class="address">
+						<span class="addrText">大连路990号海上海商务楼10号楼208</span>
+						<a class="addrIcon" title="查看详细地址" href="javascript:void(0)"></a>
+					</p>
+					<p class="telephone">021-31330635</p>
+					<p class="business">非洲线</p>
+				</li>
+			</ul>
+		</div>
+		<div class="clear" style="padding: 20px 0;">
+			分页区域
+		</div>
+		<div id="brandLogDialog" class="brandLogDialog clearfix">
+			<dl class="info">
+				<dt><img alt="骏高国际货运（中国）有限公司" src="../../images/v1.3/brandLogistics/logo_mid/02.png" /></dt>
+				<dd class="company">骏高国际货运（中国）有限公司</dd>
+				<dd>上海市虹口区四川北路1361号壹丰广场1502室</dd>
+				<dd>TEL：021-63250077</dd>
+				<dd class="business">主营航线：MCC吉大港，东南亚航线，海运整箱拼箱，达卡空运</dd>
+			</dl>
+			<div id="brandLogMap" class="map">
+				
+			</div>
+			<a class="close" href="javascript:void(0)">Close</a>
+		</div>
+		
+		<script type="text/javascript">
+		$("body").on("click", ".brandLogList .image, .brandLogList .company a, .brandLogList .addrIcon", function() {
+			$("#brandLogDialog").show();
+			fnBMap();
+			$.pageMask();
+		});
+		$("body").on("click", ".brandLogDialog .close", function() {
+			$("#brandLogDialog").hide();
+			$(".pageMask").hide();
+		});
+		// 百度地图API功能
+		function fnBMap() {
+			var map = new BMap.Map("brandLogMap");    // 创建Map实例
+			var point = new BMap.Point(121.490447,31.258649);
+			map.centerAndZoom(point, 50);    // 初始化地图,设置中心点坐标和地图级别
+			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+			
+			/* 缩放和比例尺 */
+			var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+			var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+			map.addControl(top_left_control);
+			map.addControl(top_left_navigation);
+			
+			/* 检索信息窗口 */
+			var content = '<div style="line-height: 19px; padding: 2px;">' +
+						'上海市虹口区四川北路1361号壹丰广场1502室<br />' +
+						'骏高国际货运（中国）有限公司<br />TEL：021-63250077' +
+						'</div>';
+						
+			//创建检索信息窗口对象
+			var searchInfoWindow = null;
+			searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+				title  : "当前位置",      //标题
+				width  : 290,             //宽度
+				//height : 100,             //高度
+				panel  : "panel",         //检索结果面板
+				enableAutoPan : true,     //自动平移
+				searchTypes   :[
+					BMAPLIB_TAB_SEARCH,   //周边检索
+					BMAPLIB_TAB_TO_HERE,  //到这里去
+					BMAPLIB_TAB_FROM_HERE //从这里出发
+				]
+			});
+			var marker = new BMap.Marker(point); //创建marker对象
+			marker.enableDragging(); //marker可拖拽
+			map.addOverlay(marker); //在地图中添加marker
+			searchInfoWindow.open(marker);
+			marker.addEventListener("click", function(e){
+				searchInfoWindow.open(marker);
+			});
+		}
+		</script>
+	</div>
+	<img class="bottomImg" alt="品牌物流商：真实可靠值得信赖" src="../../images/v1.3/brandLogistics/bottom.jpg" />
+</div>
+
+<div class="footer">
+	<div class="wrap">
+		<div class="footerInfo">
+			<ul>
+				<li class="cell cellFirst">
+					<h3 class="title">
+						<b>帮助中心</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_question_1.html" target="_blank">注册和密码相关</a></dd>
+						<dd><a href="help/help_question_2.html" target="_blank">我是物流商</a></dd>
+						<dd><a href="help/help_question_3.html" target="_blank">我是货主</a></dd>
+						<dd><a href="help/help_question_4.html" target="_blank">其它</a></dd>
+					</dl>
+				</li>
+				<li class="cell">
+					<h3 class="title">
+						<b>行业相关</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_related_1.html" target="_blank">货代行业关键词</a></dd>
+						<dd><a href="help/help_related_2.html" target="_blank">集装箱运输</a></dd>
+						<dd><a href="help/help_related_3.html" target="_blank">贸易术语</a></dd>
+						<dd><a href="help/help_related_4.html" target="_blank">报关</a></dd>
+					</dl>
+				</li>
+				<li class="cell">
+					<h3 class="title">
+						<b>运去哪</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_yunquna_1.html" target="_blank">关于我们</a></dd>
+						<dd><a href="help/help_yunquna_2.html" target="_blank">人才招聘</a></dd>
+						<dd><a href="help/help_yunquna_3.html" target="_blank">服务条款</a></dd>
+						<dd><a href="help/help_yunquna_4.html" target="_blank">联系我们</a></dd>
+					</dl>
+				</li>
+				<li class="cell cellTools">
+					<div class="WeChat">
+						<h3 class="title">
+							<b>官方微信</b>
+						</h3>
+						<div class="text">用手机扫一扫，有惊喜！</div>
+						<div class="image">微信扫一扫</div>
+					</div>
+					<a class="weibo" href="javascript:void(0)">微博weibo</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="foot_copyright">© Copyright 2012-2020 <a href="http://www.shippingren.com">ShippingRen</a>&nbsp;&nbsp;&nbsp;&nbsp;版权所有&nbsp;著作权与商标声明</div>
+<a class="backToTop" href="javascript:void(0)">返回顶部-Top</a>
+
+<script src="../../Scripts/global.js"></script>
+<script src="../../Scripts/page.js"></script>
+</body>
+</html>

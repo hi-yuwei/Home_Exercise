@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>21、prepend()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				$(".box").prepend("<li>我是js添加的文档</li>"); //添加在被选元素的结尾处
+			})
+		})
+	</script>
+	<style type="text/css">
+		.box {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="box">
+		<li>1</li>
+		<li>2</li>
+	</ul>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>on()</title>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("p").on("click", function () {
+				alert($(this).html());
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<p>hello,word</p>
+	<p class="box">1</p>
+	<p>2</p>
+	<p>3</p>
+</body>
+
+
+</html>

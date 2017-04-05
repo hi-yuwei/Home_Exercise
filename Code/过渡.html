@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡</title>
+    <style type="text/css">
+        .box{
+            position: absolute;
+            left:50%;
+            top:0;
+            height: 20px;
+            margin:100px auto;
+            border-radius:10px;
+            background:red;
+        }
+        /*.box:before{*/
+            /*display: block;*/
+            /*content: "";*/
+            /*height: 50px;*/
+            /*width:0%;*/
+            /*border-radius:25px;*/
+            /*background: blue;*/
+        /*}*/
+    </style>
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var flag=true;
+//            var boxWidth=$(".box").css("width");
+            var boxWidth=0;
+            while(flag){
+                boxWidth+=10;
+                if(boxWidth===300){
+                    flag=false;
+                }else{
+                    $(".box").animate({"width":boxWidth+"px"},5000)
+                }
+            }
+        })
+
+    </script>
+</head>
+<body>
+    <div class="box" style="width:0px"></div>
+</body>
+</html>

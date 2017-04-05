@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>sort()</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	function sortNumber(a,b){
+		return a-b;	//从小到大排序
+		//return b-a;	//从大到小排序
+	}
+	var arr=["a","e","d","c","f"];
+	document.write(arr.sort()+"</br>");	//字母排序是，不写参数自动按字母顺序排序
+	var nums=[6,9,3,10,5,8];
+	document.write(nums.sort(sortNumber));	//根据函数中返回的表达式排序
+</script>
+
+</html>

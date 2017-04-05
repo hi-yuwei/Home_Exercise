@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+    <script src="http://cdn.bootcss.com/jquery/1.11.0-beta3/jquery.min.js"></script>
+    <script src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js"></script>
+</head>
+<body>
+<div id="vidoe"></div>
+<embed wmode="window" flashvars="vid=i001216370f&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;shownext=1&amp;list=2&amp;autoplay=0" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1479218869544" id="tenvideo_flash_player_1479218869544" bgcolor="#000000" width="undefined" height="undefined" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/" title="Adobe Flash Player">
+<script type="text/javascript">
+    $(function () {
+        var video = new tvp.VideoInfo();
+        video.setVid("i001216370f");
+        var player = new tvp.Player();
+        player.create({
+            video: video,
+            modId: "vidoe",
+            autoplay: false,
+            volume:100
+        });
+    })
+</script>
+</body>
+</html>

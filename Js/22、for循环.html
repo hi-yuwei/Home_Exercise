@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>for循环</title>
+
+</head>
+
+<body>
+	<p id="txt"></p>
+</body>
+<script>
+	var arr = [1, 2, 3, 4];
+	var sum = 0;
+	for (var i = 0, len = arr.length; i < len; i++) {
+		sum += arr[i];
+	}
+	document.getElementById("txt").innerHTML = sum;
+</script>
+
+</html>

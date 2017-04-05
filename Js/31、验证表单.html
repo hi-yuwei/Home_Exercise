@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>验证表单</title>
+	<style type="text/css">
+		fieldset {
+			border: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<form action="" method="post"  onsubmit="return checkForms()">
+			<fieldset>
+				<label for="username">姓名：</label>
+				<input type="text" id="username" />
+			</fieldset>
+			<fieldset>
+				<label for="password">密码：</label>
+				<input type="password" id="password" />
+			</fieldset>
+			<fieldset>
+				<label for="age">年龄：</label>
+				<input type="text" id="age" />
+			</fieldset>
+			<input type="submit" value="提交">
+		</form>
+	</section>
+</body>
+<script>
+	
+	function checkForms() {
+		var userName =document.getElementById("username").value;
+		if (userName == null || userName == "") {
+			alert("用户名为必填项！");
+			return false;
+		}
+	}
+</script>
+
+</html>

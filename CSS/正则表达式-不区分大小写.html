@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>正则表达式-不区分大小写</title>
+	<script type="text/javascript">
+	function regMatch(reg,str){
+		document.write(str.match(reg));
+	}
+	var reg=/imooc.+123/i;	//不区分大小写
+	var str="I Love ImOoc_123123123123";
+	regMatch(reg,str);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

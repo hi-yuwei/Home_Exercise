@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        a {
+            display: block;
+            width: 100px;
+            height: 30px;
+            margin: 100px auto;
+            line-height: 30px;
+            font: 24px/125% '微软雅黑';
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #000;
+        }
+
+        a:hover {
+            color: #fff;
+            background: rgba(0, 0, 0, .2);
+        }
+    </style>
+
+    <script src="https://www.bxjr.com/js/??jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            var arr = ['A', 'B', 'C', 'D'], num = 0, flg = true;
+            $('.btn').on('click', function () {
+                if (flg) {
+                    ++num;
+                    $(this).html(arr[num]);
+                    ++num;
+                    flg = false;
+                } else {
+                    num = num === arr.length ? 0 : num;
+                    $(this).html(arr[num]);
+                    num++;
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+<a href="javascript:;" class="btn">A</a>
+</body>
+</html>

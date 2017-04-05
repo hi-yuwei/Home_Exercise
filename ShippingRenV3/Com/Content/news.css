@@ -1,0 +1,144 @@
+﻿@charset "utf-8";
+/*
+ * news.css
+ * author: Jack
+ * time: 2015-06-01
+*/
+
+/* global */
+a,
+a:hover {color: #3599cd;}
+body {font: 14px/1.5 Microsoft YaHei, Arial, '宋体'; color: #666;}
+
+/* 新闻导航 */
+.nsMenu {height: 62px; background: #eee;}
+.nsMenu .wrap {overflow: hidden; *position: relative;}
+.nsMenu ul {float: left; height: 40px; margin-top: 22px; position: relative; left: 50%;}
+.nsMenu li {float: left; margin: 0 3px; display: inline; position: relative; left: -50%;}
+.nsMenu a {float: left; height: 30px; line-height: 30px; padding: 0 16px 4px; border-bottom: 6px solid #eee; font-size: 18px; color: #999;}
+.nsMenu a:hover,
+.nsMenu a.current {border-bottom-color: #c33; color: #3599cd; text-decoration: none;}
+
+/* 新闻面包屑tabs */
+.nsTabs {float: left; width: 100%; height: 15px; line-height: 15px; font-size: 12px; margin-top: 15px;}
+.nsTabs em {font-family: '宋体';}
+
+/* 今日头条和图片新闻 */
+.newsHeadlines {float: left; width: 600px; margin-top: 5px;}
+.newsHeadlines .newsListMain li {width: 598px;}
+.newsHeadlines .newsListMain dl {padding-bottom: 18px; margin-top: 19px;}
+.newsHeadlines .newsListMain dd {width: 558px;}
+.newsHeadlines .newsListMain .title {width: 528px; height: 27px; line-height: 27px;}
+.newsHeadlines .newsListMain .title a {font-size: 23px;}
+.newsHeadlines .newsListMain .opts {margin-top: 7px;}
+.newsHeadlines .newsListMain .text {height: 46px; overflow: hidden; margin-top: 12px;}
+.newsHeadlines .newsListMain .shareTo {top: 28px;}
+
+.newsBanner {float: right; width: 580px; margin-top: 5px;}
+.nsImgSlide {margin-top: 8px;}
+.NsLatest {display: none;}
+.NsLatestVb {display: block;}
+.NsLatest h2 {width: 100%; height: 27px; line-height: 27px; font-weight: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.NsLatest h2 a {font-size: 23px; color: #19567d;}
+.NsLatest h2 a:hover {color: #19567d;}
+.NsLatest p {line-height: 23px; height: 69px; overflow: hidden; margin-top: 10px;}
+
+.nsImgBanner {margin-top: 20px;}
+.nsImgBanner a,
+.nsImgBanner img {width: 285px; height: 330px;}
+
+/* 图片切换 */
+.slideModel {width: 320px; height: 194px; position: relative;}
+.slideModelImg {width: 320px; height: 194px; position: relative;}
+.slideModelImg div {width: 320px; height: 194px; position: absolute; left: 0; top: 0; z-index: 2;}
+.slideModelImg div.visible {z-index: 3;}
+.slideModelImg div a,
+.slideModelImg div img {width: 320px; height: 194px; display: block; position: relative;}
+.slideModelImg div a:hover {text-decoration: none;}
+.slideModelImg div .titleBox {width: 320px; height: 27px; position: absolute; left: 0; top: 0; cursor: pointer;}
+.slideModelImg div .titleBox .bg {width: 320px; height: 27px; position: absolute; left: 0; top: 0; z-index: 1; background: #000; opacity: 0.2; filter: alpha(opacity=20);}
+.slideModelImg div .titleBox .text {
+	width: 260px; height: 27px; line-height: 27px; position: absolute; left: 30px; top: 0; z-index: 2;
+	overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; text-align: center;
+}
+.slideModelTab {height: 20px; position: absolute; right: 9px; bottom: 7px; z-index: 10;}
+.slideModelTab li {width: 20px; height: 20px; margin-left: 2px; float: left; display: inline; position: relative; overflow: hidden;}
+
+.NsSlideBig {margin-top: 10px;}
+.NsSlideBig,
+.NsSlideBig .slideModelImg,
+.NsSlideBig .slideModelImg div,
+.NsSlideBig .slideModelImg div a,
+.NsSlideBig .slideModelImg div img {width: 580px; height: 271px;}
+.NsSlideBig .slideModelImg div .titleBox {width: 580px; height: 60px; top: auto; bottom: 0;}
+.NsSlideBig .slideModelImg div .titleBox .bg {width: 580px; height: 60px;}
+.NsSlideBig .slideModelImg div .titleBox .text {width: 520px; height: 40px; line-height: 40px; font-size: 18px; font-weight: normal; color: #fff; text-align: left;}
+.NsSlideBig .slideModelTab {height: 10px; right: auto; left: 255px; bottom: 9px;}
+.NsSlideBig .slideModelTab li {width: 9px; height: 9px; margin-left: 10px; cursor: pointer;}
+.NsSlideBig .slideModelTab li span {width: 9px; height: 9px; display: block; background: #fff; border-radius: 10px;}
+.NsSlideBig .slideModelTab li.current span {background: #f5a623;}
+
+/* 新闻列表 */
+.newsMain {float: left; width: 780px;}
+.newsSide {float: right; width: 400px;}
+.newsTitle {padding: 18px 0 11px;}
+.newsTitle .title {float: left; height: 28px; line-height: 28px; font-size: 23px; font-weight: normal; color: #c33;}
+.newsTitle .more {float: right; height: 28px; line-height: 28px; color: #666;}
+.newsTitle .more:hover {color: #3599cd;}
+.newsTitle .changeLike {float: right; height: 28px; line-height: 28px;}
+.newsListMain {width: 100%;}
+.newsListMain li {float: left; width: 778px; border: 1px solid #ddd; position: relative; z-index: 1; margin-top: -1px;}
+.newsListMain li.hover {background: #eee; border-color: #268ed1; z-index: 2;}
+.newsListMain li.hover .shareTo {display: block;}
+.newsListMain dl {float: left; width: 100%; padding-bottom: 30px; margin-top: 30px;}
+.newsListMain .image {float: left; width: 286px; height: 178px; margin-left: 20px; display: inline;}
+.newsListMain .image a,
+.newsListMain .image a img {display: block; width: 286px; height: 178px;}
+.newsListMain dd {float: right; width: 430px; margin-right: 20px; display: inline;}
+.newsListMain .title {width: 400px; height: 25px; line-height: 25px; margin-right: 50px;}
+.newsListMain .title h2 {font-weight: normal; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.newsListMain .title a {font-size: 17px; color: #19567d;}
+.newsListMain .opts {line-height: 19px; margin-top: 5px;}
+.newsListMain .time {color: #999; margin-right: 15px;}
+.newsListMain .tabs a {margin: 0 5px; white-space: nowrap;}
+.newsListMain .text {line-height: 23px; margin-top: 17px; word-wrap: break-word; word-break: break-all;}
+.newsListMain .shareTo {clear: both; position: absolute; right: 20px; top: 38px; display: none;}
+.newsListMain .shareIcon {width: 18px; height: 19px; display: block; background: url(../images/news/icons.png) no-repeat 0 0; cursor: pointer;}
+.newsListMain .shareIcon .bds_more {width: 100%; height: 100%; padding: 0; margin: 0; background: none;}
+
+.newsItem {float: left; width: 100%;}
+.newsItem .newsTitle {padding: 18px 20px 20px; border: 1px solid #ddd;}
+.news_youLike {background: #eee;}
+.news_youLike .newsTitle,
+.news_ranking .newsTitle {padding-left: 20px; padding-right: 20px;}
+
+.newsListSide li {float: left; width: 360px; height: 51px; line-height: 51px; padding: 0 20px; border-bottom: 1px solid #ddd;}
+.newsListSide li a {float: left; width: 360px; color: #666; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.newsListSide li a:hover {color: #666;}
+
+/* 新闻内容 */
+.NsConTitle {padding: 30px 0 15px; border-bottom: 1px solid #ccc;}
+.NsConTitle h1 {float: left; width: 100%; line-height: 27px; font-size: 22px; font-weight: normal; color: #19567d; text-align: center; word-wrap: break-word; word-break: break-all;}
+.NsConTitle .opts {float: left; width: 100%; line-height: 19px; text-align: center; margin-top: 15px; overflow: hidden;}
+.NsConTitle .opts span {color: #999; white-space: nowrap;}
+.NsConTitle .opts .ctLink {float: none; height: 19px; line-height: 19px; font-size: 14px; color: #999; margin: 0 0 0 10px; padding: 0 25px 0 0; display: inline-block; vertical-align: 1px; _vertical-align: 2px; background: url(../images/news/icons.png) no-repeat right -29px;}
+.NsConTitle .opts .ctLink:hover {text-decoration: none;}
+.NsConTitle .tabs {float: left; width: 100%; line-height: 19px; text-align: center; margin-top: 10px; overflow: hidden;}
+.NsConTitle .tabs a {margin: 0 5px;}
+
+.NsConText {margin-top: 20px; line-height: 23px; word-wrap: break-word; overflow: hidden;}
+.NsConText strong {font-weight: 700;}
+.NsConText .uploadImg {margin-top: 25px;}
+.NsConText .uploadImg img {display: block; margin: 0 auto; max-width: 780px; _width: expression(this.width > 780 ? 780 : this.width);}
+.NsConOther {margin-top: 45px; padding-top: 10px; border-top: 1px solid #e2e2e2;}
+.NsConOther .prevNext {padding-bottom: 40px; line-height: 17px; color: #3599cd;}
+.NsConOther .prevNext .prev,
+.NsConOther .prevNext .next {float: left; width: 380px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.NsConOther .prevNext .next {float: right; text-align: right;}
+.NsConOther .source {line-height: 21px;}
+.NsConOther .tabs {margin-top: 10px; line-height: 21px;}
+.NsConOther .tabs a {margin-right: 10px;}
+.NsConOther .shareTo {margin-top: 10px;}
+.NsConOther .shareTo .st {float: left;}
+.NsConOther .shareTo a,
+.NsConOther .shareTo a:hover {color: #878d95;}

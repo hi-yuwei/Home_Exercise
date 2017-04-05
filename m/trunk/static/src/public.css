@@ -1,0 +1,140 @@
+html{font-size:80%;overflow-x:hidden;}
+@media only screen and (min-width: 481px){
+    html{font-size: 94%!important;}
+}
+@media only screen and (min-width: 561px){
+    html{font-size: 109%!important;}
+}
+@media only screen and (min-width: 641px){
+    html{font-size: 125%!important;}
+}
+html, body{width:100%;height:100%;margin:0;padding:0;background-color:#fff;}
+body{color:#333;font-family:Helvetica,'Heiti','SC';}
+a{color:#12adff;text-decoration:none;}
+h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, hr, img, div, label, span, p, ul, ol, li{margin:0;padding:0;}
+ul, li{list-style:none;}
+h4{font-size:16px;}
+h5{font-size:14px;}
+h6{font-size:12px;}
+img{border:0;}
+pre{white-space:pre-wrap;word-wrap:break-word;}
+.m10{margin:10px;}
+
+.fl{float:left;}
+.fr{float:right;}
+.t_l{text-align:left;}
+.t_c{text-align:center;}
+.t_r{text-align:right;}
+.youpinpd{padding:0 1.6rem;}
+
+.c{clear:both;}
+.cc{*zoom:1;}
+.cc:after{content:'/20';clear:both;height:0;visibility:hidden;display:block;}
+
+.v-hide{display:none;}
+
+.nav{height:88px;line-height:88px;background-color:#033b88;font-size:20px;text-align:center;color:#fff;}
+.mb{margin-bottom:10px}
+.alert{margin:10px;text-align:center;padding:10px 0;border:1px solid #d8d8d8;}
+
+.hasNav{padding-top:40px;box-sizing:border-box;}
+.youpinG{background: #edf0f3;}
+
+.noNav{}
+.noNav .top_nav{display:none;}
+
+.standalone{padding-top:60px;}
+.standalone .top_nav{padding-top:20px;}
+.standalone .top_nav .back,
+.standalone .top_nav .reload{top:20px;}
+
+.page{width:100%;position:relative;min-height:100%;box-sizing:border-box;}
+.hasMenu{padding-bottom:4rem;}
+
+/* 客户表头冻结 */
+.hasFixed{padding-top:40px;}
+.hasFixed .fixed{position:fixed;left:0;top:0;right:0;}
+
+.hasNav .hasFixed .fixed{top:40px;}
+.standalone .hasFixed .fixed{top:60px;}
+
+
+.page>div .page_button{width:11rem;margin:1rem auto;display:block;}
+
+
+.top_nav{width:100%;height:40px;background-color:#2d449f;color:#fff;text-align:center;position:fixed;left:0;top:0px;right:0;z-index:10;}
+.top_nav div{margin:0 50px;height:40px;font-size:1.4rem;line-height:40px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.top_nav .back,
+.top_nav .reload{width:40px;height:40px;line-height:40px;font-size:26px;color:#fff;position:absolute;top:0;display:block;cursor:pointer;}
+
+
+
+.top_nav .back{left:0;}
+.top_nav .reload{right:0;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM7SURBVFhHxZg9aFNhFIZTKa1VUKhDq2O1Wuoqzh1CrZMgIhYRdBDBRZ10VFFQcCquRUEdpIqOboJQNDgVHGwLLf7XVkToYP1LfE7umzRf72+Tr+kDL/fmfO95z0dI7r1JzgfFYnEXeoz2q7S+lEqlblThBhvbrKX1gQ10oc/aUInzaXREy81HG5rTfqpQG0P9sjUPhnag6jtUC/Vf6Aqnm2RfW7SZXrQQbCEa1qfQYbX5g9C96Ay6j8bRW/QeFTU7EWwP0U7F1Q8hw+iZchuCnEV0kdNWxWeHxoOoEET5hdx5dEGj0sE8ot41gfxv6LTGxYNpC3qhPu+Q/YfDZdSmkfFg2krDhDVmAe9PtID+qpQIvico27UJfyvm10FrPHgm0DU0iLoo9XAMXRhrUc8hjcoGDaPqj4T1SXSc0w1qKUOtHX0JXC7UFzlcQk5PKjTkLSCBu4R3yO5APenWUd81h8Zp5YRgbUS2SFi3DX2S3fx2cz2q5dVjzcoKwdoj2WLBVn38wH8dNfb4QcC48hyoz6F22WLBY/eyp2ifSvVDyG7ND8HaCdkSwZp+PckKQ88G412oz8jSXBh8T3twoH5TlubC4MgbJ/VBWZoLg2e1hyrUfnPokaW5MHw+2MYy1L6iLlm8w4gW1M2MHXasPV+XDVk2sovnd2SPICY7n7LFGe2jCjV7MO9Vv3fI3qNRK/lhi6/0woH6AfV7x7I1xsH2YosP9NqB+lX1e8eyNcbB9mKL5/Tagfqk+r1j2RrjYHuxT3xf8DIMhmPK8IZlKj6KvorppQoO1D9w2Fg2ecCyyPxYDl+B7UG28oaGVQ/B2phsDWNZig1he5AtuFBRSHpAuyVr3ViG4kJodousARQGyqsx0GQ/gbfJnhnrsV7FxDEguwuNt2WIhPV3HE6i1Ad28+A/pZ5YbKZaosGQ+rMZj31t7Z+yIdSPtkt2PqS1yK92LXgKGhsPpk70Rj2p4F1Cdu8zLamcis1AnRqbjBlR5HO2Dyw782Yq0NdGU+Jnqh6UWf8zOM15QlJ/XqehjLxiG4dA+8PqOfoXjEjHvOpZvuj5hnD7Jp1Hd1ABzaLKh9rOrWZr5lnlP7C53H+iPwWGdl7CxwAAAABJRU5ErkJggg==) center center no-repeat;background-size:auto 16px;}
+
+.tab_bar{width:100%;height:4rem;background-color:#ecb81c;position:fixed;bottom:0;z-index:10;display:-webkit-box;display:box;}
+.tab_bar a{height:4rem;line-height:4rem;color:#fff;font-size:14px;text-align:center;display:block;-webkit-box-flex:1;box-flex:1;overflow:hidden;border-right:1px solid #ffcc33;}
+
+.tab_bar .v-link-active,
+.show_customers .customers_btn,
+.show_receipts .receipts_btn,
+.show_invests .invests_btn,
+.tab_bar a.active{background-color:#ff9900;}
+.tab_bar a:last-child{border-right:0 none;}
+
+.tab_bar .sms_btn,.tab_bar .tel_btn{text-indent:2rem;}
+.tab_bar .sms_btn{background:#ecb81c url(sms.png) 3rem center no-repeat;background-size:auto 46%;}
+.tab_bar .tel_btn{background:#ecb81c url(tel.png) 3rem center no-repeat;background-size:auto 36%;}
+
+
+
+/* 按钮控件 */
+.buttons{text-align:center;}
+.button_a,.button_b{margin:0 0 0 39%;padding:.6rem .4rem;font-size:1.2rem;border:1px solid #5a7fb1;border-radius:3px;display:inline-block;letter-spacing:2px;box-sizing:border-box;}
+.button_a{border-color:#033C88;background-color:#033C88;color:#fff;}
+.button_b{border-color:#5a7fb1;background-color:#fff;color:#5a7fb1;}
+a.button_a,a.button_b{text-align:center;}
+a.button_a{color:#fff;}
+a.button_b{color:#5a7fb1;}
+.button_a[disabled="disabled"],.button_b[disabled="disabled"]{color:#999;border-color:#ccc;background-color:#ddd;}
+
+
+/* 列表 */
+.tableA{width:100%;border-collapse:collapse;padding-top:20px;}
+.tableA th,.tableA td{padding:5px 0px;text-align:center;}
+.tableA th:first-child,.tableA td:first-child{text-align:left;text-indent:20px;}
+.tableA thead th{height:30px;color:#999;background-color:#edf0f3;font-weight:normal;}
+.tableA tbody tr:nth-of-type(even) td{background-color:#f9f9f9;}/*偶数行*/
+.tableA tbody td{color:#333;height:4rem;}
+.tableA tbody td a{display:block;}
+
+.noData td:first-child{text-indent:0;color:#666;padding:14rem 2rem 2rem 2rem;height:10rem;text-align:center;background:#FFF url(nodata.png) center 3rem no-repeat;background-size:14rem auto;}
+
+
+/* 客户详情 */
+.customer_page{height:100%;padding-bottom:4rem;box-sizing:border-box;}
+.customer_page .info{height:10rem;color:#fff;background-color:#2d449f;text-align:center;}
+.customer_page .info strong{padding-top:.8rem}
+.customer_page .info strong,.customer_page .info p{font-size:1.4rem;line-height:2.2rem;display:block;}
+.customer_page .info .info_b{padding-top:.6rem;display:-webkit-box;display:box;}
+.customer_page .info .info_b div{padding-left:1rem;-webkit-box-flex:1;box-flex:1;}
+.customer_page .info .info_b p{}
+.customer_page .info h1{padding-top:2rem;}
+
+.customer_page .list{position:relative}
+.customer_page .list .listhead{position:absolute;top:-40px;}
+.customer_page .list .listbody{margin-top:40px;}
+.customer_page .list .listbody td p{width:8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.slideRight-transition {transition: all .2s ease;}
+.slideRight-enter, .slideRight-leave{opacity:0;margin-left:100%;}
+
+.slideUp-transition {transition: all .1s ease;}
+.slideUp-enter, .slideUp-leave{opacity:0;margin-top:100%;}
+
+
+/* 太平财险logo */
+.taiping{font-size:1.1rem;color:#999;}
+.taiping span{position:relative;padding-left:2.4rem;}
+.taiping span:before{content:'';position:absolute;top:2px;;left:0;width:1.2rem;height:1.2rem;background:url(taiping.png) no-repeat;background-size:100% 100%;display:inline-block;}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>冒泡事件</title>
+
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<section onclick="alert('section')">
+		<div onclick="alert('div')">
+			<p onclick="alert(' p ')">
+				<input type="button" value="Click Me" id="click" />
+			</p>
+		</div>
+	</section>
+</body>
+<script type="text/javascript">
+	document.getElementById("click").onclick = function () {
+		alert(1);
+		//如果没有这行会依次向上执行onclick方法
+		event.stopPropagation(); //阻止冒泡事件
+	}
+</script>
+
+</html>

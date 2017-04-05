@@ -1,0 +1,32 @@
+<section id="page" class="page hasFixed hasMenu">
+<table class="tableA fixed">
+	<thead>
+		<tr>
+			<th>客户信息</th>
+			<th width="33%">投资金额(元)</th>
+			<th width="33%">投资日期</th>
+		</tr>
+	</thead>
+</table>
+<table class="tableA">
+	<tbody v-if="list.data.length > 0 && list.isSuccess == true">
+		<tr v-for="temp in list.data" v-link="'/financialPlanner/view/' + temp.investorId">
+			<td>
+				<strong>{{ temp.realName }}</strong>
+				<p>{{ temp.mobile }}</p>
+			</td>
+			<td width="33%">{{ temp.investAmount }}</td>
+			<td width="33%">{{ temp.dateCreated }}</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr class="noData" v-if="list.data.length < 1 && list.isSuccess == true">
+			<td colspan="3">近30天一笔投资都没有</td>
+		</tr>
+		<tr class="noData" v-if="list.data.length < 1 && list.isSuccess === false">
+			<td colspan="3">{{ list.message }}</td>
+		</tr>
+	</tbody>
+</table>
+<a href="javascript:;" v-show="stillMore" when-visibled="loadMore" v-on:click="loadMore" class="button_b page_button">加载更多</a>
+</section>

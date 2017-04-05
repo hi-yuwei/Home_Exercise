@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用jQuery实现AjaxGET请求</title>
+    <script type="text/javascript" src="./jq/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.ajax({
+                type:"GET",
+                url:"http://www.baidu.com?id=1",
+                //get请求的数据都在url中，所以不需要使用data.
+                dataType:"json",
+                success:function(data){
+                    if(data.success){
+                        //成功，处理逻辑
+                    }
+                },
+                error:function(jqXHR){
+                    //jqXHR为XMLHttpRequest对象，status为状态码
+                    alert("发生错误"+jqXHR.status);
+                }
+
+            })
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

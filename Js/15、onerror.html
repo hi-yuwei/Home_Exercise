@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>onerror</title>
+
+</head>
+
+<body>
+    <img src="./1.png" alt="" id="image" />
+    <p id="txt"></p>
+</body>
+<script>
+    //当图片未能加载时触发事件。
+    document.getElementById("image").onerror = function () {
+        document.getElementById("txt").innerHTML = "图片未能加载";
+    }
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+.banner-wrap {
+  widht: 100%;
+  height: 600px;
+  overflow: hidden; }
+  .banner-wrap .images-list li {
+    display: none; }
+    .banner-wrap .images-list li .s1, .banner-wrap .images-list li .s2, .banner-wrap .images-list li .s3 {
+      display: block;
+      width: 100%;
+      height: 500px; }
+    .banner-wrap .images-list li .s1 {
+      background: red; }
+    .banner-wrap .images-list li .s2 {
+      background: green; }
+    .banner-wrap .images-list li .s3 {
+      background: yellow; }
+  .banner-wrap .small-images {
+    width: 600px;
+    margin: 0 auto; }
+    .banner-wrap .small-images li {
+      float: left;
+      width: 200px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      background: pink; }
+    .banner-wrap .small-images .li1 {
+      background: darkmagenta; }
+    .banner-wrap .small-images .li2 {
+      background: grey; }
+    .banner-wrap .small-images .li3 {
+      background: deeppink; }
+  .banner-wrap .smallbox {
+    width: 600px;
+    margin: 0 auto;
+    position: relative; }
+    .banner-wrap .smallbox .current {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid orange;
+      width: 200px;
+      height: 80px; }
+
+/*# sourceMappingURL=style.css.map */

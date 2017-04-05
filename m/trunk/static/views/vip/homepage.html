@@ -1,0 +1,38 @@
+<section id="vip-page" class="vip-wrap vip-page">
+    <!--主页 start-->
+    <div class="homepage">
+        <div class="vip-info">
+            <div class="vip-info-list clearfix">
+                <div class="fl plr5"  v-link="'/vip/integral/'">
+                    <i class="integral-icon"></i>
+                    <p>{{homeInfo.memberGrowth}}</p>
+                    <span>当前成长值</span>
+                </div>
+                <div class="fl vip-headimg">
+                        <div v-if="homeInfo.avatar" v-bind:style="'background:url(https://bxwd-img.oss-cn-hangzhou.aliyuncs.com/'+homeInfo.avatar+') no-repeat center;background-size:100% 100%;'"></div>
+                        <div v-else class="defaultHead"></div>
+                </div>
+                <div class="fl plr5" v-link="{ path: '/vip/help', replace: false }">
+                    <i class="head-icon" v-if="homeInfo.levelIcon" v-bind:style="'background:url(https://bxwd-img.oss-cn-hangzhou.aliyuncs.com/'+homeInfo.levelIcon+') no-repeat center;background-size:100% 100%;'"></i>
+                    <i class="head-icon" v-else></i>
+                    <p>{{homeInfo.levelName}}</p>
+                    <span>会员等级</span>
+                </div>
+            </div>
+            <h4>{{homeInfo.userName}}</h4>
+            <div class="gradeline">
+                <ul class="clearfix" v-bind:style="ulwidth">
+                        <li v-for="val in showline" v-bind:class="val.on" v-on:click="changetab" data-id="{{val.levelSettingId}}">
+                            <!--<i></i>-->
+                            <div v-bind:style="'background:url(https://bxwd-img.oss-cn-hangzhou.aliyuncs.com/'+val.levelSettingIcon+') no-repeat center;background-size:100% 100%;'"></div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="vip-privilege">
+        <h3>我的特权</h3>
+        <list></list>
+    </div>
+    <!--主页 end-->
+</section>

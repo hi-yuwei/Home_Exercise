@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax GET请求</title>
+
+</head>
+
+<body>
+	<button id="btn">提交</button>
+</body>
+<script>
+	document.getElementById("btn").onclick = function () {
+		var request = new XMLHttpRequest();
+		request.open("GET", "1.html", true);
+		request.send();
+		request.onreadystatechange = function () {
+			if (request.readyState === 4 && request.readyState === 200) {
+				alert("请求成功");
+			} else {
+				alert("请求失败");
+			}
+		}
+	}
+</script>
+
+</html>

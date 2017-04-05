@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>constructor属性</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+	var name = "beck";
+	document.write(name.constructor);
+	document.write("</br>");
+	var arr = [1, 2, 3, 4];
+	document.write(arr.constructor);
+	document.write("</br>");
+	var person = {
+		name: "beck",
+		age: 27
+	};
+	document.write(person.constructor);
+	document.write("</br>");
+	var timer = new Date();
+	document.write(timer.constructor);
+	document.write("</br>");
+	var x = true;
+	document.write(x.constructor);
+	document.write("</br>");
+	//Null和undefined没有constructor属性
+	var y = null;
+	document.write(y.constructor);
+	document.write("</br>");
+	var z = undefined;
+	document.write(z.constructor);
+	document.write("</br>");
+</script>
+
+</html>

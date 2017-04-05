@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航条练习</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		ul li{list-style:none;}
+		a:link{
+			text-decoration:none;
+			color:#000;
+		}
+		.clearfix:after{
+			content:"";
+			clear:both;
+			display:block;
+		}
+		.nav{
+			width:100%;
+			background:#1487E6;
+		}
+		.inNav{
+			width:980px;
+			margin:0 auto;
+		}
+		.inNavLis li{
+			float:left;
+		}
+		.inNavLis li a{
+			display:block;
+			width:85px;
+			height:45px;
+			text-align:center;
+			line-height:45px;
+			color:#fff;
+			font-size:14px;
+			font-weight:bold;
+		}
+		.inNavLis li a:hover{
+			background:#0A6EC8;
+		}
+		.inNavLis li.current{
+			background:#0A6EC8;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="inNav">
+			<ul class="inNavLis clearfix">
+				<li class="current"><a href="javascript:void(0)">首页</a></li>
+				<li><a href="javascript:void(0)">设计资讯</a></li>
+				<li><a href="javascript:void(0)">设计欣赏</a></li>
+				<li><a href="javascript:void(0)">桌面壁纸</a></li>
+				<li><a href="javascript:void(0)">图片大全</a></li>
+				<li><a href="javascript:void(0)">设计教程</a></li>
+				<li><a href="javascript:void(0)">Web开发</a></li>
+				<li><a href="javascript:void(0)">编程开发</a></li>
+				<li><a href="javascript:void(0)">电脑教程</a></li>
+				<li><a href="javascript:void(0)">原创作品</a></li>
+				<li><a href="javascript:void(0)">设计任务</a></li>
+
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

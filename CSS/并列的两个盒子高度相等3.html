@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>并列的两个盒子高度相等3</title>
+	<!--	并列两个盒子，一个盒子根据内容撑高，另一个盒子的高度与第一个盒子相同。-->
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.fatherBox {
+			width: 100%;
+			overflow: hidden;
+		}
+		
+		.box1,
+		.box2 {
+			width: 100px;
+			float: left;
+			margin-bottom: -2000px;
+			padding-bottom: 2000px;
+			margin-left: 10px;
+			background: red;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="fatherBox">
+		<div class="box1">阿里附近大神级发动机了发动机阿萨德发的撒发生发生的奋斗的所得税的萝莉的时间</div>
+		<div class="box2"></div>
+	</div>
+</body>
+
+
+</html>

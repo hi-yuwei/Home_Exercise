@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>透视</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		.box{
+			width:500px;
+			height:273px;
+			margin:100px auto;
+			border:1px solid #000;
+			overflow:hidden;
+			-webkit-perspective:800px;
+		}
+		.box img{
+			-webkit-transform:translateZ(200px);
+			transition: all 3s linear 0s;
+		}
+		.box:hover img{
+			-webkit-transform:translateZ(0px);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="./yymm.jpg" />
+	</div>
+</body>
+</html>

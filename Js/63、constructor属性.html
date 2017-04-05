@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>constructor属性</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	var arr = [1, 2, 3, 4];
+
+	function VerifyType(x) {
+		return x.constructor.toString().indexOf("Array") > -1;
+	}
+	if (VerifyType(arr)) {
+		document.write("是数组类型");
+	} else {
+		document.write("不是数组类型");
+	}
+	
+</script>
+
+</html>

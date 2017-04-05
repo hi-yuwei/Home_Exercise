@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象编程-创建对象</title>
+    <script type="text/javascript">
+        //对象模板
+        var Student={
+            name:"机器人",
+            height:1.2,
+            say:function(){
+                console.log(this.name+":Hello,world..");
+            },
+            run:function(){
+                console.log(this.name+"running ...");
+            }
+        }
+
+        //封装一个方法
+        function CreateObj(name){
+            var newObj=Object.create(Student);//创建一个新的实例newObj
+            newObj.name=name;   //修改新实例中的name属性值
+            return newObj;  //返回新实例
+        }
+
+        //调用函数传入参数，创建新的对象
+        var xiaoming=CreateObj("小明");
+        console.log(xiaoming.name);
+        console.log(xiaoming.height);
+        xiaoming.say();
+        xiaoming.run();
+        console.log(xiaoming.constructor);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

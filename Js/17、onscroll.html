@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>onscroll</title>
+    <style type="text/css">
+        body {
+            height: 2000px;
+        }
+        
+        p {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="txt"></p>
+</body>
+<script>
+    //当网页滚动时触发事件，修改P标签的内容
+    var i = 0;
+    document.querySelector("body").onscroll = function () {
+        document.getElementById("txt").innerHTML = i++;
+    }
+</script>
+
+</html>

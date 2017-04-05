@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3无缝滚动</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		ul li{
+			list-style:none;
+		}
+		img{
+			display:block;
+		}
+		.box{
+			width:800px;
+			height:100px;
+			margin:100px auto;
+			border:1px solid #000;
+			overflow:hidden;
+			position:relative;
+		}
+		.imgS{
+			width:1600px;
+			height:100px;
+			position:absolute;
+			top:0;
+			left:0;
+			-webkit-animation:dong 5s linear 0s infinite;
+		}
+		.imgS li{
+			float:left;
+		}
+
+		@-webkit-keyframes dong{
+			from{
+				left:0;
+			}
+			to{
+				left:-800px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="imgS">
+			<li><a href="javascript:void(0)"><img src="./images/1.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/2.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/3.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/4.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/1.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/2.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/3.png" /></a></li>
+			<li><a href="javascript:void(0)"><img src="./images/4.png" /></a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>驴妈妈无线官网-景区查询</title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<header>
+		<p>驴妈妈旅游网</p>
+		<div>
+			<a href="javascript:;">
+				<span></span>
+			</a>
+		</div>
+	</header>
+	<div id="huadonglunbo" class="swipe">
+		<div class='swipe-wrap'>
+			<div><img src="images/0.jpg" /></div>
+			<div><img src="images/1.jpg" /></div>
+			<div><img src="images/2.jpg" /></div>
+			<div><img src="images/3.jpg" /></div>
+			<div><img src="images/4.jpg" /></div>
+		</div>
+		<div class="xiaoyuandian">
+			<ul>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<nav>
+		<ul>
+			<li><a href="javascript:;"><p><span>景点门票</span>就找驴妈妈</p></a></li>
+			<li><a href="javascript:;"><p><span>周边游</span>约吗？说走就走！</p></a></li>
+			<li><a href="javascript:;"><p><span>国内游</span>轻轻松松放小假</p></a></li>
+			<li><a href="javascript:;"><p><span>出境游</span>带你追梦带你飞</p></a></li>
+		</ul>
+	</nav>
+	<section>
+		<ul>
+			<li><a href="javascript:;">游轮</a></li>
+			<li><a href="javascript:;">酒店</a></li>
+			<li><a href="javascript:;">温泉</a></li>
+			<li><a href="javascript:;">微游</a></li>
+		</ul>
+	</section>
+	<div class="cl"></div>
+	<div class="tu">
+		<ul>
+			<li><a href="javascript:;"><img src="images/yuan.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/lvyue.jpg" alt=""><img src="images/sale.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<div class="cl"></div>
+	<footer>
+		<div class="login">
+			<a href="javascript:;">免费注册</a>
+			<a href="javascript:;">登录</a>
+			<span>Top</span>
+		</div>
+		<div class="versions">
+			<ul>
+				<li>
+					<span>触屏版</span>|<span>电脑版</span>
+				</li>
+				<li>4001-570-570</li>
+				<li>&copy;2015驴妈妈</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- banner -->
+	<script type="text/javascript" src="js/swipe2.js"></script>
+	<script type="text/javascript">
+		var haha = document.getElementById('huadonglunbo');
+		
+		window.mySwipe = Swipe(
+			haha, 
+			{	
+				startSlide: 0,		//表示轮播开始的图片编号
+				auto: 3000,         //表示自动轮播的间隔
+				continuous: true,   //表示是否再来一轮
+				disableScroll: true,  //表示是否在上面阻止默认的滚轮事件，不用改
+				stopPropagation: true,   //表示是否阻止冒泡，不用改。
+				callback: function(index, element) {
+					//写小圆点的业务
+					$(".xiaoyuandian ul li").eq(index).addClass("cur").siblings().removeClass("cur");
+				}
+			}
+		);
+
+		//小圆点的点击业务
+		$(".xiaoyuandian ul li").click(
+			function(){
+				mySwipe.slide($(this).index(),1000);
+			}
+		);
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>焦点图</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/js.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".banner").imgsRun({
+                bigImgList: ".bigimg-list li",
+                samllImg: ".samllimg-list li",
+                samllImgTxt: ".samllimg-list li p",
+                currentbox: ".current",
+                interval: "1000"
+
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="banner">
+    <div class="bigimg-wrap">
+        <ul class="bigimg-list">
+            <li>
+                <a href="javascript:;">
+                    <img src="./images/banner1.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./images/banner2.jpg"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./images/banner3.jpg"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="samllimg-wrap">
+        <div class="current"></div>
+        <ul class="samllimg-list clearfix">
+            <li>
+                <a href="javascript:;">
+                    <img src="./images/Product-1.png"/>
+                    <p class="small-on">掠夺者</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./images/Product-2.png"/>
+                    <p>探测者</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./images/Product-3.png"/>
+                    <p>风火轮</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

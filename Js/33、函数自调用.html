@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>函数自调用</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+	//没有事件源调用是不会执行
+	function add(){
+		alert(1);
+	}
+	
+	//函数自调用--当浏览器解释到这条语句时自动执行
+	(function(){
+		alert(2);
+	})();
+</script>
+
+</html>

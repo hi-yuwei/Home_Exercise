@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建对象-使用对象构造器</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	function person(firstname,lastname,age){
+		this.firstname=firstname;
+		this.lastname=lastname;
+		this.age=age;
+		this.say=function(){
+			alert(this.firstname+this.lastname+this.age);
+		}
+	}
+	var China=new person("beck","yu",27);
+	China.say();
+</script>
+
+</html>

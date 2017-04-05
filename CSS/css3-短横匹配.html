@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>css3-短横匹配</title>
+	<style type="text/css">
+	div[class|="ha"]{
+		color:red;
+	}
+	</style>
+</head>
+<body>
+	<div class="ha">1</div>	<!-- 可以 -->
+	<div class="-ha">1</div>
+	<div class="-ha-">1</div>
+	<div class="ha-">1</div><!-- 可以 -->
+	<div class="ha-ddd">1</div><!-- 可以 -->
+	<div class="222-ha">1</div>
+	<div class="ha-adaha-">1</div><!-- 可以 -->
+	<div class="ha--">1</div><!-- 可以 -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>系统报错404</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="../Content/global.css" />
+	<link rel="stylesheet" href="../Content/page.css" />
+	<script>!window.jQuery && document.write('<script src="../Scripts/jquery-1.11.2.min.js"><\/script >');</script>
+</head>
+
+<body class="system404_body">
+<div class="container">
+	<div class="system404_img">
+		<img alt="404-系统报错页面" src="../images/v1.4/404.png" />
+		<div class="text">
+			<p class="title">或许您想要：</p>
+			<p><a class="link" href="javascript:void(0)">&lt;返回</a></p>
+			<p><a class="link" href="javascript:void(0)">运去哪首页</a></p>
+			<p><a class="link" href="javascript:void(0)">我的物流</a></p>
+			
+		</div>
+	</div>
+</div>
+<div class="foot_copyright">© Copyright 2012-2015 <a href="http://www.yunquna.com">运去哪</a>&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备12035978&nbsp;&nbsp;&nbsp;&nbsp;版权所有&nbsp;著作权与商标声明</div>
+
+<script>
+$(function() {
+	fnFooterAuto();
+	$(window).resize(function() {
+		fnFooterAuto();
+	});
+	
+	function fnFooterAuto() {
+		var _footCR = $(".foot_copyright");
+		if($(window).height() >= $("body").height()) {
+			_footCR.css({"width": "100%", "position": "absolute", "bottom": "0px"});
+		} else {
+			_footCR.css({"position": "static"});
+		}
+	}
+});
+</script>
+</body>
+</html>

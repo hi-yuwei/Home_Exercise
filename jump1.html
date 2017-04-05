@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            if (location.search) {
+                var appurl = "baoxiang://APPProjectInvesting&investId=_&type=_";
+                //处理url
+                function GetRequest() {
+
+                    var url = location.search; //获取url中"?"符后的字串
+                    var theRequest = new Object();
+                    if (url.indexOf("?") != -1) {
+                        var str = url.substr(1);
+                        strs = str.split("&");
+                        for (var i = 0; i < strs.length; i++) {
+                            theRequest[strs[i].split("=")[0]] = (strs[i].split("=")[1]);
+                        }
+                    }
+                    return theRequest;
+                }
+
+                var args = GetRequest(location.search);
+                appurl = appurl.replace("_", args.investId).replace("_", args.type);
+                $("a").attr("href",appurl);
+                $("span").trigger("click");
+            }
+            
+
+        })
+
+    </script>
+</head>
+<body>
+    <a href="#"><span></span></a>
+</body>
+</html>

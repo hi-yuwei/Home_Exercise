@@ -1,0 +1,112 @@
+﻿@charset "utf-8";
+/*
+ * Wechat.css
+ * author: Jack
+ * time: 2014-05-19
+*/
+
+/* 登录、注册、绑定 */
+.cf:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cf {
+	*zoom: 1;
+}
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+label.error {color: red;}
+body, input, select, textarea, button, .ui-btn {font-family: Microsoft YaHei;}
+
+/* 提交按钮遮罩--loading */
+.btnCoverModel {position: relative;}
+.btnCoverModel .btnCover {width: 67px; height: 23px; position: absolute; right: 0; bottom: 0; _bottom: -1px; display: none;}
+.btnCoverModel .btnCover .shadow {width: 100%; height: 100%; background-color: #fff; opacity: 0.8; filter: alpha(opacity=80); position: relative; left: 0; top: 0;}
+.btnCoverModel .btnCover .loading {width: 100%; height: 100%; background: url(../images/global/loading2.gif) no-repeat 20px center; position: absolute; left: 0; top: 0;}
+
+/* 拖车服务、报关服务、订单列表、订单详情 */
+#JQM_header {background: #568cce; border: 0 none; color: #fff;}
+#JQM_header h1 {font-size: 1.2em; font-weight: normal; padding: 0.5em 0;}
+#JQM_header a {background: #568cce; border: 0 none; top: 0.45em;}
+#btnPostForm,
+#btnMoreList,
+.ui-page-theme-a .btnModel {color: #fff; font-weight: normal; background: #568cce; border: 1px solid #568cce; text-shadow: none;}
+
+
+#post_1,
+#post_2 {padding: 0.45em 0.5em; margin: 0 0 0 0.3125em; color: #fff; font-weight: normal; background: #568cce; border: 1px solid #568cce;}
+#post_out .ui-input-text {margin: 0 0.3125em 0 0;}
+#radioBox {margin-top: 1em;}
+#radio_1 label,
+#radio_2 label,
+#agreeChk {padding-top: 0.5em; padding-bottom: 0.5em;}
+#radio_1 .ui-radio {margin: 0 0.3125em 0 0;}
+#radio_2 .ui-radio {margin: 0 0 0 0.3125em;}
+#mobile_content .errorDom {border-color: red;}
+
+.searchContList {list-style: none; margin: 0; padding: 0;}
+.searchContList li {float: left; width: 100%; border-bottom: 1px dotted #bbb;}
+.searchContList .link {float: left; width: 100%; font-weight: normal; color: #333; text-decoration: none; padding: 0.3em 0; outline: none;}
+.searchContList .link:hover {color: #333; background: #fee9e9;}
+.searchContList .link:visited {color: #333;}
+.searchContList .listLeft {float: left; width: 70%;}
+.searchContList .listRight {float: left; width: 30%; padding: 0.3em 0;}
+.searchContList .line {float: left; width: 100%; padding: 0.3em 0;}
+.searchContList .port {color: #34a8f3; margin-left: 0.5em;}
+.searchContList .time {color: #999; margin-right: 0.5em;}
+.searchContList .ptText {color: #666;}
+.searchContList .ptType {color: #8c9e00;}
+.searchContList .ptTime {color: #999;}
+.orange {color: #f5a623;}
+.green {color: #a5b813;}
+.red {color: #d0021b;}
+.noData,
+.noMore {color: #aaa;}
+
+.ui-page-theme-a .ulModel {list-style: none; margin: 0; padding: 0;}
+.staticCurrent {color: #a5b813;}
+.staticIcon {text-align: right; padding-top: 1em;}
+.orderListRecord,
+.orderListInfo {list-style: none; margin: 0; padding: 0;}
+.orderListRecord li {padding: 0.15em 0;}
+.orderListInfo li {float: left; width: 100%; padding: 0.2em 0; border-bottom: 1px solid #ddd;}
+.orderListInfo .cellLeft {float: left; width: 40%;}
+.orderListInfo .cellRight {float: left; width: 60%; word-wrap: break-word; word-break: break-all;}
+
+/* 注册页面 */
+.registerForm li {float: left; width: 100%; margin-top: 1em;}
+.registerForm .inputTit {float: left; width: 30%; text-align: right; display: inline; line-height: 1.4em; padding: 0.4em 0; margin: 1px 3% 0 0;}
+.registerForm .inputTit em {font-family: '宋体'; color: #d0021b; margin-right: 0.3em;}
+.registerForm .cellRight {float: left; width: 67%;}
+.registerForm .inputTxt {float: left; display: inline; line-height: 1.4em; padding: 0.4em 0; margin-top: 1px;}
+.registerForm .ui-input-text {margin: 0;}
+.registerForm .yanInput {float: left; width: 50%;}
+.registerForm .yanArea {float: left; width: 45%; margin-left: 5%; display: inline;}
+.registerForm .ui-select {margin: 0;}
+.registerForm .ui-select .ui-btn {padding-top: 0.4em; padding-bottom: 0.4em;}
+.registerBtnBox {padding-top: 1em;}
+.registerBtnBox .ui-btn {margin-top: 1em;}
+
+/* 发送委托成功 */
+.postEntrustOK {padding: 0 1.6em; text-align: center;}
+.postEntrustOK .titleMT {margin-top: 5em;}
+.postEntrustOK .textMT {margin-top: 5em;}
+
+/* 发布货盘、货盘列表、货盘详情 */
+.palletTabs li {float: left; width: 33%;}
+.palletTabs .ui-btn {font-weight: normal; text-shadow: none; text-align: center; margin: 0; padding: 0.7em 0;}
+.palletTabs .current {background: #568cce; color: #fff;}
+
+.palletList {list-style: none; margin: 0; padding: 0;}
+.palletList li {padding: 0.4em 0;}

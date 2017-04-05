@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>24、同时添加多个元素()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var x = "<h1>h1</h1>";
+			var y = $("<P>p</p>");
+			var z = document.createElement("div");
+			z.innerHTML = "123";
+			$("#append").click(function () {
+				$(".box").append(x, y, z);
+			})
+		})
+	</script>
+	<style type="text/css">
+		.box {
+			width: 100px;
+			background: red;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">1</div>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

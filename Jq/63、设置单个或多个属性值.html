@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>63、attr()-设置单个或多个属性</title>
+	<style type="text/css">
+		.out {
+			width: 150px;
+			height: 20px;
+			line-height: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("input").attr({
+				"class": "out",
+				"value": "请输入关键词",
+				"id": "search"
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<input type="text" />
+</body>
+
+
+</html>

@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-size:12px;
+  color:#fff;
+  line-height: 1.5;
+}
+img{
+  display: inline-block;
+  vertical-align: middle;
+}
+ul li{
+  list-style: none;
+}
+.thanks-container{
+  width:100%;
+  min-width: 1200px;
+  overflow: hidden;
+  .main{
+    position: relative;
+    left:50%;
+    width:1920px;
+    margin-left:-960px;
+    color:#e7cc77;
+  }
+}
+.thanks-title{
+  width:396px;
+  height: 104px;
+  padding-top:40px;
+  font-size:40px;
+  font-weight: normal;
+  letter-spacing: 12px;
+
+}
+.title-bg-yellow{
+  background: url("../images/icon_titile_yellow.png") no-repeat center;
+}
+.d-ib{display: inline-block;}
+.mt364{margin-top:364px;}
+.mt41{margin-top:41px}
+.f-brown{color:#7c4702;}
+.thanks-banner{
+  width:100%;
+  height: 1756px;
+  padding-top:637px;
+  text-align: center;
+  background:url("../images/thanks_banner.jpg") no-repeat center;
+  .banner-title{
+    font-size:26px;
+    letter-spacing: 9px;
+    span{
+      display: inline-block;
+      width:48px;
+      height:33px;
+    }
+    .title-icon-l{
+      background: url("../images/icon_title_r.png") no-repeat center;
+    }
+    .title-icon-r{
+      background: url("../images/icon_title_l.png") no-repeat center;
+    }
+  }
+  .banner-txt{
+    margin-top:15px;
+    font-size:16px;
+    line-height: 29px;
+    letter-spacing: 5px;
+  }
+  .prize-items{
+    margin-top:143px;
+    font-size:0;
+    color: #6fb3ff;
+    &>div{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 48px;
+      font-size:18px;
+      p{margin-top:37px;}
+      strong,em{
+        font-weight: normal;
+        font-style: normal;
+        font-size:22px;
+      }
+      strong{
+        color:#e7cc77;
+      }
+    }
+    .prize-03{
+      margin-right: 31px;
+    }
+    .prize-04{
+      margin-right: 17px;
+    }
+  }
+}
+.partake{
+  background: #fbf7ed;
+  text-align: center;
+  .partake-txt{
+    display: inline-block;
+    font-size:20px;
+    margin-top: 57px;
+    margin-bottom: 78px;
+    color:#7c4702;
+    li{
+      text-align: left;
+      letter-spacing: 5px;
+      line-height: 58px;
+      .ring{
+        display: inline-block;
+        width: 31px;
+        height: 32px;
+        margin-right: 15px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+        letter-spacing: normal;
+        color:#fff;
+        background: #7c4702;
+      }
+    }
+  }
+
+}

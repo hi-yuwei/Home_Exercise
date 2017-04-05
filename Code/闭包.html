@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>闭包</title>
+    <script type="text/javascript">
+        /*        function sum(arr){
+         var he=function(){
+         var sum=0;
+         for(var i=0;i<arr.length;i++){
+         sum+=arr[i];
+         }
+         return sum;
+         }
+         return he;
+         }
+
+         var f=sum([1,2,3]);
+         console.log(f);*/
+
+        function count() {
+            var arr = [];
+            for (var i = 1; i <= 3; i++) {
+                arr.push(function () {
+                    return i * i;
+                });
+            }
+            return arr;
+        }
+        console.log(count());
+        //        var request = count();
+        //        var f1 = request[0];
+        //        var f2 = request[1];
+        //        var f3 = request[2];
+        //        console.log("f1:"+f1());
+        //        console.log("f2:"+f2());
+        //        console.log("f3:"+f3());
+
+        //        function add(x,y){
+        //            return function (){
+        //                return x+y;
+        //            }
+        //        }
+        //
+        //        var f=add();
+        //        console.log(f);
+        /*
+         (function (x){
+         console.log(x+x);
+         })(2);*/
+
+        /*        var arr=[1,2,3,4,5];
+         //        var arr=1;
+         console.log(Array.isArray(arr));*/
+        //        if(Array.isArray(arr)){
+        //            console.log("数组");
+        //        }else{
+        //            console.log("非数组");
+        //        }
+/*        var person = {
+         name: "yuwei",
+         age: "27",
+         say: function () {
+         console.log(this.name + this.age+"1");
+         }
+         };
+         var x=person.say;
+         x.apply(person);*/
+
+        var Student={
+            name:"robot",
+            height:1.2,
+            run:function(){
+                console.log(this.name+"is running...");
+            }
+        }
+
+        function createObject(name){
+            var x=Object.create(Student);
+            x.name=name;
+            return x;
+        }
+        var xiaoming=createObject("小明");
+        console.log(xiaoming.height);
+        xiaoming.run();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

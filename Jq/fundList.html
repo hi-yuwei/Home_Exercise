@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>fundList</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        ul li {
+            list-style: none;;
+        }
+        .clearfix:after,.clearfix:before{
+            content:"";
+            clear:both;
+            display: block;
+        }
+        body{
+            font:14px/1.5 "微软雅黑";
+            background:#ccc;
+        }
+        .main{
+            width:1200px;
+            margin:30px auto;
+            /*background:#fff;*/
+            border:1px solid #000000;
+        }
+        .ttj-list{padding:10px;}
+        .ttj-list li{float:left;margin-left:20px;}
+        .ttj-list li a{
+            display: block;
+            padding: 5px 10px;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            background:#0b2c89;
+            color:#fff;
+        }
+        .ttj-fund-list{
+            width:100%;
+            text-align: center;
+            background:#fff;
+        }
+        .ttj-fund-list thead td{
+            line-height: 30px;
+            padding:5px;
+            background: #9F9FA0;
+        }
+        .ttj-fund-list tbody td{
+            padding:10px;
+            line-height:30px;
+        }
+        .sel-type{
+            background:#0b2c89;
+
+        }
+        .sel-type a{
+            color:#fff;
+        }
+        .tr-hidden{
+            display: none;
+        }
+        .no-data{
+            display: none;
+        }
+        .even-tr{
+            background:red;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery.js"></script>
+</head>
+<body>
+    <div class="main">
+        <ul class="ttj-list clearfix">
+            <li><a href="javascript:void(0)">全部</a></li>
+            <li><a href="javascript:void(0)">盈亏</a></li>
+            <li><a href="javascript:void(0)">收益</a></li>
+            <li><a href="javascript:void(0)">支出</a></li>
+        </ul>
+        <table class="ttj-fund-list">
+            <thead>
+                <tr>
+                    <td>时间</td>
+                    <td>类型</td>
+                    <td>金额</td>
+                    <td>余额</td>
+                    <td>备注</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>2015-11-12 11:09:10</td>
+                    <td>收益</td>
+                    <td>+4.5</td>
+                    <td>450.69</td>
+                    <td>添添金</td>
+                </tr>
+                <tr class="no2">
+                    <td>2015-11-12 11:09:10</td>
+                    <td>收益</td>
+                    <td>+4.5</td>
+                    <td>450.69</td>
+                    <td>添添金</td>
+                </tr>
+                <!--<tr class="no3">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>支出</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no3">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>支出</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <tr class="no2">
+                    <td>2015-11-12 11:09:10</td>
+                    <td>收益</td>
+                    <td>+4.5</td>
+                    <td>450.69</td>
+                    <td>添添金</td>
+                </tr>
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no3">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>支出</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <tr class="no2">
+                    <td>2015-11-12 11:09:10</td>
+                    <td>收益</td>
+                    <td>+4.5</td>
+                    <td>450.69</td>
+                    <td>添添金</td>
+                </tr>
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no3">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>支出</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <tr class="no2">
+                    <td>2015-11-12 11:09:10</td>
+                    <td>收益</td>
+                    <td>+4.5</td>
+                    <td>450.69</td>
+                    <td>添添金</td>
+                </tr>
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no3">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>支出</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no1">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>盈亏</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+                <!--<tr class="no3">-->
+                    <!--<td>2015-11-12 11:09:10</td>-->
+                    <!--<td>支出</td>-->
+                    <!--<td>+4.5</td>-->
+                    <!--<td>450.69</td>-->
+                    <!--<td>添添金</td>-->
+                <!--</tr>-->
+            </tbody>
+            <tfoot>
+                <tr class="no-data">
+                    <td colspan="5">暂无数据</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+<script type="text/javascript">
+    //选中默认
+    (function defaultSel(){
+        $(".main .ttj-list li").eq(2).addClass("sel-type");
+        $(".ttj-fund-list tbody tr:not(.no2)").addClass("tr-hidden");   //给不是类no2的行添加隐藏
+        $(".ttj-fund-list tbody tr.no2:even").addClass("even-tr");
+    })();
+
+    $(".ttj-list li").on("click",function(){
+        var className=".no"+$(this).index();
+        $(this).addClass("sel-type").siblings().removeClass("sel-type");
+
+        if($(this).index()!==0){    //不是全部时
+            $(".ttj-fund-list tbody tr").removeClass("tr-hidden");  //全部显示
+            if($(".ttj-fund-list tbody tr"+className).length===0){  //当无数据时
+                $(".ttj-fund-list tbody tr:not("+className+")").addClass("tr-hidden");  //隐藏不满足条件的行
+                $(".ttj-fund-list tfoot tr").removeClass(); //显示无数据提醒
+            }
+            else{   //有数据时
+                $(".ttj-fund-list tbody tr:not("+className+")").addClass("tr-hidden");  //隐藏不满足条件的行
+                $(".ttj-fund-list tfoot tr").addClass("no-data");   //隐藏无数据提醒
+            }
+
+        }else{  //全部时
+            if($(".ttj-fund-list tbody tr").length >0){ //有数据
+                $(".ttj-fund-list tbody tr").removeClass("tr-hidden even-tr");  //全部显示
+                $(".ttj-fund-list tbody tr:even").addClass("even-tr");  //改变背景
+                $(".ttj-fund-list tfoot tr").addClass("no-data");   //隐藏无数据提醒
+            }
+            else{   //无数据
+                $(".ttj-fund-list tfoot tr").removeClass(); //显示无数据提醒
+            }
+
+        }
+
+    })
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>arguments隐藏参数</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	function add(){
+		var flag="";
+		for(var x in arguments){
+			flag+=arguments[x];
+		}
+		return flag;
+	}
+	
+	var num=add(1,45,6,3);
+	document.write(num);
+</script>
+
+</html>

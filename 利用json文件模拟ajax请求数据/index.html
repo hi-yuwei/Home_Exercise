@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="//cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+	<script>
+		$(function () {
+			$.ajax({
+				type: "GET",
+				url: "data.json",
+				dataType: "json",
+				success: function (data) {
+					console.log(data['isScuess']);
+					console.log(data['message']);
+					console.log(data['data'][0]);
+					console.log(data['data'][1]);
+				}
+			});
+
+
+			$.get('data.json', function (data) {
+				if (data) {
+					console.log(data)
+				}
+			})
+		})
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

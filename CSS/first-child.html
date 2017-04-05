@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>:first-child</title>
+	<style type="text/css">
+		p:first-child{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<p>p1</p>	<!-- 选中 -->
+	<div>
+		<p>p2</p><!-- 选中 -->
+		<ul>
+			<li>
+				<h1>h1</h1>
+				<p>p3</p>
+			</li>
+			<li>
+				<p>p4</p><!-- 选中 -->
+				<p>p5</p>
+			</li>
+		</ul>
+		<p>p6</p>
+	</div>
+	<p>p7</p>
+	<p>p8</p>
+	<p>p9</p>
+</body>
+</html>

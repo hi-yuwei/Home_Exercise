@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3动画移动</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width:100px;
+			height:100px;
+			background:pink;
+			margin:100px auto;
+			-webkit-animation:move 2s linear 0s infinite alternate;
+		}
+
+		@-webkit-keyframes move{
+			from{
+				-webkit-transform:translate(0px);
+			}
+			to{
+				-webkit-transform:translate(50px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

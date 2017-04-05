@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>onresize</title>
+
+</head>
+
+<body>
+    <p id="txt"></p>
+</body>
+<script>
+    window.onresize = function () {
+        var screeWidth = outerWidth; //电脑分辨率宽度
+        var screeHeight = outerHeight; //电脑分辨率高度
+        document.getElementById("txt").innerHTML = "width：" + screeWidth + ";" + "\n" + "height:" + screeHeight;
+    }
+</script>
+
+</html>

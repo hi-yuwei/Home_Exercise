@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document.write</title>
+    <!--
+    注意：当文档加载完毕后再利用doucment.write方法添加内容
+         会覆盖之前的文档内容。
+    -->
+    <!--
+<script type="text/javascript">
+    window.onload = function () {
+        document.write("文档加载后再添加");
+    }
+</script>
+-->
+</head>
+
+<body>
+    <p>第一个段落文档</p>
+    <script type="text/javascript">
+        document.write("<p>js添加的第一段落文档</p>") //此时不会覆盖文档
+    </script>
+    <p>第二个段落文档</p>
+    <script type="text/javascript">
+        document.write("<p>js添加的第二段落文档</p>") //此时不会覆盖文档
+    </script>
+</body>
+<script type="text/javascript">
+    document.write("<p>js添加的第三段落文档</p>") //此时不会覆盖文档
+</script>
+
+</html>
+<script type="text/javascript">
+    document.write("<p>js添加的第四段落文档</p>") //此时不会覆盖文档
+</script>

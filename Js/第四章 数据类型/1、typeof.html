@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>typeof</title>
+
+</head>
+
+<body>
+    <p id="txt"></p>
+</body>
+<script>
+    var box1 = "yuwei";
+    var box2 = 3.14;
+    var box3 = true;
+    var arry = [1, 2, 3];
+    var fun = function () {};
+    var box4 = {
+        x: 1,
+        y: 2
+    };
+    var box5;
+    var txt = "box1:" + typeof (box1) + "</br>box2:" + typeof (box2) + "</br>box3:" +
+        typeof (box3) + "</br>arry:" + typeof (arry) + "</br>fun:" + typeof (fun) + "</br>box4:" + typeof (box4) + "</br>box5:" + typeof (box5) + "</br>box6:" + typeof (box6);
+    document.getElementById("txt").innerHTML = txt;
+</script>
+
+</html>

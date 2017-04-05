@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>全局变量</title>
+    <script>
+        var x = 1; //此变量为全局变量，在函数之外定义的变量为全局变量网页上的所有脚本和函数都能访问它。
+
+        function Add() {
+            y = 2; //在函数中没有使用var关键字声明的变量，也为全局变量。
+            var w = 5; //局部变量，在函数内部使用var关键字声明的变量为局部变量，只能在声明的函数中使用，生存期即局部变量声明时和函数结束后。
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

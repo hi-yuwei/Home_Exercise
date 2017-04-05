@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>removeChild()</title>
+	<style type="text/css">
+		.btn {
+			width: 100px;
+			height: 50px;
+			color: red;
+			background: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var list = document.getElementById("list");
+	var nodes = removeEmptyNode(list.childNodes);
+	nodes.removeChild(1);
+
+	function removeEmptyNode(nodeList) {
+		var n = [];
+		for (var i = 0, len = nodeList.length; i < len; i++) {
+			if (nodeList[i].nodeType == 1) {
+				n.push(nodeList[i]);
+			}
+		}
+		return n;
+	}
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON方法eval()</title>
+    <script type="text/javascript">
+        var jsonData='['
+            +'{"TOP1":"王XX","result":"90"},'
+            +'{"TOP2":"吴xx","result":"85"},'
+            +'{"TOP3":"方xx","result":"83"}'
+       +']';
+        var jsonObj=eval('('+jsonData+')');
+        console.log(jsonObj[0]["TOP1"]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

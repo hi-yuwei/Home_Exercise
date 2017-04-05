@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attr</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font:14px/1.2 "微软雅黑";
+        }
+        .login{
+            position: relative;
+            width:150px;
+            height:50px;
+            overflow: hidden;
+            margin:50px auto;
+
+            line-height:50px;
+            border-radius:5px;
+            text-align: center;
+            cursor: pointer;
+            color:#fff;
+            background:#617fde;
+            transition:all ease-in-out .3s;
+        }
+        .login:hover{
+            font-size:16px;
+            background:#5474db;
+        }
+        .login::after{
+            position: absolute;
+            bottom:0;
+            left:0;
+            /*自动获取元素中自定义的data-txt属性*/
+            content: attr(data-txt);
+            width: 100%;
+            height:25px;
+            line-height:0;
+            overflow: hidden;
+            color:#fff;
+            background:#617fde;
+            transition:bottom ease-in-out .5s;
+        }
+        .login::before{
+            position: absolute;
+            top:0;
+            left:0;
+            /*自动获取元素中自定义的data-txt属性*/
+            content: attr(data-txt);
+            width: 100%;
+            height:25px;
+            line-height:3.5;
+            overflow: hidden;
+            background:#617fde;
+            transition:top ease-in-out .5s;
+        }
+        .login:hover::before{
+            top:-25px;
+        }
+        .login:hover::after{
+            bottom:-25px;
+        }
+    </style>
+</head>
+<body>
+    <!--自定义data-txt属性，供before,after伪类使用-->
+    <div class="login" data-txt="Login">Login</div>
+</body>
+</html>

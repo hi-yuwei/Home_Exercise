@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>background-origin</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		.box{
+			margin:0 auto;
+			width:200px;
+			height:200px;
+			border:1px solid #000;
+			padding:100px;
+			background:url(./mm.jpg) no-repeat;
+			background-origin:content-box;	/*以内容区域的左上角为原点*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box">1</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+input[type="submit"], input[type="reset"], input[type="button"], input {
+  -webkit-appearance: none;
+  resize: none; }
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  -webkit-tap-highlight-color: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto \9;
+  -ms-interpolation-mode: bicubic; }
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+body {
+  font-family: Microsoft YaHei, Tahoma, Arial, sans-serif;
+  background: #fff8eb;
+  color: #555; }
+
+em, i {
+  font-style: normal; }
+
+strong {
+  font-weight: normal; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+a {
+  text-decoration: none;
+  color: #969696;
+  font-family: Microsoft YaHei, Tahoma, Arial, sans-serif; }
+
+a:hover {
+  color: #FED503;
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: Microsoft YaHei; }
+
+html {
+  font-size: 10px !important; }
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  html {
+    font-size: 11px !important; } }
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  html {
+    font-size: 12px !important; } }
+@media screen and (min-width: 415px) and (max-width: 639px) {
+  html {
+    font-size: 15px !important; } }
+@media screen and (min-width: 640px) and (max-width: 719px) {
+  html {
+    font-size: 20px !important; } }
+@media screen and (min-width: 720px) and (max-width: 749px) {
+  html {
+    font-size: 22.5px !important; } }
+@media screen and (min-width: 750px) and (max-width: 799px) {
+  html {
+    font-size: 23.5px !important; } }
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 25px !important; } }
+.pd2-4 {
+  padding: 2rem 1rem; }
+
+.million-main .award {
+  display: inline-block;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  line-height: 2;
+  color: #fff;
+  background: #ee5361; }
+.million-main .gift .title {
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 3rem; }
+  .million-main .gift .title span {
+    position: relative; }
+    .million-main .gift .title span:first-child {
+      padding: 0 .7rem 0 2.4rem;
+      margin-right: .5rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff;
+      background: #ee5361; }
+      .million-main .gift .title span:first-child:before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -1rem;
+        width: 3rem;
+        height: 2.4rem;
+        background: url("../images/gold-icon.png") no-repeat;
+        background-size: 100% 100%; }
+    .million-main .gift .title span:last-child {
+      top: -.1rem;
+      border-top: 1px solid #ee5361;
+      border-bottom: 1px solid #ee5361; }
+.million-main .gift .case {
+  position: relative;
+  border: 1px solid #ee5361;
+  padding: 2rem .5rem;
+  margin-top: 1.6rem; }
+  .million-main .gift .case h2 {
+    position: absolute;
+    top: -7.5%;
+    left: 50%;
+    width: 97%;
+    font-size: 1.2rem;
+    text-align: center;
+    background: #fff8eb;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .million-main .gift .case .txt {
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify; }
+    .million-main .gift .case .txt strong {
+      color: #ee5361; }
+    .million-main .gift .case .txt span {
+      color: #949494; }
+  .million-main .gift .case .img {
+    padding: 1.2rem 1rem;
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+    border: 1px solid #f9e8ca;
+    background: #fff4e0; }
+    .million-main .gift .case .img img {
+      width: 54%; }
+    .million-main .gift .case .img span {
+      margin-left: 1rem;
+      position: relative;
+      top: -.8rem; }
+  .million-main .gift .case .wait {
+    font-size: 1.6rem;
+    color: #555; }
+    .million-main .gift .case .wait strong {
+      font-weight: bold;
+      color: #ee5362; }
+.million-main .gift .btn {
+  display: block;
+  width: 80%;
+  padding: .5rem 0;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: inset 0 -4px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  background: #ee5362; }
+.million-main .gift .time {
+  font-size: 1.2rem;
+  text-align: center; }
+.million-main .gift .items {
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #e52a3e; }
+  .million-main .gift .items li {
+    overflow: hidden;
+    margin-bottom: 1rem; }
+    .million-main .gift .items li:nth-child(1) i {
+      width: 8.75rem;
+      height: 10.5rem;
+      background: url("../images/crown1.png") no-repeat center top;
+      background-size: 100% 100%;
+      margin-bottom: 1rem; }
+    .million-main .gift .items li:nth-child(2) i {
+      width: 7.2rem;
+      height: 11.2rem;
+      background: url("../images/crown2.png") no-repeat center top;
+      background-size: 100% 100%; }
+    .million-main .gift .items li:nth-child(3) i {
+      width: 7.2rem;
+      height: 11.2rem;
+      background: url("../images/crown3.png") no-repeat center top;
+      background-size: 100% 100%; }
+    .million-main .gift .items li div {
+      overflow: hidden;
+      padding: 0 1.5rem 0 2.5rem;
+      background: #fff; }
+      .million-main .gift .items li div i {
+        float: left; }
+      .million-main .gift .items li div p {
+        float: right;
+        padding-top: 2rem;
+        font-size: 1.4rem; }
+        .million-main .gift .items li div p strong {
+          font-size: 1.6rem; }
+    .million-main .gift .items li .grant {
+      padding: .9rem 0;
+      text-align: center;
+      background: #ffc73e; }
+      .million-main .gift .items li .grant span {
+        color: #5e3016;
+        padding-left: 1rem; }
+        .million-main .gift .items li .grant span strong {
+          font-size: 1.4rem;
+          color: #e52a3f; }
+  .million-main .gift .items .remark {
+    position: relative;
+    padding-left: 1.4rem;
+    color: #fff; }
+    .million-main .gift .items .remark:before {
+      content: '';
+      position: absolute;
+      top: 8%;
+      left: 0;
+      width: 1.1rem;
+      height: 1.1rem;
+      background: url("../images/yuan.png") no-repeat center;
+      background-size: 100% 100%; }
+.million-main .team {
+  background: #fff4e0; }
+  .million-main .team .casetxt {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.7; }
+  .million-main .team h4 {
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    text-align: center; }
+  .million-main .team .lists li {
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border: 1px solid #ee5361; }
+    .million-main .team .lists li img {
+      display: block;
+      width: 70%;
+      margin: 0 auto; }
+    .million-main .team .lists li p {
+      box-sizing: border-box;
+      position: absolute;
+      top: -11%;
+      left: 50%;
+      width: 70%;
+      padding: 0 3rem;
+      font-size: 1.4rem;
+      text-align: center;
+      background: #fff4e0;
+      transform: translateX(-50%); }
+    .million-main .team .lists li:first-child p {
+      width: 74%; }
+    .million-main .team .lists li:last-child p {
+      width: 54%; }
+.million-main .activity {
+  padding: 2rem 0; }
+  .million-main .activity h4 {
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e1dfda; }
+    .million-main .activity h4:after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin-left: -4px;
+      border-top: 1px solid #e1dfda;
+      border-right: 1px solid #e1dfda;
+      background: #fff8eb;
+      transform: rotate(-45deg); }
+  .million-main .activity ul {
+    padding: 1rem; }
+    .million-main .activity ul li {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      line-height: 1.7; }
+  .million-main .activity .txt {
+    color: #ccc;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>宝象"爱车"总动员</title>
+    <link rel="stylesheet" href="//www.bxjr.com/topic/css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="//www.bxjr.com/topic/js/jquery-1.8.2.min.js"></script>
+    <script src="//www.bxjr.com/topic/js/layer.js"></script>
+    <style>
+        html,body{
+            max-width:720px;position:relative;
+        }
+    </style>
+</head>
+<body class="main">
+<img src="images/a_banner.jpg" alt="" />
+<section class="section first">
+    <div class="con">
+        <img src="images/a_first_tit.png" class="a_tit" alt="" />
+        <a href="car.html"><img src="images/a_final.png" alt="" /></a>
+        <p>享受一份风驰电掣般的速度感<br />还是期待波澜不惊的稳定性<br />是在摩登都市中耀享尊荣道路<br />还是踏破山水去征服星辰大海<br />驾驭，是力量与智慧的凝结<br />精彩人生旅途<br />揭晓你的终极座驾</p>
+    </div>
+</section>
+<section id="second" class="section second tt">
+    <div class="con">
+        <img src="images/a_second_tit.png" class="a_tit" alt="" />
+        <p class="way">参与方式：用户在活动期间投资指定标的，根据现金投资金额，可以换取不同档次的车配礼品，具体兑换如下</p>
+        <div class="invest">
+            <ul class="clearfix"></ul>
+            <a href="javascript:void(0)" class="m_investBtn"><img src="images/a_invest.png" alt="" /></a>
+        </div>
+        <div class="exchange">
+            <div class="exchangeTable"></div>
+            <ul class="a_txt">
+                <li><i>1</i>本活动投资不含债权转让和月月丰；</li>
+                <li><i>2</i>奖品将于满标后第一个自然周安排发放；</li>
+                <li><i>3</i>宝象金融保留对活动的最终解释权。</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="third" class="section third tt">
+    <div class="con">
+        <img src="images/a_third_tit.png" class="a_tit" alt="" />
+        <p class="way">参与方式：用户邀请新的一级好友在活动期间进行投资（不含债权转让和月月丰），即可获得价值170元的途虎汽车豪华券礼包，被邀请人需是完成实名认证并在活动期间内完成首笔现金投资（100元以上）</p>
+        <p>活动奖励：</p>
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr class="trFirst">
+                <th>邀请合规好友数</th>
+                <th>获得对应奖励 </th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>价值170元途虎券 </td>
+            </tr>
+        </table>
+        <a href="/center/invite/index" class="a_invite"><img src="images/a_invite.png" /></a>
+        <ul class="a_txt">
+            <li><i>1</i>本活动投资不含债权转让和月月丰；</li>
+            <li><i>2</i>奖品将于满标后7个工作日之内发放；</li>
+            <li><i>3</i>宝象金融保留对活动的最终解释权。</li>
+        </ul>
+    </div>
+</section>
+<!--提交收货地址-->
+<div class="a_layerBox a_formBox">
+    <div class="a_layerBg"></div>
+    <form id="a_addressForm" action="" class="a_addressForm a_layerCon">
+        <div class="a_addressTitle">
+            <h2>恭喜您成功兑换</h2>
+            <p>价值<span class="a_price"></span>元<span class="a_name"></span>
+            </p>
+        </div>
+        <label><p>收货人</p><p class="a_userName"></p></label>
+        <label><p>联系电话</p><p class="a_mobile"></p></label>
+        <label class="a_address_txt">
+            <p class="f_s">地     址</p>
+            <input type="text" placeholder="为确保您能收到，请填写详细地址" class="a_address_val" maxlength="25"/>
+            <p class="empty"></p>
+        </label>
+        <button type="button" id="submit" class="submit">提交<i></i></button>
+    </form>
+</div>
+<!--兑换失败-->
+<div class="a_layerBox a_failBox">
+    <div class="a_layerBg"></div>
+    <div class="a_fail a_layerCon">
+        <p class="a_fail_message"></p>
+        <div class="a_fail_btn clearfix">
+            <a href="javascript:void(0)" class="a_fail_close a_layer_close">知道了</a>
+            <a href="/lc/invest/list.html" class="a_fail_invest">去投资</a>
+        </div>
+    </div>
+</div>
+<p class="tip">市场有风险，投资需谨慎</p>
+<!-- 音乐 -->
+<audio id="car_audio"  src="images/music.mp3" autoplay="autoplay" loop="loop" ></audio>
+<script src="//www.bxjr.com/topic/js/wechatLink-1.1.js"></script>
+<script>
+    (function(){
+        /*音乐*/
+        var audio = $('#car_audio');
+        var isPlaying = false;
+        function playAudio() {
+            var audio = $('#car_audio');
+            if (audio.attr('src') == undefined) {
+                audio.attr('src', audio.data('src'));
+            }
+            audio[0].play();
+            isPlaying = true;
+        }
+        function loginFun(){
+            layer.open({
+                content: '您还没有登录，马上去登录？'
+                ,btn: ['确定', '取消']
+                ,yes: function(index){
+                    location.href = "/login/index.html?redirect=/topic/201611/car/"
+                    layer.close(index);
+                }
+            });
+        }
+        indFun();
+        function indFun(){
+            $.ajax({
+                url:'/act-car-love/index.html',
+                success:function(json){
+                    if(!json.success){
+                        loginFun();
+                        $(".invest ul").html('<li><p>您的活动总投资额：<br />您的活动可兑换投资额：</p></li><li><a href="" class="js-list-login detail-blue">登录查看</a><br /><a href="" class="js-list-login detail-blue">登录查看</a></li>')
+                    }else{
+                        $(".invest ul").html('<li><p>您的活动总投资额：<br />您的活动可兑换投资额：</p></li><li><p><i class="a_totalInvest">'+ (json.investAmount ? json.investAmount:0) +'</i>元</p><p><i class="a_count">'+( json.canUseMoney? json.canUseMoney:0) +'</i>元</p></li>')
+                    }
+                    $(".js-list-login").on("click",function(e){
+                        $.ajax({
+                            url: '/secure/get-login-info.html',
+                            success: function (json) {
+                                if(!json.isLogin){
+                                    loginFun();
+                                    return false;
+                                }
+                            }
+                        });
+                        e.preventDefault();
+                    });
+                    if(!json.type){
+                        layer.open({
+                                content:json.message
+                            });
+                    }
+                    var html = "";
+                    for(var i = 0 , len = json.data.length ; i < len ; i++){
+                        html += '<table cellpadding="0" cellspacing="0" id='+ json.data[i].giftId +'>';
+                        html += '<tr>';
+                        html += '<td rowspan="3" class="flImg"><img src='+  json.data[i].logo +' /></td>';
+                        html += '<td class="tr"><p>兑换所需现金投资额:  <span><i class="exPr">'+ json.data[i].exchangePrice + '</i>'+'元</span></p></td>';
+                        html += '</tr>';
+                        html += '<tr>';
+                        html += '<td class="tr"><h4>价值' + json.data[i].giftPrice + '元'+ json.data[i].giftName +'</h4></td>';
+                        html += '</tr>';
+                        html += '<tr>';
+                        html += '<td class="tr"><a href="javascript:void(0)" class="a_exBtn"><img src="images/a_exchange.png"/></a></td>';
+                        html += '</tr>';
+                        html += '</table>';
+                    }
+                    $(".exchangeTable").html(html);
+                    exchangeNow();
+                }
+
+            });
+        }
+
+        function exchangeNow(){//立即兑换
+            $(".a_exBtn").unbind("click");
+            $(".a_exBtn").on("click",function(e){
+                var id = $(this).parents("table").attr("id");
+                $.ajax({
+                    url:'/act-car-love/trade.html',
+                    type:'post',
+                    data:{giftId:id},
+                    success:function(json){
+                        if(!json.success){
+                            loginFun();
+                            return false;
+                        }
+                        if(!json.type){
+                            var failBox = $(".a_failBox");
+                            failBox.show();
+                            $(".a_fail_message").text(json.message);
+                            return false;
+                        }
+                        var a_formBox = $(".a_formBox");
+                        a_formBox.show();
+
+                        $(".a_price").text(json.price);
+                        $(".a_name").text(json.giftName);
+                        $(".a_mobile").text(json.mobile);
+                        $(".a_userName").text(json.userName);
+                        $(".a_address_val").val(json.address).focus();
+                        indFun();
+                        $(".a_count").text(json.canUseMoney);
+                        sendAddress();//提交地址
+                    }
+                });
+                /*关闭弹框*/
+                $(".a_layerBg,.a_layer_close").on("click",function(){
+                    $(".a_layerBox").hide();
+                });
+                e.preventDefault();
+            })
+        }//立即兑换
+
+        function sendAddress(){
+            $(".submit").unbind("click");
+            $(".submit").on("click",function(){
+                var txt = $(this).siblings(".a_address_txt").find("input").val();
+                $.ajax({
+                    url:'/act-car-love/save-address.html',
+                    type:"post",
+                    data:{address:txt},
+                    success:function(json){
+                        if(!json.success){
+                            loginFun();
+                            return false;
+                        }
+                        if(!json.type){
+                            $(".empty").show().text(json.message);
+                            $(".a_address_val").bind("keyup input focus",function(){
+                                if($(".a_address_val").val() != ""){
+                                    $(".empty").hide();
+                                }
+                            });
+                            return false;
+                        }
+                        $(".a_formBox").hide();
+                        layer.open({
+                            content:'谢谢您，奖品将于满标后第一个自然周安排发放'
+                        });
+                    }
+                })
+            });
+        }//提交
+
+        subBtn();//立即投资
+        function subBtn(){
+            $(".m_investBtn,.a_fail_invest").unbind("click");
+            $(".m_investBtn,.a_fail_invest").on("click",function(e){
+                $.ajax({
+                    url:'/act-car-love/go-invest.html',
+                    success:function(json){
+                        if(!json.success){
+                            loginFun();
+                            return false;
+                        }
+                        if(!json.type){
+                            layer.open({
+                                content:json.message
+                            });
+                            return false;
+                        }
+                        location.href = "/lc/invest/confirm/" + json.investId + ".html";
+                        $(".a_fail_invest").attr("href","/lc/invest/detail/" + json.investId + ".html");
+                    }
+                });
+                e.preventDefault();
+            })
+        }
+        $(".a_invite").on("click",function(e){
+            $.ajax({
+                url:'/secure/get-login-info.html',
+                success:function(json){
+                    if(!json.isLogin){
+                        loginFun();
+                        return false;
+                    }
+                    location.href = "/center/invite/index"
+                }
+            });
+            e.preventDefault();
+        });
+        /*分享*/
+        share();
+        function share(){
+            var wechatShare=new WeChatShare(),
+                    shareData ={
+                    shareConfig:{
+                        title: "天哪！我的终极座驾是劳斯莱斯-幻影，你也来测一测吧！",
+                        desc: "劳斯莱斯or保时捷，你的终极座驾你来做主！",
+                        link: location.href,
+                        imgUrl: "http://100cfp.oss-cn-hangzhou.aliyuncs.com/upload/image/fa453e8f-057a-4e56-b27b-e50c0bf9f21f.png"
+                    },
+                    menuList:{
+                        menuList: [
+                            'menuItem:readMode', // 阅读模式
+                            'menuItem:share:timeline', // 分享到朋友圈
+                            'menuItem:copyUrl', // 复制链接
+                            'menuItem:share:appMessage'
+                        ]
+                    },
+                    callback:function(){}
+            };
+            wechatShare.init(shareData);
+        }
+
+        $('.a_address_val').on('input', function () {
+          if($(this).val().length == 25) {
+            $(this).one('keydown', function () {
+              $('.empty').show()
+              $('.empty')[0].innerText = '请填写不超过25位字符'
+            })
+          } else {
+            $('.empty').hide()
+          }
+        })
+        $('.a_address_val').on('blur', function () {
+          if($(this).val().length <= 25) {
+              $('.empty').hide()
+          }
+        })
+    }());
+</script>
+
+<div style="display:none">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var s = document.getElementsByTagName("script")[0];
+            //百度统计
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9d8516b072af1baf608b889209361cbe";
+            s.parentNode.insertBefore(hm, s);
+            //友盟统计
+            var ym = document.createElement("script");
+            ym.src = "//s4.cnzz.com/z_stat.php?id=1258672745";
+            s.parentNode.insertBefore(ym, s);
+        })();
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>创建元素</title>
+
+</head>
+
+<body>
+	<div class="box" id="box">
+		<p class="con" id="con">第一个段落</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var box=document.getElementById("box");	//找到父节点
+	var element=document.createElement("p");	//创建新的节点
+	element.innerHTML="第一个标题";	//给新的节点添加内容
+	box.appendChild(element);	//追加到父元素末尾
+</script>
+
+</html>

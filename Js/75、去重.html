@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Boolean测试</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	Array.prototype.clearRepeat = function () {
+		var n = {};
+		var r = []; //临时数组存放没有重复的数据
+		for (var i = 0, len = this.length; i < len; i++) {
+			if (!n[this[i]]) { //利用对象n[属性名]查找属性值判断，如果没有当前属性值返回undefined，undefined在boolean是返回flase
+				n[this[i]] = true; //将当前数组元素添加为n对象的属性，属性值为true。
+				r.push(this[i]); //将当前数组元素追加到临时数组的末尾。
+			}
+		}
+		return r;
+	}
+	var arr = [1, 2, 3, 3, 2, 5, 2, 6, ];
+	document.write(arr.clearRepeat());
+</script>
+
+</html>

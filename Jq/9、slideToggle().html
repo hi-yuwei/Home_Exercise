@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>7、slideToggle()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#side").click(function () {
+				$(".box").slideToggle(1000);
+			})
+		})
+	</script>
+	<style type="text/css">
+		.side {
+			width: 500px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: green;
+			cursor: pointer;
+		}
+		
+		.box {
+			width: 500px;
+			height: 200px;
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="side" class="side">slideToggle</div>
+	<div class="box">
+
+	</div>
+</body>
+
+</html>

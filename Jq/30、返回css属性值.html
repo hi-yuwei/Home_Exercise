@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>30、返回css属性值</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				$(".blue").text($(".blue").css("color"));
+			})
+		})
+	</script>
+	<style type="text/css">
+		.blue {
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<p class="blue" id="p1">对被选元素添加/删除类操作</p>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

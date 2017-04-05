@@ -1,0 +1,31 @@
+<!doctype html>
+<html id="app" _manifest="bx.appcache">
+<head>
+<meta charset="UTF-8">
+<title>{{Name}}</title>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,user-scalable=no" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="宝象金融" />
+<link rel="apple-touch-icon-precomposed" href="static/src/logo.png" />
+<script src="static/lib/sea.js"></script>
+</head>
+<body :class=[bodyClass,bodyColor]>
+<navigation></navigation>
+
+<router-view></router-view>
+
+<script src="static/lib/zepto.min.js"></script>
+<!--<script src="static/lib/vue.min.js"></script>-->
+<script src="static/lib/vue.js"></script>
+<script src="static/lib/vue-router.min.js"></script>
+<script>
+(function() {
+window.setToken = function(accessToken){try{sessionStorage['persion'] = JSON.stringify({"accessToken": accessToken});}catch(r){}};
+seajs.config({base:'./static', charset:'utf-8', map: [[ /^(.*\.(?:css|js|html))(.*)$/i, '$1?v=1.0.1']], paths:{}});
+seajs.use(['app.js']);
+})();
+</script>
+</body>
+</html>

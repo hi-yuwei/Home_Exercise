@@ -1,0 +1,181 @@
+/* 
+* @Author: Administrator
+* @Date:   2015-08-14 16:17:27
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-09-20 22:36:30
+*/
+
+
+/*css reset*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+h2 {
+	color: #14B9D6;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+i {
+	display: inline-block;
+	font-style: normal;
+}
+
+fieldset,
+img {
+	border: none;
+}
+
+img {
+	display: block;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+textarea {
+	resize: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+body {
+	color: #6C6C6C;
+	background: #E2E6EC;
+	font-size: 12px;
+	font-family: "Microsoft YaHei", "iconfont"!important;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+a {
+	font-size: 12px;
+	color: #bcbfc4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #14B9D6;
+}
+
+.w1008 {
+	width: 1008px;
+}
+
+.w720 {
+	width: 720px;
+}
+
+.h360 {
+	height: 360px;
+}
+
+.fontC {
+	color: #bcbfc4;
+}
+
+.fontB {
+	color: #14B9D6;
+}
+
+.font16 {
+	font-size: 16px;
+}
+
+.noMargin {
+	margin-right: 0px!important;
+}
+
+.noBorder_Bottom {
+	border-bottom: 0px!important;
+}
+
+.mt10 {
+	margin-top: 10px!important;
+}
+
+.mt50 {
+	margin-top: 50px!important;
+}
+
+.btb {
+	border-top: 1px solid #14B9D6;
+}
+
+.btb2 {
+	border-top: 2px solid #14B9D6;
+}
+
+.textleft {
+	text-align: left;
+}
+
+.textright {
+	text-align: right;
+}
+
+.colorR {
+	color: #EB5B4C;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../icon/iconfont.eot');
+	/* IE9*/
+	src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'), url('../icon/iconfont.woff') format('woff'), url('../icon/iconfont.ttf') format('truetype'), url('../icon/iconfont.svg#iconfont') format('svg');
+	/* iOS 4.1- */
+}
+
+li.currentBg {
+	background: #f7f7f7;
+}
+
+
+/*=====================================CSS初始化=====================================*/

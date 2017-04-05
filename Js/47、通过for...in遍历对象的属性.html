@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>通过for...in遍历对象的属性</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	var person = {
+		name: "beck",
+		age: 27,
+		sex: "男",
+		address: "上海闵行区浦江镇",
+		say: function () {
+			return "HI：" + this.name + this.age + this.sex + this.address;
+		}
+	};
+	var txt="";
+	for (x in person) {
+		txt+=person[x];
+	}
+	document.write(txt);
+	//注：此时将person对象的函数也遍历出来了
+</script>
+
+</html>

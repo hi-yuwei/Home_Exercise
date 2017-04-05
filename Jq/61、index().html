@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>61、index()</title>
+	<style type="text/css">
+		ul li {
+			list-style: none;
+			line-height: 25px;
+			width: 200px;
+			height: 25px;
+			border: 1px solid #000;
+			margin-bottom: 5px;
+			text-indent: 1em;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#li-3").index(); //返回2
+			$(".list >li").index($("#li-2")); //返回1
+			$(".list>li").index($("li-5")); //返回 - 1
+		})
+	</script>
+</head>
+
+<body>
+	<ul class="list">
+		<li id="li-1">1</li>
+		<li id="li-2">2</li>
+		<li id="li-3">3</li>
+		<li id="li-4">4</li>
+	</ul>
+</body>
+
+
+</html>

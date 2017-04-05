@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON方法parse()</title>
+    <script type="text/javascript">
+        //犯浑写法：报错，因为JSONObj已是json对象，直接JSONObj[0]["name"]取值即可，无需再反序列化。
+        /*var JSONObj = [
+            {"name":"钢铁侠","nickname":"铁人"},
+            {"name":"美国队长","nickname":"铁牌"},
+            {"name":"黑寡妇","nickname":"玫瑰"}
+        ];
+        var JSONobj=JSON.parse(JSONObj);
+        console.log(JSONObj[0]["name"]);*/
+
+        //正确写法：data是字符串形式的json对象，使用JSON.parse()方法反序列化为json对象。
+        var data= '['
+                +'{"name":"6101","value":"西安市"},'
+                +'{"name":"6102","value":"铜川市"},'
+                +'{"name":"6103","value":"宝鸡市"},'
+                +'{"name":"6104","value":"咸阳市"},'
+                +'{"name":"6105","value":"渭南市"},'
+                +'{"name":"6106","value":"延安市"},'
+                +'{"name":"6107","value":"汉中市"},'
+                +'{"name":"6108","value":"榆林市"},'
+                +'{"name":"6109","value":"安康市"},'
+                +'{"name":"6110","value":"商洛市"}'
+                +']';
+        var JSONObj=JSON.parse(data);
+        console.log(JSONObj[0]["value"]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

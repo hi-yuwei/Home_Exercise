@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>检测用户设备</title>
+	<script type="text/javascript" src="./js/device.min.js"></script>
+	<script type="text/javascript">
+	window.onload=function(){
+		if(device.iphone()){
+			document.getElementById("info").innerHTML="您在使用苹果手机访问";
+		}
+		else if(device.android()){
+			document.getElementById("info").innerHTML="您在使用安卓手机访问";
+		}
+	}
+	</script>
+</head>
+<body>
+	<h1 id="info">你的PC端</h1>
+</body>
+</html>

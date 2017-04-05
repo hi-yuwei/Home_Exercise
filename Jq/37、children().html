@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>36、children()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				$(".box").children().css({
+					"width": "200px",
+					"height": "100px",
+					"margin-bottom": "10px",
+					"border": "1px solid red"
+				})
+			})
+		})
+	</script>
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<div>
+			<p><a href="#">百度</a></p>
+		</div>
+		<div>
+			<p><a href="#">阿里</a></p>
+		</div>
+		<div>
+			<p><a href="#">腾讯</a></p>
+		</div>
+		<div>
+			<p><a href="#">新浪</a></p>
+		</div>
+	</div>
+
+	<button id="append">Click Me</button>
+</body>
+
+</html>

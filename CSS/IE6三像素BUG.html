@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>IE6三像素BUG</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.main{
+			margin:50px auto;
+			width:1000px;
+			height:500px;
+			border:1px solid #000;
+		}
+		.leftBox{
+			width:200px;
+			height:100px;
+			float:left;
+			background:red;
+			_margin-right:-3px;	/*解决在IE6下3pxBug*/
+		}
+		.rightBox{
+			height:100px;
+			background:yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="leftBox"></div>
+		<div class="rightBox"></div>
+	</div>
+</body>
+</html>

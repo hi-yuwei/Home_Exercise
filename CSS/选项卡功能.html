@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡功能</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.option{
+			width:450px;
+			height:200px;
+			margin:0 auto;
+			border: 1px solid #000;
+		}
+		.option-Title{
+			overflow:hidden;
+			zoom:1;
+		}
+		.option-Title a{
+			float:left;
+			width:150px;
+			height:100px;
+			line-height:100px;
+			text-align:center;
+		}
+		.option-Con-Box1,.option-Con-Box2,.option-Con-Box3{
+			height:100px;
+			background:red;
+			display:none;
+		}
+		.current{
+			display:block;
+		}
+		a.boxShow{
+			background:gray;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery-1.4.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var titles=$(".option-Title a");
+		var divs=$(".option-Con div");
+		titles.click(function(){
+			$(this).addClass('boxShow').siblings().removeClass('boxShow');
+			divs.eq($(this).index()).addClass('current').siblings().removeClass('current');
+		})
+	})
+	</script>
+</head>
+<body>
+	<article>
+		<div class="option">
+			<div class="option-Title ">
+				<a href="javascript:void(0)" class="boxShow">国内新闻</a>
+				<a href="javascript:void(0)">国际新闻</a>
+				<a href="javascript:void(0)">军事新闻</a>
+			</div>
+			<div class="option-Con">
+				<div class="option-Con-Box1 current">1</div>
+				<div class="option-Con-Box2">2</div>
+				<div class="option-Con-Box3">3</div>
+			</div>
+		</div>
+	</article>
+</body>
+</html>

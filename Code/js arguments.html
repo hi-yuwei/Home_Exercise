@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>arguments</title>
+</head>
+
+<body>
+</body>
+<script>
+    //    'use strict';
+    //    function add(x, y) {
+    //        var sum = 0;
+    //        for (var i = 2, len = arguments.length; i < len; i++) {
+    //            sum += arguments[i];
+    //        }
+    //        return sum;
+    //    }
+    //    document.write(add(1, 2, 3, 4, 5));
+    //    'use strict';
+    //
+    //    function add(x, y, z, ...rest) {
+    //        var sum = 0;
+    //        for (var i = 0, len = rest.length; i < len; i++) {
+    //            sum += rest[i];
+    //        }
+    //        return sum;
+    //    }
+    //    document.write(add(1, 2, 3, 4, 4, 4, 4, 4, 4, 4));
+    //    (function add() {
+    //        var x = 1;
+    //
+    //        (function minus() {
+    //            var y = x + 1;
+    //            document.write("y:" + y);
+    //        })();
+    //        var z = y + x;
+    //        document.write("z:" + z);
+    //    })();
+
+    //    (function say() {
+    //        var x = "Hello," + y;
+    //        document.write(x);
+    //        var y = "yuwei";
+    //    })();
+    //    var mayAPP = {};
+    //    mayAPP.name = "yu";
+    // function getAge() { // var date = new Date().getFullYear(); // require date - this.birth; // // }
+    "use strict"
+    var beck = {
+        name: "beck",
+        birth: 1990,
+        age: function() {
+            var date = new Date().getFullYear();
+            return date - this.birth;
+        }
+    }
+    document.write(beck.age);
+    //    document.write(getAge());
+
+</script>
+
+<!--
+<script>
+    var clientApp = {};
+    clientApp.name = "beck";
+
+</script>
+<script>
+    alert(mayAPP.name);
+
+</script>
+-->
+
+</html>

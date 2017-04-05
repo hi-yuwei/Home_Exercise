@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象的方法并调用方法</title>
+    <style type="text/css">
+        p {
+            color: red;
+            line-height: 2;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+</body>
+<script>
+    var person = {
+        firstname: "yu",
+        lastname: "wei",
+        age: 27,
+        say: function () {
+            return "大家好" + this.firstname + this.lastname + this.age;
+        }
+    };
+    document.querySelector("p").innerHTML = person.say();
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+p,ul{margin:0}*,html{box-sizing:border-box}body{font-size:12px;line-height:1.5;font-family:Heiti}ul{padding:0}ul li{list-style:none}strong{font-weight:400}a{color:#666;text-decoration:none}.bx-main{width:100%;min-width:1200px;overflow:hidden}.bx-main .w1200{width:1200px;margin:0 auto}.bx-main .clearfix:after{content:'';display:block;clear:both}.bx-main .fl{float:left}.bx-main .fr{float:right}.bx-main img{vertical-align:middle}.bx-main .bb1{border-bottom:1px solid #E4E7F5}.bx-main .mb37{margin-bottom:37px}.bx-head{position:relative;left:50%;width:1920px;margin-left:-960px}.bx-nav-wrap{position:absolute;top:0;left:0;width:100%;height:95px}.bx-nav-wrap .nav-main{height:95px;padding:26px 7px 18px}.bx-nav-wrap .nav-main .img-logo{width:153px;height:50px;background:url(../images/bx_logo.png) center no-repeat}.bx-nav-wrap .nav-main .nav-list{width:694px;padding:21px 0 7px;margin-left:89px}.bx-nav-wrap .nav-main .nav-list li{float:left}.bx-nav-wrap .nav-main .nav-list li a{display:block;padding:0 15px;font-size:18px;color:#fff}.bx-nav-wrap .nav-main .nav-list li:not(:last-child){margin-rigth:18px}.bx-nav-wrap .nav-main .nav-login{padding-top:23px}.bx-nav-wrap .nav-main .nav-login a{height:17px;line-height:17px;font-size:14px;padding:0 18px;color:#fff}.bx-nav-wrap .nav-main .nav-login a:first-child{border-right:1px solid #fff}.bx-endorse{width:100%;background:#fff}.bx-endorse .endorse-data{padding:30px 0 16px;font-size:14px;color:#999}.bx-endorse .endorse-data .endorse-data-list li{float:left;width:25%}.bx-endorse .endorse-data .endorse-data-list .endorse-data-list-txt span{margin-left:7px;letter-spacing:2px}.bx-endorse .endorse-data .endorse-data-list .endorse-data-list-txt strong{font-size:26px;color:#333}.bx-endorse .endorse-data .endorse-data-list .endorse-total{width:29%}.bx-endorse .endorse-data .endorse-data-list .endorse-person{width:23%}.bx-endorse .endorse-data .endorse-data-list .endorse-deal{width:27%}.bx-endorse .endorse-data .endorse-data-list .endorse-user{width:21%}.bx-endorse .endorse-present{padding:44px 0 32px}.bx-endorse .endorse-present .endorse-tag{width:920px;padding:2px 0 3px}.bx-endorse .endorse-present .endorse-tag .tag-list-con{float:left;width:33.333%}.bx-endorse .endorse-present .endorse-tag .tag-list-con .icon-tag{display:inline-block;vertical-align:middle;width:58px;height:58px;background-image:url(../images/icon_introduce.png);background-repeat:no-repeat}.bx-endorse .endorse-present .endorse-tag .tag-list-con .tag-txt{display:inline-block;vertical-align:middle;font-size:14px;color:#868686}.bx-endorse .endorse-present .endorse-tag .tag-list-con .tag-txt strong{font-size:16px;color:#3f4457}.bx-endorse .endorse-present .endorse-tag .tag-icon-agro{background-position:0 0}.bx-endorse .endorse-present .endorse-tag .tag-icon-fund{background-position:-58px 0}.bx-endorse .endorse-present .endorse-tag .tag-icon-history{background-position:-116px 0}.bx-endorse .endorse-present .endorse-tag .tag-icon-safe{background-position:-174px 0}.bx-endorse .endorse-present .endorse-tag .tag-icon-ranking{background-position:-232px 0}.bx-endorse .endorse-present .endorse-tag .tag-icon-data{background-position:-290px 0}.bx-endorse .endorse-present .endorse-video{width:280px;height:158px;background:red}         vertical-align: middle;
+          width: 58px;
+          height: 58px;
+          background-image: url("../images/icon_introduce.png");
+          background-repeat: no-repeat; }
+        .bx-endorse .endorse-present .endorse-tag .tag-list-con .tag-txt {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 14px;
+          color: #868686; }
+          .bx-endorse .endorse-present .endorse-tag .tag-list-con .tag-txt strong {
+            font-size: 16px;
+            color: #3f4457; }
+      .bx-endorse .endorse-present .endorse-tag .tag-icon-agro {
+        background-position: 0 0; }
+      .bx-endorse .endorse-present .endorse-tag .tag-icon-fund {
+        background-position: -58px 0; }
+      .bx-endorse .endorse-present .endorse-tag .tag-icon-history {
+        background-position: -116px 0; }
+      .bx-endorse .endorse-present .endorse-tag .tag-icon-safe {
+        background-position: -174px 0; }
+      .bx-endorse .endorse-present .endorse-tag .tag-icon-ranking {
+        background-position: -232px 0; }
+      .bx-endorse .endorse-present .endorse-tag .tag-icon-data {
+        background-position: -290px 0; }
+    .bx-endorse .endorse-present .endorse-video {
+      width: 280px;
+      height: 158px;
+      background: red; }

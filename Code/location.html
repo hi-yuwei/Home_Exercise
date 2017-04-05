@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location对象</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    if(confirm("要重新加载页面"+location.href+"?")){
+        location.reload();  //重新加载当前页面
+    }else{
+        location.assign("http://www.baidu.com");    //在当前页打开新的url
+    }
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹出框倒计时</title>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            height:100%;
+        }
+        .box{
+            overflow: hidden;
+            height:100%;
+            background: dodgerblue;
+        }
+        .btn{
+            position: relative;
+            top:50%;
+            width:150px;
+            height:60px;
+            margin:-30px auto 0;
+            background: yellow;
+        }
+    </style>
+    <script type="text/javascript" src="../jq/jquery.js"></script>
+    <script type="text/javascript" src="./layer/layer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".btn").on("click",function(){
+/*                layer.confirm(
+                    '<div><p>Hello,world</p><p class="countDown">5s秒后关闭</p></div>',
+                        {
+                            icon:3,
+                            title:'提示',
+                            area:['300px','200px'],
+                            btn:false,
+                            time:5000
+                        },function(index){
+                            alert(1);
+                        }
+
+                );*/
+                layer.open({
+                    type:0,
+                    title:"提示1",
+                    area:["300px","200px"],
+                    contnet:'yellow',
+                    btn:false,
+                    success:function(layero,index){
+                        var timer=null,i=5;
+                        var countDown=function(){
+                            i--;
+                            if(i!==0){
+                                $("。countDown").text(i);
+                            }else{
+                                clearInterval(timer);
+                            }
+                        };
+                        clearInterval(timer);
+                        timer=setInterval(countDown,5000);
+                    }
+                })
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="btn"></div>
+    </div>
+</body>
+</html>

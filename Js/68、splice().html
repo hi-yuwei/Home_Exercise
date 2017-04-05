@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>splice()</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	var arr = [1, 2, 3, 4];
+	//替换
+	document.write(arr.splice(2, 1, 5) + "</br>"); //splice方法用于替换时，返回被删除的元素
+	document.write(arr + "</br>");
+	//删除
+	document.write(arr.splice(2, 1) + "</br>"); //splice方法用于删除时，返回被删除的元素
+	//添加
+	document.write(arr.splice(2, 0, 11, 11, 11, 11) + "</br>"); //splice方法用于追加时，没有返回值
+	document.write(arr);
+</script>
+
+</html>

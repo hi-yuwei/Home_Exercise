@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>65、removeAttr</title>
+	<style type="text/css">
+		.bg {
+			background: #f499db;
+			line-height: 25px;
+			color: black;
+		}
+		/*修改placeholder颜色*/
+		
+		.bg::-webkit-input-placeholder {
+			color: black;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("input").removeAttr("placeholder");
+		})
+	</script>
+</head>
+
+<body>
+	<input type="text" placeholder="请输入关键词" autofocus class="bg" />
+</body>
+
+
+</html>

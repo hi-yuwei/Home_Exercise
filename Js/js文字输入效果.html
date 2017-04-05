@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>js文字输入效果()</title>
+	<style type="text/css">
+		.box {
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			text-align: justify;
+			border: 1px solid #000;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var box = $(".box");
+			var str = "Rather than using the strings array to insert strings, you can place an HTML div on the page and read from it. This allows bots and search engines, as well as users with JavaScript disabled, to see your text on the page.";
+			var index = 0;
+			var timer = null;
+
+			timer = setInterval(function () {
+				box.append(str.charAt(index));
+				if (index++ === str.length) {
+					clearInterval(timer);
+				}
+			}, 20)
+		})
+	</script>
+</head>
+
+<body>
+	<div class="box"></div>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="//cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+</head>
+<body>
+    <!--DOM结构-->
+    <div class="bdsharebuttonbox" data-tag="share_1">
+        <a class="bds_weixin" data-cmd="weixin"></a>
+        <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+        <a class="bds_tsina" data-cmd="tsina"></a>
+        <a class="bds_sqq" data-cmd="sqq"></a>
+        <a class="bds_tqq" data-cmd="tqq"></a>
+        <a class="bds_more" data-cmd="more"></a>
+    </div>
+    <!--自己写的内容-->
+    <div class="con">
+        这是分享的内容
+    </div>
+<script>
+    //全局配置
+    window._bd_share_config = {
+        common: {
+            bdText: document.title,
+            bdDesc: $('.con').html(),
+            //注意本地测试时，如果地址是locathost无效，可以将地址改为127.0.0.1
+            bdUrl: location.href
+        },
+        share: [{
+            "bdSize": 16    //按钮尺寸
+        }]
+    }
+    //引用插件
+    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+</body>
+</html>

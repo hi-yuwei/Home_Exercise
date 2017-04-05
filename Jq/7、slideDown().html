@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>7、sideDown()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#side").click(function () {
+				$(".box").slideDown(1000);
+			})
+		})
+	</script>
+	<style type="text/css">
+		.side {
+			width: 500px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: green;
+		}
+		
+		.box {
+			width: 500px;
+			height: 200px;
+			display: none;
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="side" class="side">slideDown</div>
+	<div class="box">
+
+	</div>
+</body>
+
+</html>

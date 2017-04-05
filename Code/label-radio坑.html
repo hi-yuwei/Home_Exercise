@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .lab{
+            display: block;
+            width:200px;
+            height:100px;
+            border:1px solid #000;
+        }
+    </style>
+    <script type="text/javascript" src="./validation/lib/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".hezi .lab").on("click",function(e){
+                console.log(e.target);
+//                alert($(this).index());
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <input type="hidden" >
+        <section class="hezi">
+        <label for="ll" class="lab">
+            <input type="radio" id="ll"  name="sel"  />
+            <div>111</div>
+        </label>
+        <label for="jd"  class="lab">
+            <input type="radio" id="jd" name="sel">
+            <div>111</div>
+        </label>
+        </section>
+    </div>
+</body>
+</html>

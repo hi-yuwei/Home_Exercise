@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>冒泡事件</title>
+
+	<style type="text/css">
+		section,
+		div,
+		p {
+			background: red;
+			height: 500px;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="sec">
+		<div onclick="alert('div')">
+			<p onclick="alert(' p ')">
+				<input type="button" value="Click Me" id="click" onclick="alert('input')" />
+			</p>
+		</div>
+	</section>
+</body>
+<script type="text/javascript">
+	document.getElementById("sec").onclick = function () {
+		alert("section");
+	}
+</script>
+
+</html>

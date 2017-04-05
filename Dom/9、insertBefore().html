@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>insertBefore()</title>
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var lis = document.createElement("li");
+	var txt = document.createTextNode("js插入");
+	lis.appendChild(txt);
+
+	var list = document.getElementById("list");
+	list.insertBefore(lis, list.childNodes[1]);
+</script>
+
+</html>

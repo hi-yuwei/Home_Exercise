@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+    <script>
+        $(function () {
+            var num = 10, timer;
+            //函数表达式（匿名函数）
+            var Down = function () {
+                if (--num) {
+                    console.log(num);
+                } else {
+                    clearInterval(timer);
+                }
+            }
+            //函数声明式
+            function count() {
+                return function(){
+                    if (num--) {
+                        console.log(num);
+                    } else {
+                        clearInterval(timer);
+                    }
+                }
+
+            }
+
+            clearInterval(timer);
+            timer = setInterval("Down", 100); //报错
+            timer = setInterval("Down()", 100); //报错
+            timer = setInterval(Down(), 100); //只执行一次
+            timer = setInterval(Down, 100); //正常
+
+
+            timer = setInterval("count", 100); //报错
+            timer = setInterval("count()", 100);   //报错
+            timer = setInterval(count(), 100); //只执行一次
+            timer = setInterval(count, 100);
+
+        })
+    </script>
+</head>
+<body>
+<div class="underline">
+    <ul>
+        <li>
+            <a href="javascript:;"></a>
+            <i></i>
+        </li>
+        <li>
+            <a href="javascript:;"></a>
+            <i></i>
+        </li>
+        <li>
+            <a href="javascript:;"></a>
+            <i></i>
+        </li>
+        <li>
+            <a href="javascript:;"></a>
+            <i></i>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

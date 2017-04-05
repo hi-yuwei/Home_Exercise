@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算程序运行时间</title>
+    <script type="text/javascript">
+        var startTime=new Date().getTime(); //得到程序开始前到1970 年 1 月 1 日之间的毫秒数
+        var sum=0;
+        for(var i=0;i<100000000;i++){
+            sum+=i;
+        }
+        document.write(sum);
+        var endTime=new Date().getTime();    //得到程序结束到1970 年 1 月 1 日之间的毫秒数
+        time=(endTime-startTime)/1000;  //相减 除以1000得到秒数
+        console.log(time);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

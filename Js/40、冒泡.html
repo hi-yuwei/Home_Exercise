@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>冒泡</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			margin: 100px auto;
+			width: 100px;
+			height: 100px;
+			border: 1px solid #000;
+		}
+		
+		.con {
+			height: 100px;
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box" id="box">
+		<p class="con" id="con"></p>
+	</div>
+</body>
+<script>
+	document.getElementById("box").onclick=function(){
+		alert("div盒子");
+	}
+	document.getElementById("con").onclick=function(){
+		alert("P盒子");
+	}
+</script>
+
+</html>

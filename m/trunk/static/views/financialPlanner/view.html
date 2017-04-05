@@ -1,0 +1,47 @@
+<section id="page" class="customer_page" transition="slideRight">
+	<div class="info" v-bind:style="{backgroundColor : viewbgc}">
+	<template v-if="customer.info.isSuccess == false">
+		<h1>{{customer.info.message}}</h1>
+	</template>
+	<template v-if="customer.info.isSuccess == true">
+		<strong>{{customer.info.data.realName }}</strong>
+		<p>{{customer.info.data.mobile }}</p>
+		<div class="info_b">
+			<div>账户余额(元) <p>{{customer.info.data.availableMoney}}</p></div>
+			<div>在投金额(元) <p>{{customer.info.data.waitingReceiptAllMoney}}</p></div>
+		</div>
+	</template>
+	</div>
+	<div class="list">
+		<table class="tableA listhead">
+			<thead>
+				<tr>
+					<th>投资项目</th>
+					<th width="33%">回款金额(元)</th>
+					<th width="33%">回款日期</th>
+				</tr>
+			</thead>
+		</table>
+		<table class="tableA listbody">
+			<tbody v-if="customer.list.data.length > 0">
+				<tr v-for="temp in customer.list.data">
+					<td><a :href="'baoxiang://APPProjectInvesting?type='+temp.bType+'&investId='+temp.borrowId">
+					<p>{{ temp.borrowName }}</p><p>{{ temp.interestTime ? temp.interestTime.substring(0,10) : '未起息'}}</p>
+					</a></td>
+					<td width="33%"><a :href="'baoxiang://APPProjectInvesting?type='+temp.bType+'&investId='+temp.borrowId">{{ temp.amount }}</a></td>
+					<td width="33%"><a :href="'baoxiang://APPProjectInvesting?type='+temp.bType+'&investId='+temp.borrowId">{{ temp.nextReceipt.substring(0,10) }}</a></td>
+				</tr>
+			</tbody>
+			<tbody v-if="customer.list.data.length < 1 && customer.list.isSuccess == true">
+				<tr class="noData">
+					<td colspan="3">Ta还没有投资过，赶紧联系Ta！</td>
+				</tr>
+			</tbody>
+			<tbody v-if="customer.list.data.length < 1 && customer.list.isSuccess == false">
+				<tr class="noData">
+					<td colspan="3">{{ customer.list.message }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

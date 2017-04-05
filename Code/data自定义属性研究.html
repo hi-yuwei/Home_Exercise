@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data自定义属性研究</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul.assets {
+            width: auto;
+            height: 110px;
+            background: #999;
+            padding: 15px 0 15px 15px;
+            margin: 15px auto 30px;
+        }
+
+        ul.assets li {
+            color: #000;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        ul.assets li {
+            width: 31%;
+            padding-top: 30px;
+            height: 80px;
+            float: left;
+            text-align: center;
+            margin: 0 5px;
+            position: relative;
+        }
+
+        ul.assets li.on, ul.assets li:hover {
+            background: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("[data-tab-head]").each(function(){
+                var data = $(this).data();
+                console.log(data);
+                data.tabEvent = data.tabEvent ? data.tabEvent : "mousemove";
+                $(data.tabHead).data(data).on(data.tabEvent, function(){
+                    var index = $(data.tabHead).removeClass(data.tabSelect).index(this);
+                    $(this).addClass(data.tabSelect);
+                    $(data.tabShow).hide().eq(index).show();
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<ul class="assets" data-tab-head=".assets li" data-tab-select="on" data-tab-show=".account_c13c .assets_list"
+    data-tab-event="click">
+    <li class="on">
+        <p>可用余额</p>
+        <p class="dgray f24">￥ 0.00</p>
+    </li>
+    <li>
+        <p>账户总资产</p>
+        <p class="dgray f24">￥ 0.00</p>
+        <span></span></li>
+    <li class="last">
+        <p>累计净收益</p>
+        <p class="f_red f24">￥ -1.50</p>
+    </li>
+</ul>
+</body>
+</html>

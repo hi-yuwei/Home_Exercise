@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像懒加载</title>
+    <style type="text/css">
+        ul li{
+            margin:0;
+            padding:0;
+            list-style: none;
+            margin-top:20px;
+        }
+        img {
+            width:200px;
+            height:113px;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="./lazyload.js"></script>
+    <script type="text/javascript">
+       $(function(){
+           $("img.lazy").lazyload({
+               threshold:200,   //设置图片在距离屏幕200PX时提前加载
+               effect:"fadeIn",  //图片加载方式
+               failure_limit:10 //当图片不是顺序排列时
+           });
+       })
+    </script>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg"/></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+            <li><img class="lazy" src="image/abc.png" data-original="http://cdn.duitang.com/uploads/item/201207/27/20120727100119_s4FK5.jpeg" /></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>验证是否为数组对象</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+	var arr = [1, 2, 4, 5];
+	var person = {
+		name: "beck",
+		age: 27
+	};
+
+	function checkArray(arr) {
+		return arr.constructor.toString().indexOf("Array") > -1;
+	}
+	if (checkArray(arr)) {
+		document.write("arr:是数组类型");
+	}
+</script>
+
+</html>

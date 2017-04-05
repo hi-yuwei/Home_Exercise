@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>25、remove()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				//$(".box").remove(); //删除被选元素及其子元素
+				//				$(".box").remove(".p2");
+				$("p").remove(".p2"); //排除类名为p2的元素，其余被删除
+			})
+		})
+	</script>
+	<style type="text/css">
+		.box {
+			width: 100px;
+			background: red;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<!--
+	<div class="box">
+		<p>1</p>
+		<p class="p2">2</p>
+		<p>3</p>
+		<p>4</p>
+	</div>
+-->
+	<p>1</p>
+	<p class="p2">2</p>
+	<p>3</p>
+	<p>4</p>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

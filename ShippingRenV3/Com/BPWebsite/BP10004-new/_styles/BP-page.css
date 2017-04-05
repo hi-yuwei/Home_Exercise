@@ -1,0 +1,131 @@
+﻿@charset "utf-8";
+/*
+ * author: Jack
+ * time: 2015-03-16
+*/
+
+.aboutUs_img {display: block; margin: 55px auto 0;}
+.aboutUs_text {font-size: 14px; line-height: 21px; text-align: center; margin-top: 15px;}
+.index_tabs {width: 1000px; overflow: hidden; margin-top: 55px;}
+.index_tabs ul {float: left; width: 1200px; margin-left: 108px; display: inline;}
+.index_tabs li {float: left; width: 316px;}
+.index_tabs dl ,
+.index_tabs dt,
+.index_tabs dd {float: left; width: 100%; padding-bottom: 20px;}
+.index_tabs dt a {float: left; width: 150px; height: 150px; line-height: 150px; text-align: center; font-size: 26px; color: #6d7075; background: url(../_imgs/tabs.png) no-repeat 0 0;}
+.index_tabs dt a:hover,
+.index_tabs dt a.current {background-position: -150px 0; color: #fff; text-decoration: none;}
+.index_tabs dd {line-height: 19px; padding: 7px 0;}
+.index_tabs dd a {float: left; font-size: 14px; color: #6d7075; padding-left: 18px; background: url(../_imgs/icons.png) no-repeat 0 7px;}
+.index_tabs dd a:hover,
+.index_tabs dd a.current {color: #3ab4ff; text-decoration: none;}
+.index_cont {padding: 0 30px; border-top: 1px solid #bfbfbf; margin-top: 20px;}
+.index_cont .contP,
+.index_cont .contS {display: none;}
+
+.company_info {padding-top: 30px;}
+.company_info .floatImg {float: right; margin: 5px 0 0 20px;}
+.company_info p {font-size: 14px; line-height: 25px;}
+.company_info .textTop {margin-bottom: 20px;}
+.company_info .textBot {text-indent: 2em;}
+.company_info .textComp {font-size: 20px; color: #3ab4ff; margin-right: 10px;}
+.company_history {padding-top: 30px;}
+.company_history .CHImg {display: block; margin: 0 auto;}
+
+.partnerBox ul {float: left; width: 730px; margin: 20px 0 0 150px; display: inline;}
+.partnerBox li {float: left; width: 120px; margin: 10px 50px 30px 0; display: inline;}
+.partnerBox li img {width: 120px; height: 50px; display: block;}
+.partnerBox li span {width: 120px; height: 27px; line-height: 27px; text-align: center; display: block;}
+
+.serviceBox .tit {height: 17px; line-height: 17px; padding: 20px 10px; font-size: 14px; color: #3ab4ff;}
+.serviceBox .info {padding: 0 90px; border-top: 1px solid #f2f2f2;}
+.serviceBox .text {line-height: 23px; padding: 20px 0; color: #6d7075;}
+.serviceBox .imgBox {width: 760px; overflow: hidden;}
+.serviceBox .imgBox ul {float: left; width: 900px;}
+.serviceBox .imgBox li {float: left; width: 218px; height: 128px; border: 1px solid #bfbfbf; margin-right: 50px;}
+.serviceBox .imgBox li img {width: 218px; height: 128px; display: block;}
+
+.latestJob ul {float: left; width: 940px; margin-top: 10px;}
+.latestJob li {float: left; width: 920px; padding: 22px 10px; border-bottom: 1px solid #f2f2f2;}
+.latestJob .tit {height: 21px; line-height: 21px; font-size: 14px; color: #3ab4ff;}
+.latestJob .sub {height: 15px; line-height: 15px; font-size: 14px; color: #666; padding-left: 9px; border-left: 4px solid #3ab4ff; margin-top: 15px;}
+.latestJob .text {line-height: 21px; color: #666; margin-top: 7px;}
+.latestJob .emailAdd {float: left; font-size: 18px; color: #666; margin-top: 20px;}
+.latestJob .emailAdd span {color: #ff6900;}
+
+.hotRecommendList {width: 970px; margin-left: 15px; padding-top: 22px;}
+.hotRecommendList li {float: left; width: 100%; padding: 18px 0; border-bottom: 1px solid #f2f2f2;}
+.hotRecommendList .img,
+.hotRecommendList .img img {float: left; width: 370px; height: 160px;}
+.hotRecommendList .info {float: right; width: 580px;}
+.hotRecommendList .title {font-family: '微软雅黑'; font-size: 26px; font-weight: normal; line-height: 29px; color: #000; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.hotRecommendList .title a,
+.hotRecommendList .title a:hover {color: #000;}
+.hotRecommendList .time {height: 28px; margin-top: 10px;}
+.hotRecommendList .time .tm {color: #b0b0b0; line-height: 15px;}
+.hotRecommendList .text {height: 63px; line-height: 21px; overflow: hidden; color: #878d95; margin-top: 5px; word-wrap: break-word;}
+.hotRecommendList .opts {margin-top: 10px;}
+.hotRecommendList .NsBtnLink {float: right; line-height: 15px;}
+.hotRecommendList .NsBtnLink em {font-family: '宋体';}
+
+.activitiesList {width: 970px; overflow: hidden; padding-top: 20px; margin-left: 15px;}
+.activitiesList ul {float: left; width: 1050px;}
+.activitiesList li {float: left; width: 300px; padding: 20px 0; margin-right: 30px;}
+.activitiesList a {position: relative; display: block; width: 300px; height: 200px;}
+.activitiesList a:hover {text-decoration: none; cursor: pointer;}
+.activitiesList .image {position: relative; z-index: 2; display: block; width: 100%; height: 100%;}
+.activitiesList .titleBox {position: absolute; left: 0; bottom: 0; z-index: 3; width: 100%; height: 40px;}
+.activitiesList .title {position: absolute; left: 0; bottom: 0; z-index: 5; width: 90%; height: 40px; margin-left: 5%; display: inline; font-family: Microsoft YaHei; font-size: 16px; font-weight: normal; line-height: 40px; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.activitiesList .layer {position: absolute; left: 0; bottom: 0; z-index: 4; width: 100%; height: 100%; background: #000; opacity: 0.6; filter: alpha(opacity=60);}
+.activitiesList a:hover .titleBox {height: 100%;}
+.activitiesList a:hover .layer {background: #008dff;}
+
+.contactUs_list {width: 100%; overflow: hidden; padding-top: 10px;}
+.contactUs_list ul {float: left; margin-bottom: -1px;}
+.contactUs_list li {float: left; width: 100%; padding: 28px 0 25px; border-bottom: 1px solid #f2f2f2; color: #666;}
+.contactUs_list .info {float: left; width: 640px;}
+.contactUs_list .title {height: 20px; padding-left: 14px; font-size: 16px; font-weight: normal; line-height: 20px; color: #008dff; border-left: 6px solid #96af3b;}
+.contactUs_list .text {margin-top: 10px; padding-left: 20px;}
+.contactUs_list .text p {font-size: 14px; line-height: 21px; margin-top: 1px;}
+.contactUs_list .image {float: right;}
+
+.detail_info_cont {width: 970px; margin-left: 15px; padding-top: 40px;}
+.detail_info_cont .top {padding-bottom: 22px; border-bottom: 1px solid #d1cfcf;}
+.detail_info_cont .tit {font-size: 22px; font-weight: normal; text-align: center;}
+.detail_info_cont .opt {font-family: '宋体'; line-height: 15px; color: #b7b7b7; text-align: center; margin-top: 10px;}
+.detail_info_cont .cont {width: 810px; padding: 1.5em 80px 1em; font-size: 14px; line-height: 1.7em; word-wrap: break-word;}
+.detail_info_cont .cont img {display: block; margin: 0.5em auto;}
+
+.service_list li {border-bottom: 0;}
+.service_list .title {padding: 0 80px; border: 0 none; color: #3ab4ff;}
+.service_list .text {padding: 0 80px; margin-top: 10px; line-height: 33px;}
+
+/* 改版 */
+.bigTitle {margin-top: 20px;}
+.bigTitle h2 {float: left; height: 50px; font-size: 38px; line-height: 50px; color: #008dff;}
+.bigTitle em {float: left; margin: 6px 0 0 5px; font-size: 18px; line-height: 20px; color: #96af3b;}
+.bigTitle strong {float: left; height: 50px; font-size: 38px; line-height: 50px; color: #96af3b;}
+
+.aboutUsTxtEN {padding: 0 30px; margin-top: 40px;}
+.aboutUsTxtEN h1 {height: 50px; font-size: 44px; font-weight: normal; line-height: 50px; color: #008dff; text-align: center;}
+.aboutUsTxtEN h1 em {color: #96af3b;}
+.aboutUsTxtEN h3 {height: 20px; font-size: 16px; font-weight: normal; line-height: 20px; color: #000; margin-top: 40px; padding-bottom: 10px;}
+.aboutUsTxtEN p {font-size: 14px; line-height: 24px;  color: #666;}
+
+.index_tabs_en dt {padding-bottom: 2px;}
+.index_tabs_en dt a {width: 100%; height: 30px; font-size: 20px; line-height: 30px; color: #96af3b; text-align: left; background: none;}
+.index_tabs_en dt a:hover,
+.index_tabs_en dt a.current {color: #96af3b; background: none;}
+.index_tabs_en dd {padding: 2px 0;}
+.index_tabs_en dd a {color: #999; padding-left: 0; background: none;}
+.index_cont_en {border-top: 0;}
+
+.latestJob_en li {padding: 15px 0; border-bottom: 0;}
+.latestJob_en .sub {padding-left: 0; border-left: 0; margin-top: 12px;}
+
+.service_list_en li {padding: 18px 0 15px;}
+.service_list_en .img {float: left; width: 202px; height: 83px;}
+.service_list_en .word {float: right; width: 768px; display: inline;}
+.service_list_en .title {padding: 0;}
+.service_list_en .text {padding: 0; line-height: 20px; margin-top: 5px;}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>37、find()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				$(".box").find("*").css({
+					"width": "100px",
+					"height": "10px",
+					"border": "1px solid red",
+					"margin-top": "2px"
+				})
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div class="box">
+		<div>
+			<div>
+				<div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<button id="append">Click Me</button>
+</body>
+
+</html>

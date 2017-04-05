@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>vaildate</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		form {
+			margin: 0 auto;
+			width: 400px;
+			height: 500px;
+		}
+		
+		fieldset {
+			padding: 3px;
+			height: 30px;
+			border: 0;
+			border-collapse: collapse;
+		}
+		
+		label.errorClass {
+			padding-left: 10px;
+			color: red;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="jquery-validation-1.14.0/dist/localization/messages_zh.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#login").validate({
+				rules: {
+					username: {
+						required: true,
+						minlength: 2,
+						maxlength: 16
+					},
+					password: {
+						required: true,
+						minlength: 3,
+						maxlength: 20
+					}
+				},
+				//				messages: {
+				//					username: {
+				//						required: "必填项",
+				//						minlength: "至少两位",
+				//						maxlength: "至少十六位"
+				//					},
+				//					password: {
+				//						required: "必填项",
+				//						minlength: "至少三位",
+				//						maxlength: "至少二十位"
+				//					}
+				//				}
+				errorClass: "errorClass",
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<form id="login">
+		<fieldset>
+			<label for="username">用户名：</label>
+			<input type="text" id="username" name="username" />
+		</fieldset>
+		<fieldset>
+			<label for="password">密码：</label>
+			<input type="text" id="password" name="password" />
+		</fieldset>
+		<fieldset>
+			<button type="submit">登录</button>
+		</fieldset>
+	</form>
+</body>
+
+</html>

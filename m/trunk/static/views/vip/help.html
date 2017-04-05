@@ -1,0 +1,29 @@
+<section id="vip-page" class="vip-wrap vip-page">
+    <!--成长值帮助 start-->
+    <div class="exp">
+        <div class="page-item details ">
+            <h2><i class="upgrade"></i>升级说明</h2>
+            <table class="upgrade-wrap">
+                    <tr v-for="val in list">
+                        <td class="crown">
+                            <i v-bind:style="'background:url(https://bxwd-img.oss-cn-hangzhou.aliyuncs.com/'+val.levelSettingIcon+') no-repeat center;background-size:100% 100%;'"></i>
+                        </td>
+                        <td class="grade">{{val.levelSettingName}}</td>
+                        <td>所需成长值{{val.levelSettingGrowthLow}}</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="page-item details">
+            <h2><i class="growth"></i>成长值介绍</h2>
+            <div class="pl4">
+                <p><i class="remind"></i>成长值=投资成长值+任务成长值-过期成长值</p>
+                <ul>
+                    <li>1、投资成长值: 通过投资理财项目获得(不含添添金)，根据您的实际投资金额取整后 1 : 1 换算;</li>
+                    <li>2、任务成长值:通过完成特定任务、参与运营活动等方式获得;</li>
+                    <li>3、成长值有效期180天，成长值失效会导致级别下降。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--成长值帮助 end-->
+</section>

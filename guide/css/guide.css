@@ -1,0 +1,99 @@
+.bx_main{width:100%;overflow:hidden;}
+
+.guide_main{width:1920px;margin-left:-960px;line-height:1.8;font-size:14px;color:#787878;position:relative;left:50%;overflow:hidden;}
+.guide_main img{vertical-align:middle;}
+
+.br5{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+
+.guide_part{padding:70px 0;background-color:#fff;}
+.guide_part .container{width:1200px;margin:0 auto;}
+.guide_part h2{margin:0 0 30px;text-align:center;font-size:36px;color:#0096dc;}
+
+.part_tit{height:82px;line-height:88px;margin-bottom:50px;font-size:24px;color:#fff;text-indent:50px;background:url(../images/tit_01.png) no-repeat;}
+
+/*ul.part_ul{overflow:hidden;}
+ul.part_ul li{float:left;width:202px;margin:0 85px;text-align:center;}
+ul.part_ul li img{margin-bottom:20px;}
+ul.part_ul li h3{font-size:24px;color:#fff;}
+ul.part_ul li p{font-size:16px;}*/
+ul.part_ul li a{width:160px;height:50px;line-height:50px;margin-top:20px;font-size:18px;color:#fff;background-color:#28c896;display:inline-block;}
+
+.guide_part_01 .container{padding:0 48px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+ul.guide_honor{padding:45px 0 32px;border-bottom:1px dashed #ccc;margin-bottom:32px;}
+ul.guide_honor img{width: 120px}
+ul.guide_honor li{float:left;text-align:center;width:184px;}
+ul.guide_honor li p{padding-top:20px;line-height:1.6;}
+
+
+.guide_part_02{background-color:#ffaa1e;}
+.guide_part_02 h2{margin-bottom:60px;color:#fff;}
+.guide_part_02 ul li p{color:#fff;}
+
+.guide_part_03 h2{font-size:48px;color:#b4b4b4;}
+.guide_part_03 ul li{position:relative;}
+.part_03_list li.li1:before,.part_03_list  li.li2:before{content:"";width:14px;height:16px;background:url(../images/part3_04.png) no-repeat;position:absolute;top:70px;right:0;display:block;}
+.guide_part_03 ul li.li2 a{background-color:#ff8264;}
+.guide_part_03 ul li.li3 a{background-color:#a082f0;}
+
+.guide_part_04{background-color:#5be6a0;}
+.guide_part_04 .part_tit{line-height:82px;color:#ff5a5a;background-image:url(../images/tit_02.png);}
+.guide_part_04 ul li a{background-color:#ff5a5a;}
+
+.guide_part_05 .part_tit{line-height:82px;;background-image:url(../images/tit_03.png);}
+
+.guide_part_05 ul li{height:460px;background-color:#fff0c8;margin-left:58px;}
+.guide_part_05 ul li:first-child{margin-left:0;}
+.guide_part_05 ul li h3{height:64px;line-height:64px;font-weight:normal;background-color:#ff9600;}
+.guide_part_05 ul li .cont{min-height:100px;padding:40px 0 10px;}
+.guide_part_05 ul li .cont span{color:#ff9600;}
+.guide_part_05 ul li .cont span b{font-size:34px;}
+
+.guide_part_05 ul li.li1 a{background-color:#ff9600;margin-top:70px;}
+
+.guide_part_05 ul li.li2{background-color:#c8f0ff;}
+.guide_part_05 ul li.li2 h3,.guide_part_05 ul li.li2 a{background-color:#50bfff;}
+.guide_part_05 ul li.li2 .cont{line-height:2.1;}
+
+.guide_part_05 ul li.li3{background-color:#d9fff2;}
+.guide_part_05 ul li.li3 h3,.guide_part_05 ul li.li3 a{background-color:#5ad2aa;}
+.guide_part_05 ul li.li3 a{
+    margin-top:70px;
+
+}
+.guide_part_05 ul li.li3 .cont span{color:#5ad2aa;}
+
+.guide_part_06{background-color:#f0f0f0;}
+.guide_part_06 .part_tit{line-height:82px;background-image:url(../images/tit_04.png);}
+.guide_part_06 .cont{text-align:center;}
+
+
+/*改版*/
+.t-j{text-align: justify;}
+.ws-data{table-layout:fixed;font-size:20px;color:#767676;text-align: center;}
+.ws-data td{width:50%;padding-top:28px;padding-bottom:11px;}
+.ws-data td+td{border-left:1px solid #e6e6e6;}
+.ws-data strong{font-size:45px;margin-left:26px;color:#ff6400;}
+
+/*为什么选择宝象金融*/
+.part_02_list{font-size: 0;width:100%;color:#fff;text-align: center;}
+.part_02_list li{display: inline-block; vertical-align: middle; font-size:16px;width:25%;}
+.part_02_list li h3{font-size:24px;color:#fff;}
+
+.part_03_list{font-size:0;width:100%;color:#787878;text-align: center;}
+.part_03_list li{display: inline-block;vertical-align:middle;width:33.33%;font-size:16px;}
+
+.part_05_list{font-size:0;width:100%;color:#787878;text-align: center;}
+.part_05_list li{display: inline-block;vertical-align:middle;width:426px;height: 326px;font-size:22px;color:#787878;border-radius: 6px;}
+.part_05_list li h3{font-size:24px;color:#fff;border-radius: 6px 6px 0 0;}
+.part_05_list .li2{margin-left:55px;margin-right:55px;}
+
+.erweima-txt{font-size:16px;margin-top:80px;color:#787878;}
+
+.prize-box{position: relative;}
+.prize-box .JQ-slide-nav a{width:30px;height:57px;}
+.prize-box .JQ-slide-nav .arrow-prev{background:url("../images/arrow_left.png") no-repeat;}
+.prize-box .JQ-slide-nav .arrow-next{background:url("../images/arrow_right.png") no-repeat;}
+.prize-box .prize-list{width:1104px;overflow: hidden;position: relative;}
+
+

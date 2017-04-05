@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+          id="viewport">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="item">
+
+</div>
+<script>
+    //前一次滚动条值
+    var beforeTop =  document.body.scrollTop;
+    window.addEventListener("scroll", function () {
+        //每滚动一次时的值
+        var afterTop =  document.body.scrollTop;
+        if (afterTop > beforeTop) {
+            console.log("向下滚");
+        } else {
+            console.log("向上滚");
+        }
+        //把当前的滚动值放到变量中，做为下次比较的标准
+        beforeTop = afterTop;
+    })
+</script>
+</body>
+</html>

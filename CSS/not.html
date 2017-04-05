@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>not</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html,body{
+			line-height: 1;
+			
+		}
+		body{
+
+		}
+		ul li{
+			height: 100%;
+			margin: 0;
+			list-style:none;
+			-webkit-align-items: center;  
+			-ms-flex-align: center;  
+			align-items: center;
+			display: -webkit-flex;
+			display: flex;
+		}
+		.nav{
+			width: 100%;
+			font-size: 0;
+		}
+		.nav li{
+			display: inline-block;
+			width:20%;
+			height: 50px;
+			font-size: 12px;
+			text-align: center;
+		}
+		.nav li:not(:last-child){
+			border-right: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li>
+			<p>1</p>
+		</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯布局-flex</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		.clearfix:after,
+		.clear:before {
+			content: "";
+			clear: both;
+			display: block;
+		}
+		
+		.box {
+			height: 200px;
+			border: 1px solid #000;
+			-webkit-display: flex;
+			display: flex;
+			flex-flow: row nowrap;
+		}
+		
+		.left,
+		.right {
+			width: 200px;
+			height: 200px;
+			flex: 0 0 auto;
+			background: red;
+		}
+		
+		.content {
+			-webkit-flex: 1;
+			flex: 1;
+			height: 200px;
+			background: green;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box clearfix">
+		<div class="left"></div>
+		<div class="content"></div>
+		<div class="right"></div>
+	</div>
+</body>
+
+</html>

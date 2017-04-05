@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animate</title>
+    <style type="text/css">
+        .box{
+            width:0;
+            height: 20px;
+            background: red;
+        }
+        .in-box{
+            width:20px;
+            height:0;
+            background: green;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var timer=null;
+            var timerout= setTimeout(function(){
+                timer=setInterval(function(){
+                    $(".box").animate({
+                        "width":"1000px"
+                    },1000,function(){
+                        $(this).css("width","0px");
+                    })
+                },8000);
+            },3000)
+
+
+            $(".in-box").animate({
+                "height":"500px"
+            },8000).animate({
+                "width":"1000px"
+            },5000);
+        })
+    </script>
+</head>
+<body>
+<div class="box"></div>
+<div class="in-box"></div>
+</body>
+</html>

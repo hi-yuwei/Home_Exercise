@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js控制过渡</title>
+	<style type="text/css">
+		.box{
+			width:100px;
+			height:100px;
+			background:red;
+			transition:all 1s linear 0s;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var btn=document.getElementById("btn");
+			var boxID=document.getElementById("boxID");
+			btn.onclick=function(){
+				boxID.style.width="200px";
+			}
+			btn.ondblclick=function(){
+				boxID.style.width="100px";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="box" id="boxID"></div>
+	<button id="btn">点击</button>
+</body>
+</html>

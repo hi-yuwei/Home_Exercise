@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>26、empty()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				$(".box").empty();
+			})
+		})
+	</script>
+	<style type="text/css">
+		.box {
+			width: 100px;
+			height: 200px;
+			background: red;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<p>1</p>
+		<p class="p2">2</p>
+		<p>3</p>
+		<p>4</p>
+	</div>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

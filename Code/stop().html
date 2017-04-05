@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stop()</title>
+    <style type="text/css">
+        .box{
+            width:50px;
+            height: 50px;
+            background: red;
+        }
+        .in-box{
+            width:200px;
+            height:50px;
+            /*border-radius: 25px;*/
+            background: #000000;
+            opacity: .2;
+            background:rgba(0,0,0,.2);
+
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".box").animate({
+                "width":"1000px"
+            },8000);
+
+            $(".box").mouseover(function(){
+                $(this).stop();
+            });
+            $(".box").mouseout(function(){
+                $(this).animate({
+                    width:"1000px"
+                },8000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="in-box"></div>
+</body>
+</html>

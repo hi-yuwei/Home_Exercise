@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>35、parent()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				//parent()只能选中上一级父元素
+				$("#ul-list li").eq(0).parent().addClass("ul-list");
+			})
+		})
+	</script>
+	<style type="text/css">
+		.ul-list {
+			width: 200px;
+			height: 200px;
+			background: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<ul id="ul-list">
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>
+	</div>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

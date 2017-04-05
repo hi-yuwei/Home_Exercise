@@ -1,0 +1,48 @@
+.inGuess_list_ConList{
+	border-bottom: 1px dotted #ccc;
+	height: 52px;
+	padding:17px 0px;
+}
+
+.inGuess_list_ConList_L{
+	float:left;
+	background: pink;
+	/*height:50px;*/
+}
+.inGuess_list_ConList_R{
+	/*width:560px;*/
+	float:right;
+	background: yellow;
+}
+span.GameType {
+	/*width: 49px;*/
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+.inGuess_list_Con i{
+	width:20px;
+	height:20px;
+	margin-right: 4px;
+	background:url(../icon/halls-icon.png) no-repeat -162px -61px;
+}
+.inGuess_list_ConList_R_troops{
+	float: left;
+}
+.inGuess_list_ConList_Name{
+	display: inline-block;
+/*	margin-top:4px;*/
+	margin-top:4px;
+}
+.inGuess_list_ConList_Name p{
+	font-size:14px;
+	color:#333;
+}
+.inGuess_list_ConList_R_troops_Name{
+	float: left;
+}
+.inGuess_list_ConList_R_troops img{
+	float: left;
+	border:1px solid #ccc;
+	margin:0px 10px;
+}

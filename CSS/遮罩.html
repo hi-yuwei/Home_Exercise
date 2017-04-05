@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>遮罩层</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		html,body{width:100%;height:100%;} /*兼容IE6遮罩*/
+		.box{width:1000px;height:1000px;margin:0 auto;background:yellow;}
+		.shade{ 
+			position:fixed;  /*兼容现代浏览器全屏遮罩*/
+			_position:absolute;	/*IE6浏览器全屏遮罩*/
+			top:0;
+			left:0;
+			z-index:10000; 
+			width:100%;
+			height:100%;
+			/*background:rgba(0,0,0,0.6);*/
+			background:#000;
+			opacity:0.6;
+			filter:alpha(opacity=60); 	/*兼容IE透明*/
+		}
+		.login{
+			position:fixed;
+			_position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			_margin-left:-200px;
+			_margin-top:-200px;
+			z-index:10001;
+			width:400px;
+			height:400px;
+			background:red;
+		}
+		.closed{
+			position:absolute;
+			top:0;
+			right:-20px;
+			width:20px;
+			height:20px;
+			text-align:center;
+			line-height:20px;
+			cursor:pointer;
+			background:#fff;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			// alert(1)
+			var closed=document.getElementById("guanbi");
+			var shade=document.getElementById("zhezhao");
+			var login=document.getElementById("loginBox");
+			function shadeHidden(){
+				login.style.display="none";
+				shade.style.display="none";
+			}
+
+			closed.onclick=function(){
+				shadeHidden();	//单击关闭按钮，关闭
+			}
+			shade.onclick=function(){
+				shadeHidden();	//单机遮罩也关闭，增加用户体验
+			}
+		}
+	</script>
+</head>
+<body>
+	<!--遮罩元素-->
+	<div class="shade" id="zhezhao"></div>
+	<!--可视区域-->
+	<div class="box">
+		11
+	</div>
+	<div class="login" id="loginBox">
+		<span class="closed" id="guanbi">X</span>
+	</div>
+</body>
+</html>

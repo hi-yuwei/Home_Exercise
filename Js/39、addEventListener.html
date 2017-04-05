@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>addEventListener</title>
+
+</head>
+
+<body>
+	<button id="btn">Click Me</button>
+	<button id="Click" onclick="function() {alert(1)}">移除</button>
+</body>
+<script>
+	function out(){
+		alert("鼠标移出");
+	}
+	document.getElementById("btn").addEventListener("click",function(){alert(1)});	//注意：事件不需要添加on
+	document.getElementById("btn").addEventListener("click",function(){alert(2)});	//同一元素添加多个相同类型事件
+	document.getElementById("btn").addEventListener("mouseout",out);	//注意引用外部函数时，不需要填加（）
+	
+	document.getElementById("Click").removeEventListener("click","");	//移除函数
+</script>
+
+</html>

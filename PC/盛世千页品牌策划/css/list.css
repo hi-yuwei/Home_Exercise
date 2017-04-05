@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*临时*/
+
+	
+
+/*主体开始*/	
+.main{
+	width:1000px;
+	margin:0px auto;
+	/*border:1px solid #000;*/
+	}
+	
+.mainNav{
+	width:800px;
+	height:34px;
+	margin:49px auto 42px;
+	/*background:blue;*/
+	line-height:34px;
+	}
+	
+.mainNav li{
+	width:116px;
+	float:left;
+	/*border:1px solid #090;*/
+	margin-right:52px;
+	border-radius:5px;
+	}
+.mainNav li.current{
+	background:#E42829;
+	color:#fff;
+	}
+.mainNav li.current a{
+	color:#fff;
+	}
+.mainNav li a{
+	/*border:1px solid #000;*/
+	text-align:center;
+	line-height:34px;
+	display:block;
+	color:#333;
+	}
+.mainNav li a:hover{
+	background:#E42829;
+	border-radius:5px;
+	color:#fff;
+	text-decoration:none;
+	}
+
+	
+.mainCon{
+	width:1000px;
+	height:1008px;
+	border-bottom:1px dotted #ccc;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	/*background:#930;*/
+	}
+.mainCon li{
+	float:left;
+	text-align:center;
+	margin:0px 17px 17px 0px;
+	}
+.mainCon a{
+	display:block;
+	height:160px;
+	width:260px;
+	padding:80px 30px;
+	background:#F7F7F7;
+	text-decoration:none;
+	}
+.mainCon li div{
+	width:76px;
+	height:56px;
+	text-align:center;
+	background:#535353;
+	border-radius:10px;
+	padding:10px 0px;
+	margin:0px auto;
+	}
+.mainCon li img{
+	margin:0px auto;
+	}
+.mainCon li h2{
+	font-size:16px;
+	color:#000;
+	font-weight:bold;
+	margin:10px 0px;
+	}
+.mainCon li p{
+	text-align:left;
+	}
+.mainCon li a:hover {
+	background:#343434;
+	color:#fff;
+	}
+.mainCon li a:hover h2{
+	color:#fff;
+	}
+.mainCon li a:hover div{
+	background:#E42829;
+	}
+/*主体结束*/	
+
+/*合作流程开始*/
+.cpa{
+	width:1000px;
+	/*height:500px;*/ /*临时*/
+	margin:0px auto;
+	padding-bottom:30px;
+	border-bottom:1px dotted #ccc;
+	/*background:red;*/
+	}
+.cpa h2{
+	/*background:#903;*/
+	font-size:20px;
+	margin-bottom:15px;
+	}
+.cpaCon{
+	width:1000px;
+	/*height:300px;*/
+	/*background:#36F;*/
+	}
+.cpaConL,.cpaConR,.cpaConC-L,.cpaConC-R{
+	width:157px;
+	/*height:246px;*/
+	/*background:#CC3;*/
+	margin-top:51px;
+	}
+.cpaConL,.cpaConC-L,.cpaConC-C{
+	float:left;
+	}
+.cpaUl li{
+	margin-bottom:5px;
+	}
+.cpaUl a{
+	width:157px;
+	height:46px;
+	text-align:center;
+	line-height:46px;
+	font-size:14px;
+	color:#fff;
+	background:#FF9B00;
+	display:block;
+	/*border:1px solid #000;*/
+	}
+.cpaUl .cpaBottom{
+	margin-bottom:0px;
+}
+.cpaUl .cpaBottom a{
+	background-color:#fff;
+	color:#FF9B00;
+	border-bottom:4px solid #FF9B00;
+	}
+.cpaUl h3,.cpaConCArea h3{
+	text-align:center;
+	line-height:40px;
+	font-weight:bold;
+	font-size:16px;
+	color:#FF9B00;
+	}
+.cpaConCArea{
+	width:600px;
+	text-align:center;
+	float:left;
+	}
+.cpaConC{
+	width:600px;
+	/*height:297px;*/
+	/*float:left;*/
+	/*background:#33C;*/
+	margin-left:43px;
+	border-bottom:4px solid #0AB69E;
+	}
+.cpaConC-C{
+	margin-left:62px;
+	}
+.cpaConC .cpaBottom a{
+	border-bottom:0px;
+	color:#0AB69E;
+	}
+.cpaConC a{
+	background:#0AB69E;
+	}
+.cpaConCArea h3{
+	color:0AB69E;
+	width:600px;
+	margin-left:43px;
+	/*border:1px solid #000;*/
+	}
+	
+	
+	
+	
+.cpaConR{
+	float:right;
+	}
+.cpaUlR a{
+	background:#0C739D;
+	}
+.cpaUlR .cpaBottom a{
+	color:#0C739D;
+	border-bottom:4px solid #0C739D;
+	}
+.cpaUlR h3{
+	color:#0C739D;
+	}
+	
+/*合作流程结束*/

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>货盘列表</title>
+	<link rel="stylesheet" href="../../../Content/mobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../../../content/mobile/mobile.css">
+	<script src="../../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="JQM_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>运去哪</h1>
+	</div>
+	<div role="main" class="ui-content" id="mobile_content">
+		<ul class="ulModel cf palletTabs">
+			<li>
+				<a class="ui-btn current" href="javascript:void(0)">海运整箱</a>
+			</li>
+			<li>
+				<a class="ui-btn" href="javascript:void(0)">海运拼箱</a>
+			</li>
+			<li>
+				<a class="ui-btn" href="javascript:void(0)">空运</a>
+			</li>
+		</ul>
+		<ul class="searchContList cf" style="margin-top: 0.5em;">
+			<li>
+				<a class="link" href="pallet-detail.html" target="_top">
+					<div class="line">
+						<span>SHANGHAI</span>
+						<span>—</span>
+						<span>SINGAPOR</span>
+					</div>
+					<div class="line ptText">工作服4000件纸箱包装，报价包含上海报关及新加坡的运费和关税。</div>
+					<div class="line ptType">1*20'GP 2*40'GP 3*40'HQ</div>
+					<div class="line ptTime">出运日期：07-16</div>
+				</a>
+			</li>
+			<li>
+				<a class="link" href="pallet-detail.html" target="_top">
+					<div class="line">
+						<span>SHANGHAI</span>
+						<span>—</span>
+						<span>SINGAPOR</span>
+					</div>
+					<div class="line ptText">工作服4000件纸箱包装，报价包含上海报关及新加坡的运费和关税。</div>
+					<div class="line ptType">1*20'GP 2*40'GP 3*40'HQ</div>
+					<div class="line ptTime">出运日期：07-16</div>
+				</a>
+			</li>
+		</ul>
+		<a href="javascript:void(0)" id="btnMoreList" class="ui-btn">查看更多</a>
+		<p class="noData">暂无数据</p>
+		<p class="noMore">没有更多数据</p>
+	</div>
+</div>
+<script>
+$(function() {
+	$(".ui-corner-all, .ui-shadow, .ui-shadow-inset").removeClass("ui-corner-all ui-shadow ui-shadow-inset");
+	$(".ui-input-text input").focus(function() {
+		$(this).parent().removeClass("ui-focus");
+	});
+	$("textarea").focus(function() {
+		$(this).removeClass("ui-focus");
+	});
+});
+</script>
+
+</body>
+</html>

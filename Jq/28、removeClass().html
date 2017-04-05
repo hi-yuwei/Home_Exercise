@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>28、removeClass()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				$(".box-w").removeClass("box-bd");
+			})
+		})
+	</script>
+	<style type="text/css">
+		.box-w {
+			width: 100px;
+		}
+		
+		.box-h {
+			height: 100px;
+		}
+		
+		.box-bd {
+			border: 10px solid red;
+		}
+		
+		.box-bg {
+			background: green;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box-w box-h box-bd box-bg">
+	</div>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

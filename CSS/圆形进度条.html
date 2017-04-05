@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>圆形进度条</title>
+	<style type="text/css">
+		.box {
+			width: 58px;
+			height: 58px;
+			background: url(./dot-load.png) no-repeat;
+			background-position: -0px -3px;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery-1.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#val").change(function () {
+				var x = $("#val").val() * -58 + "px";
+				$(".box").css({
+					backgroundPosition: x + " -3px"
+				});
+			})
+
+		})
+	</script>
+</head>
+
+<body>
+	<div class="box"></div>
+	<input type="text" value="" id="val" />
+</body>
+
+</html>

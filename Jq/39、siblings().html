@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>37、siblings()</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$(".list").children().click(function () {
+				$(this).css({
+					"background": "red"
+				}).siblings().css({
+					"background": "green"
+				})
+			})
+		})
+	</script>
+	<style type="text/css">
+		.list {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.list li {
+			list-style: none;
+			width: 100px;
+			height: 20px;
+			border: 1px solid #000;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+</body>
+
+</html>

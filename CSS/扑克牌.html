@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>扑克牌</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.beck,
+		.smallSeven {
+			width: 200px;
+			height: 188px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		.box {
+			width: 200px;
+			height: 188px;
+			margin: 50px auto;
+			position: relative;
+		}
+		
+		.beck {
+			background: url(./beck.jpeg) no-repeat;
+			-moz-transform: rotateY(-180deg);
+			/*先让图片旋转到背面*/
+			-webkit-transform: rotateY(-180deg);
+			-ms-transform: rotateY(-180deg);
+			-moz-backface-visibility: hidden;
+			/*背面不显示*/
+			-webkit-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			transition: all 1s;
+		}
+		
+		.smallSeven {
+			background: url(./smallSeven.jpeg) no-repeat;
+			-webkit-transform: rotateY(0deg);
+			-moz-backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			transition: all 1s;
+		}
+		
+		.box:hover .beck {
+			-webkit-transform: rotateY(0deg);
+			-moz-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+		}
+		
+		.box:hover .smallSeven {
+			-webkit-transform: rotateY(-180deg);
+			-moz-transform: rotateY(-180deg);
+			-ms-transform: rotateY(-180deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class="beck"></div>
+		<div class="smallSeven">Hello</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<style>html,body{background-color:#edf0f3;}</style>
+<article class="helpMain">
+    <section class="section01">
+        <ul>
+            <li v-for="item in indexInfo" data-helpKey="{{item.helpKey}}"  v-on:click="click" v-bind:class="{on: 0 == $index}">
+               {{item.name}}
+            </li>
+        </ul>
+    </section>
+    <section class="sectionTab">
+        <list></list>
+    </section>
+</article>

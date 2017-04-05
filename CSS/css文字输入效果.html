@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>css文字输入效果()</title>
+	<style type="text/css">
+		.box {
+			width: 500px;
+			white-space: nowrap;
+			padding: 10px;
+		}
+		
+		.str1,
+		.str2,
+		.str3,
+		.str4 {
+			width: 100%;
+			overflow: hidden;
+			opacity: 0;
+		}
+		/*		注意forwards为设置对象为动画结束时的动态*/
+		
+		.str1 {
+			-webkit-animation: out 5s linear forwards;
+		}
+		
+		.str2 {
+			-webkit-animation: out 5s linear 5s forwards;
+		}
+		
+		.str3 {
+			-webkit-animation: out 5s linear 9s forwards;
+		}
+		
+		.str4 {
+			-webkit-animation: out 5s linear 15s forwards;
+		}
+		
+		@-webkit-keyframes out {
+			from {
+				opacity: 1;
+				width: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="box">
+		<p class="str1">具体用法可以看看项目地址，带注释的源码200多行，不算复杂</p>
+		<p class="str2">实现方法也不神奇，大多数人肯容易可以想到</p>
+		<p class="str3">作者做了很多字符的出来还有速度神马的，我们可以撸一个简单的</p>
+		<p class="str4">如果对细节和浏览器兼容性要求的不是很严格，我们可以通过CSS3实现</p>
+	</div>
+</body>
+
+
+</html>

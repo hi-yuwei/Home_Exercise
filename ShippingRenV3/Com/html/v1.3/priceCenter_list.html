@@ -1,0 +1,1091 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>运费管理--运费中心</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="../../Content/global.css" />
+	<link rel="stylesheet" href="../../Content/page.css" />
+	<script>!window.jQuery && document.write('<script src="../../Scripts/jquery-1.11.2.min.js"><\/script >');</script>
+	<link rel="stylesheet" href="../../plugin/autocomplete/css/jquery.ui.autocomplete.css">
+	<script src="../../plugin/autocomplete/js/jquery.ui.autocomplete.min.js"></script>
+</head>
+
+<body>
+<div id="fixedBar">
+	<div class="wrap">
+		<div class="leftSide">
+			<a class="login" href="javascript:void(0)">亲，请登录</a>
+			<a class="register" href="javascript:void(0)">免费注册</a>
+			<span class="welcome">欢迎来到汇航！</span>
+		</div>
+		<div class="rightSide">
+			<a class="tab attention" href="javascript:void(0)">关注</a>
+			<a class="tab collection" href="javascript:void(0)">收藏</a>
+			<a class="tab suggestion" href="javascript:void(0)">建议</a>
+			<a class="tab help" href="javascript:void(0)">帮助</a>
+		</div>
+	</div>
+</div>
+<div class="topWrap">
+	<div class="wrap">
+		<a class="logo" href="javascript:void(0)">运去哪</a>
+		<span class="zheng">100%有货必达</span>
+		<div class="web_SR_search">
+			<div class="web_search_selType">
+				<div class="textBox">
+					<span class="text" mid="0">拼箱</span>
+					<em class="arrow"></em>
+				</div>
+				<ul class="showBox">
+					<li>
+						<a mid="1" href="javascript:void(0)">整箱</a>
+					</li>
+				</ul>
+			</div>
+			<div class="web_search_selPort">
+				<span class="text">起始港</span>
+				<em class="line"></em>
+				<input class="input inputJsTip" type="text" vtext="请选择起始港" />
+			</div>
+			<div class="web_search_selPort">
+				<span class="text">目的港</span>
+				<em class="line"></em>
+				<input class="input inputJsTip" type="text" vtext="请选择目的港" />
+			</div>
+		</div>
+		<span class="call">客服电话</span>
+	</div>
+</div>
+<div class="navWrap">
+	<div class="wrap">
+		<div id="categoryAll">
+			<div class="HD">
+				<ul class="HD_title">
+					<li>
+						<span class="text">全部航线分类</span>
+						<em class="icon"></em>
+					</li>
+				</ul>
+			</div>
+			<div id="category_SR">
+				<div class="listBox">
+					<ul>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">加勒比航线</a>，
+									<a class="aLink" href="javascript:void(0)">加勒比航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">加勒比航线 Caribbean Airlines+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">黑海航线</a>，
+									<a class="aLink" href="javascript:void(0)">黑海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">黑海航线The black sea route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">欧洲航线</a>，
+									<a class="aLink" href="javascript:void(0)">欧洲航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">欧洲航线European route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">红海航线</a>，
+									<a class="aLink" href="javascript:void(0)">红海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">红海航线The red sea route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">近洋航线</a>，
+									<a class="aLink" href="javascript:void(0)">近洋航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">近洋航线ear-sea shipping line+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">澳新航线</a>，
+									<a class="aLink" href="javascript:void(0)">澳新航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">澳新航线ANZ route+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">地中海航线</a>，
+									<a class="aLink" href="javascript:void(0)">地中海航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">地中海航线The Mediterranean good health+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="cell">
+								<span class="aBox">
+									<a class="aLink" href="javascript:void(0)">中南美航线</a>，
+									<a class="aLink" href="javascript:void(0)">中南美航线</a>
+								</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="showBox">
+								<div class="topBox">
+									<h3 class="title">目的港</h3>
+								</div>
+								<div class="dataList">
+									<dl>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">巴尔的摩 Baltimore</a></dd>
+										<dd><a href="javascript:void(0)">波士顿 Boston</a></dd>
+										<dd><a href="javascript:void(0)">迈阿密 Miami</a></dd>
+										<dd><a href="javascript:void(0)">纽约 New York</a></dd>
+										<dd><a href="javascript:void(0)">诺福克 Norfolk</a></dd>
+										<dd><a href="javascript:void(0)">新奥尔良 New Orleans</a></dd>
+										<dd><a href="javascript:void(0)">费拉德尔菲亚 Philadelphia</a></dd>
+										<dd><a href="javascript:void(0)">坦帕 Tampa</a></dd>
+										<dd><a href="javascript:void(0)">吉大港 Chittagong</a></dd>
+										<dd><a href="javascript:void(0)">洛杉矶 Los Angeles</a></dd>
+										<dd><a href="javascript:void(0)">中南美航线South America Line+——</a></dd>
+									</dl>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<ul class="navMenu">
+			<li>
+				<a class="current" href="javascript:void(0)">首页</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">我的物流</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">货盘市场</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">物流市场</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">订单跟踪</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">物流资讯</a>
+			</li>
+		</ul>
+		<div class="navReleasePH">
+			<ul>
+				<li class="p_price">
+					<a href="javascript:void(0)">发布运价</a>
+				</li>
+				<li class="p_pallet">
+					<a href="javascript:void(0)">发布货盘</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="adminSide">
+		<ul class="adminMenu">
+			<li>
+				<a href="publish_pallet.html" target="_blank">
+					<strong class="publish_pallet"></strong>
+					<span>发布货盘</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="admin-myPallet.html">
+					<strong class="pallet"></strong>
+					<span>我的货盘</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a class="current" href="javascript:void(0)">
+					<strong class="order"></strong>
+					<span>我的客户</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">
+					<strong class="evaluation"></strong>
+					<span>我的评价</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="admin-interesting.html">
+					<strong class="interesting"></strong>
+					<span>意向航线</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="admin-logisticsBusiness.html">
+					<strong class="collection"></strong>
+					<span>我的收藏</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="admin-integral.html">
+					<strong class="integral"></strong>
+					<span>我的积分</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">
+					<strong class="complaint"></strong>
+					<span>我的投诉</span>
+					<em></em>
+				</a>
+			</li>
+			<li>
+				<a href="admin-tools-baohan.html">
+					<strong class="tools"></strong>
+					<span>实用工具</span>
+					<em></em>
+				</a>
+			</li>
+		</ul>
+		<div class="adminSideDL">
+			<strong class="icon"></strong>
+			<a class="link" href="javascript:void(0)">下载快捷入口&gt;&gt;</a>
+		</div>
+		<div class="adminSideSecret">
+			<div class="title">
+				<h3>发布货盘秘籍</h3>
+				<a href="javascript:void(0)">更多</a>
+			</div>
+			<ul class="list">
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货？</a>
+				</li>
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货盘如何发布货盘？</a>
+				</li>
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货？</a>
+				</li>
+				<li>
+					<em></em>
+					<a href="javascript:void(0)">如何发布货盘如何发布货？</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="adminMain">
+		<div class="adminTabs clearfix">
+			<ul>
+				<li>
+					<span>运费中心</span>
+				</li>
+			</ul>
+		</div>
+		<div class="adminTabsSub clearfix">
+			<ul>
+				<li>
+					<a class="add" href="javascript:void(0)">智能批量上传</a>
+				</li>
+				<li>
+					<a class="import" href="javascript:void(0)">EXCEL导入</a>
+				</li>
+			</ul>
+		</div>
+		<div class="quoteBargainSearch">
+			<div class="publishForm clearfix" style="margin-top: 0;">
+				<div class="list">
+					<span class="inputTitle" style="width: 55px;">航线</span>
+					<div class="inputMDSM" style="width: 128px;">
+						<input class="inputArea inputJsTip" style="width: 118px;" type="text" vtext="输入起始港" />
+					</div>
+					<div class="sLine"></div>
+					<div class="inputMDSM" style="width: 128px;">
+						<input class="inputArea inputJsTip" style="width: 118px;" type="text" vtext="输入目的港" />
+					</div>
+					<span class="inputSpan ml30 mr15">运费状态</span>
+					<div class="dropDownWrap cf dropDown140">
+						<div class="dropDownShow">
+							<span class="word" value="0" title="">全部</span>
+						</div>
+						<dl class="slide-model dropDownSlide">
+							<dd>
+								<a href="javascript:void(0)">
+									<span class="text" value="0" title="">xxx</span>
+								</a>
+							</dd>
+							<dd>
+								<a href="javascript:void(0)">
+									<span class="text" value="0" title="">sss</span>
+								</a>
+							</dd>
+						</dl>
+					</div>
+					<a class="btnSmall btnSearch" href="javascript:void(0)">搜索</a>
+					<a class="moreSelOpts moreSelOptsUp" href="javascript:void(0)">更多筛选条件</a>
+				</div>
+				<div class="moreSelOptsShow">
+					<div class="list">
+						<div class="schedulePrice" style="width: 261px;">
+							<span class="inputTitle" style="width: 55px;">班期</span>
+							<div class="box">
+								<ul>
+									<li vid="1"><a href="javascript:void(0)">周一</a></li>
+									<li vid="2"><a href="javascript:void(0)">周二</a></li>
+									<li vid="3"><a href="javascript:void(0)">周三</a></li>
+									<li vid="4"><a href="javascript:void(0)">周四</a></li>
+									<li vid="5"><a href="javascript:void(0)">周五</a></li>
+									<li vid="6"><a href="javascript:void(0)">周六</a></li>
+									<li vid="7" class="selected"><a href="javascript:void(0)">周日</a></li>
+									<li vid="8" class="budingqi selected"><a href="javascript:void(0)">不定期</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="left" style="width: 675px;">
+							<div class="list" style="margin-top: 0;">
+								<span class="inputTitle" style="width: 70px;">有效船期</span>
+								<div class="inputMDSM" style="width: 128px;">
+									<span class="inputTextL">2015-01-21</span>
+									<span class="inputDate"></span>
+								</div>
+								<span class="inputSpan" style="margin: 0 15px;">至</span>
+								<div class="inputMDSM" style="width: 128px;">
+									<span class="inputTextL">2015-01-21</span>
+									<span class="inputDate"></span>
+								</div>
+							</div>
+							<div class="list">
+								<span class="inputTitle" style="width: 70px;">承运人</span>
+								<div class="inputMDSM" style="width: 128px;">
+									<input class="inputArea" style="width: 118px;" type="text" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list">
+						<a class="btnSmall btnSearchSenior" style="margin-left: 70px;" href="javascript:void(0)">高级搜索</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="priceCenterListTip">
+			亲，班期1-7代表星期一至星期日，8代表不定期！
+		</div>
+		<div class="adminLineWrap priceCenterList">
+			<div class="priceCLTitleBox">
+				<div id="priceCLTitle" class="adminLineTitle clearfix">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<span class="cellD" style="width: 120px; margin-left: 10px;">运费编号</span>
+					<span class="cellD" style="width: 190px; margin-left: 10px;">航线</span>
+					<span class="cellD" style="width: 65px;">承运人</span>
+					<span class="cellD" style="width: 80px;">班期</span>
+					<span class="cellD" style="width: 50px;">20'GP</span>
+					<span class="cellD" style="width: 50px;">40'GP</span>
+					<span class="cellD" style="width: 50px;">40'HQ</span>
+					<span class="cellD" style="width: 80px;">航程/中转</span>
+					<span class="cellD" style="width: 75px;">有效船期</span>
+					<span class="cellD" style="width: 60px; _margin-right: -3px;">操作</span>
+				</div>
+			</div>
+			<div class="adminLineList clearfix">
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF10001</span>
+						<img class="icon_yifabu" alt="未发布" src="../../images/v1.3/icon_weifabu.png" />
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+						<em class="icon_baozhang"></em>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">1/2/3/4/5/6/7</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">直达</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<span class="cellLineOF">2015-02-12</span>
+						<span class="cellLineOF">—</span>
+						<span class="cellLineOF">2015-02-22</span>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+						<img class="icon_yifabu" alt="已发布" src="../../images/v1.3/icon_yifabu.png" />
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghaidd</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYorkdd</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDSLKK</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDSLKK</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">8</span>
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list li_yiguoqi">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">1/2/3/4/5/6/7</span>
+						<img class="icon_yiguoqi" alt="已过期" src="../../images/v1.3/icon_yiguoqi.png" />
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">8</span>
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">1/2/3/4/5/6/7</span>
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">1/2/3/4/5/6/7</span>
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">1/2/3/4/5/6/7</span>
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="cellD" style="width: 15px; margin-left: 0;">
+						<input class="inputChk" style="margin-left: 0;" type="checkbox" />
+					</div>
+					<div class="cellD" style="width: 120px; margin-left: 10px;">
+						<span class="left">YF1000100</span>
+					</div>
+					<div class="cellD" style="width: 190px; margin-left: 10px;">
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">上海 Shanghai</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">纽约 NewYork</span>
+						</div>
+						<div class="left" style="width: 100%;">
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KDS</span>
+							<span class="left" style="width: 20px; text-align: center;">—</span>
+							<span class="left text-overflow" style="max-width: 83px; _width: 83px;">保税区KD</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 65px;">中运集团</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">1/2/3/4/5/6/7</span>
+					</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 50px;">$2000</div>
+					<div class="cellD" style="width: 80px;">
+						<span class="cellLineOF">22天</span>
+						<span class="cellLineOF">BABABO</span>
+					</div>
+					<div class="cellD" style="width: 75px;">
+						<div class="left">
+							<span class="left clear white-space">2015-02-12</span>
+							<span class="left clear white-space">—</span>
+							<span class="left clear white-space">2015-02-22</span>
+						</div>
+					</div>
+					<div class="cellD" style="width: 60px;">
+						<a class="left clear white-space" href="javascript:void(0)">修改</a>
+						<a class="left clear white-space" href="javascript:void(0)">删除</a>
+						<a class="left clear white-space" href="javascript:void(0)">查看详情</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix" style="margin: 20px 0 0 100px; padding-bottom: 10px;">
+			分页区域
+		</div>
+		<div class="priceCenterOptsBox">
+			<div id="priceCenterOpts" class="priceCenterOpts clearfix">
+				<!--<span class="text">共300行</span>-->
+				<a class="link" href="javascript:void(0)">删除选中</a>
+				<a class="link" id="btnPatchModifyPrice" href="javascript:void(0)">批量修改运费</a>
+			</div>
+		</div>
+		<div id="patchModifyPrice" class="pageDialogDiv patchModifyPrice">
+			<div class="top cf">
+				<div class="topLeft"></div>
+				<div class="topRight"></div>
+				<div class="topCenter"></div>
+			</div>
+			<div class="middle">
+				<div class="middleInner">
+					<div class="title cf">
+						<h3>批量修改运费</h3>
+						<a class="close" href="javascript:void(0)"></a>
+					</div>
+					<div class="publishForm clearfix">
+						<div class="list li_1">
+							<span class="inputSpan mr15">有效船期</span>
+							<div class="inputMDSM errorBorder" style="width: 133px;">
+								<span class="inputTextL">2015-01-21</span>
+								<span class="inputDate"></span>
+							</div>
+							<span class="PNHuo" style="margin-top: 7px;">至</span>
+							<div class="inputMDSM" style="width: 133px;">
+								<span class="inputTextL">2015-01-21</span>
+								<span class="inputDate"></span>
+							</div>
+							<span class="errorTip">有效船期不完整</span>
+						</div>
+						<div class="list li_2">
+							<div class="yunfeiBox">
+								<div class="type">
+									<span>20'GP</span>
+									<span>40'GP</span>
+									<span>40'HQ</span>
+								</div>
+								<div class="inputMDSM">
+									<input class="inputArea" type="text" />
+								</div>
+								<div class="inputMDSM">
+									<input class="inputArea" type="text" />
+								</div>
+								<div class="inputMDSM">
+									<input class="inputArea" type="text" />
+								</div>
+							</div>
+						</div>
+						<div class="list li_3">
+							<span class="inputTitle" style="width: 85px;">&nbsp;</span>
+							<a class="btnSmall btnDetermine" href="javascript:void(0)">确定</a>
+							<a class="btnSmallGray ml10 btnCancel" href="javascript:void(0)">取消</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom cf">
+				<div class="bottomLeft"></div>
+				<div class="bottomRight"></div>
+				<div class="bottomCenter"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="wrap">
+		<div class="footerInfo">
+			<ul>
+				<li class="cell cellFirst">
+					<h3 class="title">
+						<b>帮助中心</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_question_1.html" target="_blank">注册和密码相关</a></dd>
+						<dd><a href="help/help_question_2.html" target="_blank">我是物流商</a></dd>
+						<dd><a href="help/help_question_3.html" target="_blank">我是货主</a></dd>
+						<dd><a href="help/help_question_4.html" target="_blank">其它</a></dd>
+					</dl>
+				</li>
+				<li class="cell">
+					<h3 class="title">
+						<b>行业相关</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_related_1.html" target="_blank">货代行业关键词</a></dd>
+						<dd><a href="help/help_related_2.html" target="_blank">集装箱运输</a></dd>
+						<dd><a href="help/help_related_3.html" target="_blank">贸易术语</a></dd>
+						<dd><a href="help/help_related_4.html" target="_blank">报关</a></dd>
+					</dl>
+				</li>
+				<li class="cell">
+					<h3 class="title">
+						<b>运去哪</b>
+					</h3>
+					<dl class="info">
+						<dd><a href="help/help_yunquna_1.html" target="_blank">关于我们</a></dd>
+						<dd><a href="help/help_yunquna_2.html" target="_blank">人才招聘</a></dd>
+						<dd><a href="help/help_yunquna_3.html" target="_blank">服务条款</a></dd>
+						<dd><a href="help/help_yunquna_4.html" target="_blank">联系我们</a></dd>
+					</dl>
+				</li>
+				<li class="cell cellTools">
+					<div class="WeChat">
+						<h3 class="title">
+							<b>官方微信</b>
+						</h3>
+						<div class="text">用手机扫一扫，有惊喜！</div>
+						<div class="image">微信扫一扫</div>
+					</div>
+					<a class="weibo" href="javascript:void(0)">微博weibo</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="foot_copyright">© Copyright 2012-2020 <a href="http://www.shippingren.com">ShippingRen</a>&nbsp;&nbsp;&nbsp;&nbsp;版权所有&nbsp;著作权与商标声明</div>
+<a class="backToTop" href="javascript:void(0)">返回顶部-Top</a>
+
+<script src="../../Scripts/global.js"></script>
+<script src="../../Scripts/page.js"></script>
+<script>
+$(function() {
+	var availableTags = [
+		"ActionScript",
+		"AppleScript",
+		"Asp",
+		"BASIC",
+		"Erlang",
+		"Fortran",
+		"Groovy",
+		"Haskel",
+		"Java",
+		"JavaScri",
+		"Lisp",
+		"Per",
+		"PHP",
+		"Pytho",
+		"Ruby",
+		"Scala",
+		"Scheme"
+	];
+	$( ".publishForm .inputMDSM .inputArea" ).autocomplete({
+		source: availableTags
+	});
+	$(".main").delegate(".publishForm .inputMDSM .inputArea", "focus", function() {
+		$(this).autocomplete({
+			source: availableTags
+		});
+	});
+});
+</script>
+</body>
+</html>

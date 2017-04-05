@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册表单效果</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            font: 14px/1.2 "微软雅黑";
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        .register {
+            width: 300px;
+            margin: 100px auto;
+            /*border:1px solid #000;*/
+        }
+
+        .register .register-item {
+            position: relative;
+            zoom: 1;
+            height: 70px;
+            margin-top: 10px;
+        }
+
+        .register .register-item span {
+            position: absolute;
+            top: 18px;
+            left: 0;
+        }
+
+        .register input {
+            width: 300px;
+            height: 20px;
+            margin-top: 18px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #999;
+        }
+
+        .register .bdbc {
+            border-bottom: 1px solid lightskyblue;
+        }
+
+        .del {
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            width: 15px;
+            height: 14px;
+            background: url("./image/del.png") no-repeat;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript" src="./jquery-1.11.1.js"></script>
+    <!--<script type="text/javascript">
+        $(function () {
+            var reg=/./;
+            $(".register-item input").focus(function(){
+                $(".register-item i").remove();
+                $(this).prev().after("<i class='del'></i>").next().mousedown(function(){
+                    $(this).next().val("");
+                });
+
+                $(this).parent().find("span").stop().animate({
+                    "top":"0",
+                    "font-size":"12px"
+                }).css("color","#555");
+
+                $(this).addClass("bdbc");
+            })
+
+            $(".register-item input").focusout(function(){
+                $(this).parent().find("i.del").remove();
+
+                if(!reg.test($(this).val())){
+                    $(this).parent().find("span").stop().animate({
+                        "top":"20px",
+                        "font-size":"14px"
+                    })
+                }
+                $(this).removeClass("bdbc");
+            })
+
+            $(".register-item").click(function(){
+                $(this).find("input").focus();
+            })
+
+            $(".register input:eq(0)").focus();
+        });
+    </script>-->
+    <script type="text/javascript" src="./jQuery.register.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".register-item").register({
+                element:".register-item",
+                delicon:"<i class='del'></i>",
+                borderBC:"bdbc",
+                reg:"/./"
+            });
+        })
+    </script>
+</head>
+<body>
+<form class="register" method="post">
+    <fieldset class="register-item">
+        <!--<span>昵称</span>-->
+        <input type="text" placeholder="昵称"/>
+    </fieldset>
+    <fieldset class="register-item">
+        <!--<span>手机号</span>-->
+        <input type="text" placeholder="手机号"/>
+    </fieldset>
+    <fieldset class="register-item">
+        <!--<span>密码</span>-->
+        <input type="password" placeholder="密码"/>
+    </fieldset>
+    <fieldset class="register-item">
+        <!--<span>验证码</span>-->
+        <input type="text" placeholder="验证码"/>
+    </fieldset>
+</form>
+</body>
+</html>

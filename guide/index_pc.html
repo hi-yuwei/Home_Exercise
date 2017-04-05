@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>宝象金融_宝象金融是什么</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="宝象金融是什么">
+    <meta name="description" content="宝象金融是什么?宝象金融是一家专注于农牧食品业供应链金融领域的互联网金融平台，致力于为借款人提供便捷高效融资渠道、为投资人提供安全可靠投资理财资产。">
+    <meta name="layout" content="main"/>
+    <link href="./css/sageguard.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.bxjr.com/css/normalize.css?v=20150731"/>
+    <link rel="stylesheet" href="https://www.bxjr.com/css/common.css?v=20150731"/>
+    <link rel="shortcut icon" href="https://www.bxjr.com/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/guide.css" type="text/css" />
+    <script type="text/javascript">window.hxb = {ctx: "/web/"};</script>
+    <style>.placeholder {
+        color: #a9a9a9;
+    }
+    </style>
+
+    <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./js/jq.Slide.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/seajs/dist/sea.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/seajs-css/dist/seajs-css.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="https://www.bxjr.com/js/img-animal.js"></script>
+    <!--<script type="text/javascript" src="/js/application.js"></script>-->
+    <script type="text/javascript">
+        seajs.config({
+            base: "/js",
+            alias: {
+                handlebars: 'handlebars-v1.3.0.js',
+                validationEngine: 'validation/js/jquery.validationEngine',
+                layer: 'layer1.9/layer',
+                inputFormat: 'jquery.inputFormat',
+                fancybox: 'fancybox/jquery.fancybox-1.3.2',
+                main: 'application',
+                copy: 'copy/jquery.zclip.min'
+            },
+            map: [
+                [/^(.*\.(?:css|js))(.*)$/i, '$1?v=20150731']
+            ]
+        });
+        seajs.use("main");
+    </script>
+</head>
+<body>
+<div class="bx_wrap">
+    <div class="bx_head">
+        <div class="bx_top">
+            <div class="w1200">
+
+                <div class="bx_topbar_right">
+                    <div class="bx_topmenu">
+                        <ul class="clearfix">
+                            <script type="text/javascript">
+                                (function () {
+                                    var params = {
+                                        isBalance: 'balance',
+                                        isRecommend: 'recommend',
+                                        isValidStatus: 'validStatus',
+                                        isVoucherCount: 'voucherCount',
+                                        isSafe: 'safe',
+                                        isAsset: 'asset',
+                                        isNotify: 'notify'
+                                    };
+                                    var paramsStr = '?';
+                                    for (var item in params) {
+                                        if (window[item]) {
+                                            paramsStr += params[item] + "=true&";
+                                        }
+                                    }
+                                    var jrMsgCount = 0;
+                                    $.ajax({
+                                        url: "/secure/get-login-info.html" + paramsStr,
+                                        async: false,
+                                        cache: false,
+                                        success: function (data) {
+                                            window.loginInfo = data;
+                                            var newAction = new Date().getTime();
+                                            if (data && data.isLogin) {
+                                                document.write('<li><span>你好，<a href="/center/home/index" class="bx_userName">' + data.callName + '</a></span></li>\
+                                                <li class="bx_login_after bx_showMenu">\
+                                                    <a href="/center/message/index?' + newAction + '" class="bx_msg" target="_blank"><i id="jrMsg">0</i></a>\
+                                                </li>\
+                                                <li class="bx_exit"><a href="/logout/logout.html">[退出]</a></li>');
+
+                                                // 理财端的消息数
+                                                var nCount = data && data.nCount ? data.nCount : 0;
+                                                if (nCount > 0) {
+                                                    $("#wdMsg").text(nCount);
+                                                    $("#wdMsg").addClass('msgCount' + nCount);
+                                                    jrMsgCount = Number(nCount);
+                                                    changeJrMsg();
+                                                } else {
+                                                    $("#wdMsg").addClass('msgCount0')
+                                                }
+                                            } else {
+                                                $.get("/logout/ssoLogout.html");
+                                                document.write('<li class="bx_welcome"><span>欢迎来到宝象金融</span></li><li><a href="/login/index.html"  target="_blank">登录</a></li><li><a href="/secure/register.html">免费注册</a></li>');
+                                            }
+                                        }
+                                    });
+
+                                    // 更新超过3位的数字
+                                    function changeJrMsg() {
+                                        if (jrMsgCount > 0) {
+                                            $("#jrMsg").addClass("newMsg")
+                                        }
+                                        if (jrMsgCount > 99) {
+                                            $("#jrMsg").html("...");
+                                            $("#jrMsg").addClass("bx_msg1")
+                                        } else {
+                                            $("#jrMsg").text(jrMsgCount);
+                                        }
+                                    }
+                                })();
+                            </script>
+                            <li class="bx_app-jr">
+                                <b></b>
+                                <a href="https://www.bxjr.com/topic/app/" target="_blank">移动客户端</a>
+                            </li>
+                            <li><a href="/sageguard/guide.html">新手指引</a></li>
+                            <li><a href="http://bbs.bxjr.com" target="_blank">宝象社区</a></li>
+                        </ul>
+                    </div>
+                    <div class="bx_toplink">
+                        <ul>
+                            <li class="bx_showMenu">
+                                <i class="bx_wx_icon"></i>
+                                <div class="bx_toplink_select">
+                                    <s></s>
+                                    <img class="lazy" data-original="/images/topbar_wx.png"
+                                         src="/images/default.gif" width="94" height="94"/>
+                                    <p>关注宝象金融</p>
+                                </div>
+                            </li>
+                            <li class="bx_showMenu">
+                                <i class="bx_sina_icon"></i>
+                                <div class="bx_toplink_select">
+                                    <s></s>
+                                    <a rel="nofollow" href="http://weibo.com/bxjr" class="bx_round3">+ 宝象金融</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bx_nav clearfix w1200">
+            <a href="//www.bxjr.com" class="bx_logo newyear_logo">宝象金融</a>
+            <div class="bx_menu">
+                <ul class="cc">
+                    <li><a href="//www.bxjr.com">首页</a></li>
+                    <li class="bx_showMenu">
+                        <a href="/lc">投资理财<span id="totalNum"></span><s></s></a>
+                        <div class="bx_menu_second">
+                            <a href="/lc/invest/list.html">直投项目<span id="borrowNum"></span></a>
+
+                            <a href="/lc/bond/list.html">债权转让<span id="bondNum"></span></a>
+                            <a href="/lc/special/list.html">活动专区<span id="specialNum"></span></a>
+                        </div>
+                    </li>
+                    <!--<li class="bx_showMenu">-->
+                        <!--<a href="//www.bxjr.com/zc/">众筹频道<s></s></a>-->
+                        <!--<div class="bx_menu_second">-->
+                            <!--<a href="//www.bxjr.com/zc/">商品众筹</a>-->
+                            <!--<a href="//www.bxjr.com/gq/">股权众筹</a>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <li><a href="/insure">保险频道</a></li>
+                    <li><a href="/borrow/index.html">我要借款</a></li>
+                    <li><a href="/sageguard/index.html">安全保障</a></li>
+                    <li><a href="/about/index.html">关于我们</a></li>
+                </ul>
+
+                <script type="text/javascript">
+                    (function () {
+                        var result = 0;
+                        try {
+                            result = JSON.parse(localStorage['NavNum']);
+                        } catch (e) {
+                        }
+                        window.inIntNavNum = function (num) {
+                            for (var i in num) {
+                                try {
+                                    $('#' + i).html('(<i>' + num[i] + '</i>)');
+                                } catch (e) {
+                                }
+                            }
+                            try {
+                                localStorage['NavNum'] = JSON.stringify(num);
+                            } catch (e) {
+                            }
+                        };
+                        if (result) {
+                            inIntNavNum(result);
+                        }
+                        $.getScript("//www.bxjr.com/index/get-borrow-num.html?callback=inIntNavNum");
+                    })();
+                </script>
+            </div>
+
+            <div class="bx_userMenu bx_showMenu">
+                <a href="/center/home/index"><b></b>我的账户<i></i></a>
+                <ul>
+                    <li><span></span><a href="/center/invest/list" target="_blank">投资记录</a></li>
+                    <li><span></span><a href="/center/member-info/member-basic-info" target="_blank">个人资料</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div><!-- //head -->
+    <div class="bx_main">
+        <div class="guide_main">
+            <div class="guide_banner"><img src="images/guide_banner.jpg" alt="" /></div>
+            <div class="guide_part guide_part_01">
+                <div class="container">
+                    <h2>宝象金融是谁？</h2>
+                    <p class="t-j">上海宝象金融信息服务有限公司（以下简称：宝象金融）是专注农业供应链的互联网金融平台，于2016年9月获得财政部直属央企中国信达旗下信达金控亿元级战略入股。公司注册于中国（上海）自由贸易试验区，注册资金1亿元人民币，实缴资本超过7500万元，领先于全国98%的互联网金融企业。宝象金融以农业上市公司及龙头企业为核心，围绕核心企业及其上下游供应链中有核心企业担保的小微企业来开发安全优质的资产为重点。迄今为止，宝象金融已自主研发三大创新金融技术系统、获得5项国家专利、24项计算机软件著作权，打造银行级风控体系象牙风控，形成了“互联网+产业链+金融”的纵深发展模式。</p>
+                    <div class="js-prize  prize-box">
+                        <div class="prize-list">
+                            <ul class="guide_honor JQ-slide-content clearfix">
+                                <li>
+                                    <img class="lazy" data-original="images/prize_01.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2016年9月<br />
+                                        宝象金融获得信达金控亿元<br />级战略入股
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/prize_02.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2016年7月<br />
+                                        宝象金融斩获“2016互联<br />
+                                        网典范企业奖”
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/part1_07.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2016年7月<br />
+                                        宝象金融加入上海<br />
+                                        金融信息行业协会<br />（SFIA）
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/part1_05.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2016年7月<br />
+                                        宝象金融荣获<br />
+                                        “2016互联网金融<br />行业典范奖”
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/prize_03.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2015年12月<br />
+                                        宝象金融荣获“21世纪中<br />
+                                        国最佳商业模式奖”
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/prize_04.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2015年8月<br />
+                                        宝象金融任上海互联网金融<br />行业协会首批理事单位
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/prize_05.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2015年8月<br />
+                                        宝象金融荣膺“2015优秀<br />互联网金融创新机构
+                                    </p>
+                                </li>
+                                <li>
+                                    <img class="lazy" data-original="images/prize_06.png" src="images/defualt.gif" alt="" />
+                                    <p>
+                                        2015年7月<br />
+                                        宝象金融斩获“2015<br />最具成长价值奖”
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="JQ-slide-nav">
+                            <a href="javascript:;" class="prev arrow-prev">prev</a>
+                            <a href="javascript:;" class="next arrow-next">next</a>
+                        </div>
+                    </div>
+
+                    <table width="100%" cellpadding="0" cellspacing="0" class="ws-data">
+                        <tr>
+                            <td>累计注册量 (人)<strong class="js-register"></strong></td>
+                            <td>累计总投资额 (元)<strong class="js-invest"></strong></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="guide_part guide_part_02">
+                <div class="container">
+                    <h2>为什么选择宝象金融？</h2>
+                    <ul class="part_02_list">
+                        <li>
+                            <img class="lazy" data-original="images/icon_gov.png" src="images/defualt.gif" alt="" />
+                            <h3>国资入驻</h3>
+                            <p>获信达金控亿元级<br/>战略入股</p>
+                        </li>
+                        <li>
+                            <img class="lazy" data-original="images/part2_01.png" src="images/defualt.gif" alt="" />
+                            <h3>高收益</h3>
+                            <p>最高年化收益率15%<br/>40倍以上活期存款利率</p>
+                        </li>
+                        <li>
+                            <img class="lazy" data-original="images/part2_02.png" src="images/defualt.gif" alt="" />
+                            <h3>够灵活</h3>
+                            <p>1天-12个月，任意投资<br/>随时变现，迅速回笼资金</p>
+                        </li>
+                        <li>
+                            <img class="lazy" data-original="images/part2_03.png" src="images/defualt.gif" alt="" />
+                            <h3>低风险</h3>
+                            <p>实物抵押，真实借款<br/>10大安全保障</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guide_part guide_part_03">
+                <div class="container">
+                    <h2>四步成为理财达人!</h2>
+                    <div class="part_tit">STEP1  /  <b>注册账户</b></div>
+                    <ul class="part_03_list part_ul">
+                        <li class="li1">
+                            <img class="lazy" data-original="images/part3_01.png" src="images/defualt.gif" alt="" />
+                            <p>30秒完成注册<br/>屌丝逆袭的开始</p>
+                            <a class="br5" href='//www.bxjr.com/secure/register.html' target="_blank">马上注册</a>
+                        </li>
+                        <li class="li2">
+                            <img class="lazy" data-original="images/icon_attestation.png" src="images/defualt.gif" alt="" />
+                            <p>完成身份信息、安全认证<br/>保障您的合法权益</p>
+                            <a class="br5" href='//www.bxjr.com/center/member-info/member-basic-info' target="_blank">我要认证</a>
+                        </li>
+                        <li class="li3">
+                            <img class="lazy" data-original="images/icon_invest.png" src="images/defualt.gif" alt="" />
+                            <p>马上投资<br/>立享最高15%收益</p>
+                            <a class="br5" href='//www.bxjr.com/lc' target="_blank">我要投资</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guide_part guide_part_04">
+                <div class="container">
+                    <div class="part_tit">STEP2  /  <b>赚取福利</b></div>
+                    <ul class="part_03_list part_ul">
+                        <li class="li1">
+                            <img class="lazy" data-original="images/part4_01.png" src="images/defualt.gif" alt="" />
+                            <div>
+                                <a class="br5" href="//www.bxjr.com/secure/register.html" target="_blank">我要注册</a>
+                            </div>
+                        </li>
+                        <li class="li2">
+                            <img class="lazy" data-original="images/part4_02.png" src="images/defualt.gif" alt="" />
+                            <div>
+                                <a class="br5" href="//www.bxjr.com/lc" target="_blank">我要投资</a>
+                            </div>
+
+                        </li>
+                        <li class="li3 ">
+                            <img class="lazy" data-original="images/part4_03.png" src="images/defualt.gif" alt="" />
+                            <div>
+                                <a class="br5" href="//www.bxjr.com/center/invite/index" target="_blank">马上邀请好友</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guide_part guide_part_05">
+                <div class="container">
+                    <div class="part_tit">STEP3  /  <b>投资理财</b></div>
+                    <ul class="part_05_list part_ul ">
+                        <li class="li1 br5">
+                            <h3>直投标</h3>
+                            <div class="cont">
+                                <p>最高年利率<span><b>9.8</b>%</span></p>
+                                <p>1个月、3个月、6个月......</p>
+                                <p>各种期限任您选择</p>
+                            </div>
+                            <a class="br5" href="//www.bxjr.com/lc/invest/list.html" target="_blank">我要投资</a>
+                        </li>
+<!--                        <li class="li2 br5">
+                            <h3>自动投标</h3>
+                            <div class="cont">
+                                <p>投标抢标</p>
+                                <p>永远快人一步</p>
+                                <p>自动会赚钱的理财神器</p>
+                            </div>
+                            <a class="br5" href="//www.bxjr.com/center/auto-invest/index.html" target="_blank">抢先投标</a>
+                        </li>-->
+                        <li class="li3 br5">
+                            <h3>月月丰</h3>
+                            <div class="cont">
+                                <p>最高年利率<span><b>11</b>%</span></p>
+                                <p>加入简便  自动分散</p>
+                                <p>投资透明  悦享收益</p>
+                            </div>
+                            <a class="br5" href="//www.bxjr.com/lc/fina/list.html" target="_blank">我要加入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guide_part guide_part_06">
+                <div class="container">
+                    <div class="part_tit">STEP4  /  <b>掌上理财</b></div>
+                    <div class="cont">
+                        <img class="lazy" data-original="images/erwema.png" src="images/defualt.gif" alt="" />
+                        <p class="erweima-txt">关注宝象金融服务号，随时随地投资理财</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bx_foot">
+        <div class="w1200 clearfix">
+            <div class="bx_link bx_fl">
+                <dl class="bx_about">
+                    <dt>
+                        <i></i>
+                        <a rel="nofollow" href="/about/index.html">关于我们</a>
+                    </dt>
+                    <dd>
+                        <a rel="nofollow" href="/about/team.html">管理团队</a>
+                        <a rel="nofollow" href="/about/collaboration.html">合作伙伴</a>
+                        <a rel="nofollow" href="/about/expert.html">专家顾问</a>
+                        <a rel="nofollow" href="/about/contact.html">联系我们</a>
+                    </dd>
+                </dl>
+                <dl class="bx_help">
+                    <dt>
+                        <i></i>
+                        <a rel="nofollow" href="/help/index.html">帮助中心</a>
+                    </dt>
+                    <dd>
+						<a rel="nofollow" href="https://www.bxjr.com/help/index.html?helpKey=regLogin">注册与登录</a>
+                        <a rel="nofollow" href="/help/index.html">常见问题</a>
+                        <a rel="nofollow" href="/help/explain.html">名词解释</a>
+                        <!--<a href="http://www.bxjr.com/asks/">宝象问答</a>-->
+                        <a href="/help/expenses.html">资费标准</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bx_service bx_fl">
+                <h2>400 885 1100</h2>
+                <p class="fl clearfix">服务时间：</p>
+                <div class="fl clearfix">
+                    <p>周一至周五 9:00 - 21:00</p>
+                    <p>周六、周日 9:00 - 17:00</p>
+                </div>
+            </div>
+            <div class="bx_copyRight bx_fr">
+                <ul>
+                    <li class="bx_foot_sina"><a class="f-sina" rel="nofollow" href="http://weibo.com/bxjr"
+                                                target="_blank" title="新浪微博"></a></li>
+                    <li class="bx_foot_qq"><a class="f-qq" target="_blank" href="/about/contact.html?pop=true"
+                                              title="在线客服"></a></li>
+                    <li class="bx_foot_wx"><a href="javascript:void(0)" class="f-wx" title="扫描二维码"><img class="lazy"
+                                                                                                        data-original="/images/indexnew/card-wx.png"
+                                                                                                        src="/images/default.gif"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="shgs w1200 clearfix"><br/>
+            <a rel="nofollow" target="_blank" title="ICP备案" href="http://www.miibeian.gov.cn/"><img class="lazy"
+                                                                                                    data-original="/images/icon/icp.jpg?v=20150806"
+                                                                                                    src="/images/default.gif"
+                                                                                                    alt="ICP备案"></a>
+            <a rel="nofollow" target="_blank" title="诺顿"
+               href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.bxjr.com&lang=zh_cn"><img
+                    class="lazy" data-original="/images/icon/norton.jpg?v=20150806" src="/images/default.gif" alt="诺顿"></a>
+            <a rel="nofollow" target="_blank" title="中国信用企业"
+               href="http://www.itrust.org.cn/Home/Index/itrust_certifi?wm=1332343034"><img class="lazy"
+                                                                                            data-original="/images/icon/xyqy.jpg?v=20150806"
+                                                                                            src="/images/default.gif"
+                                                                                            alt="中国信用企业"></a>
+            <a rel="nofollow" target="_blank" title="诚信网站"
+               href='https://credit.szfw.org/CX20150826011067100188.html'><img class="lazy"
+                                                                               data-original='/images/icon/cert.jpg?v=20150806'
+                                                                               src="/images/default.gif"
+                                                                               border='0'/></a>
+            <a rel="nofollow" target="_blank" title="工商营业执照"
+               href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne26zbqq0ili51oosvqywkvpe6b6e"><img
+                    class="lazy" data-original="/images/icon/shgs.jpg?v=20150806" src="/images/default.gif" alt="上海工商"></a>
+            <a rel="nofollow" target="_blank" title="可信网站"
+               href="https://ss.knet.cn/verifyseal.dll?sn=e15091031011560337sppm000000&ct=df&a=1&pa=0.9623787335585803"><img
+                    class="lazy" data-original="/images/icon/verifyseal.jpg?v=20150806" src="/images/default.gif"
+                    alt="可信网站"></a>
+            <a rel="nofollow" target="_blank" title="安全联盟"
+               href="http://www.anquan.org/authenticate/cert/?site=www.bxjr.com&at=business"><img class="lazy"
+                                                                                                  data-original="/images/icon/anquan.png?v=20151028"
+                                                                                                  src="/images/default.gif"
+                                                                                                  alt="安全网站" width="108"
+                                                                                                  height="40"></a>
+            <a rel="nofollow" target="_blank" title="互联网金融行业认证"
+               href="http://si.trustutn.org/info?sn=320160111000348686848"><img class="lazy"
+                                                                                data-original="/images/icon/hlwjr.jpg?v=20160115"
+                                                                                src="/images/default.gif" alt="安全网站"
+                                                                                width="108" height="40"></a>
+        </div>
+        <div class="w1200 clearfix">
+            <p class="bx_footP">Copyright&copy;2014-2016.宝象金融版权所有 <a rel="nofollow" href="http://www.miibeian.gov.cn/"
+                                                                     target="_blank">沪ICP备15015289号</a></p>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        //图片懒加载
+        $(function() {
+            $("img.lazy").lazyload({
+                effect : "fadeIn",
+                failure_limit : 30
+            });
+        });
+    </script>
+    <script>
+        /*奖项滚动*/
+        $(".js-prize").Slide({
+            effect: "scroolLoop",
+            autoPlay: false,
+            speed: "normal",
+            timer: 100,
+            steps: 1
+        });
+
+
+        /*动态获取平台数据*/
+        $.ajax({
+            type: "GET",
+            async: true,
+            url: location.hostname+"/index/statistic.html",
+            dataType: "json", //返回数据形式为json
+            success: function (json) {
+                /*json.members 注册会员*/
+                $(".js-register").text(json.members);
+                /*json.moneys 累计交易额*/
+                $(".js-invest").text(json.moneys)
+            }
+        });
+
+    </script>
+    <span style="display: none;">
+<script>
+        var _hmt = _hmt || [];
+        (function () {
+            var s = document.getElementsByTagName("script")[0];
+            //百度统计
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9d8516b072af1baf608b889209361cbe";
+            s.parentNode.insertBefore(hm, s);
+            //友盟统计
+            var ym = document.createElement("script");
+            ym.src = "//s4.cnzz.com/z_stat.php?id=1258672745";
+            s.parentNode.insertBefore(ym, s);
+        })();
+
+
+
+        </script>
+    </span>
+</div>
+</body>
+</html>

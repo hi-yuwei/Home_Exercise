@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>hasAttribute()</title>
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<input type="button" value="Click Me" id="btn" onclick="alert('hello,word')" />
+</body>
+<script type="text/javascript">
+	var btn = document.getElementById("btn");
+	if (btn.hasAttribute("onclick")) { //判断元素是否拥有指定的属性，有的话返回true，否则返回false
+		alert("已有了onclick事件");
+	}
+</script>
+
+</html>

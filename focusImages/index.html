@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta>
+    <title>Title</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+    <!--<script type="text/javascript" src="./js/js.js"></script>-->
+</head>
+<body>
+    <div class="banner-wrap">
+        <ul class="images-list" id="imagslist">
+            <li>
+                <!--<img src="./images/banner1.jpg"/>-->
+                <span class="s1">1</span>
+            </li>
+            <li>
+                <!--<img src="./images/banner2.jpg"/>-->
+                <span class="s2">2</span>
+            </li>
+            <li>
+                <!--<img src="./images/banner3.jpg"/>-->
+                <span class="s3">3</span>
+            </li>
+        </ul>
+        <div class="smallbox">
+            <div class="current" id="current" style="left:0;"></div>
+            <ul class="small-images" id="smallList">
+                <li index="0" class="li1">1</li>
+                <li index="1" class="li2">2</li>
+                <li index="2" class="li3">3</li>
+            </ul>
+        </div>
+    </div>
+<script type="text/javascript">
+    var imagesli= document.getElementById("imagslist").getElementsByTagName("li");
+    var current=document.getElementById("current");
+    var samllimgList=document.getElementById("smallList").getElementsByTagName("li");
+    var currentWidth=200;
+    var timer=null;
+    var j=0;
+    var currentLeft=0;
+/*    function smallRun(){
+                setInterval(function(){
+         if(j==0){
+
+         }else{
+         //正常跑
+         if(parseInt(current.style.left)==currentLeft){
+         return;
+         }else{
+         current.style.left= parseInt(current.style.left)+10+"px";
+         }
+         }
+
+
+         },30)
+    }*/
+    var showImage=function(x){
+        for(var i=0;i<imagesli.length;i++){
+            imagesli[i].style.display="none";
+        }
+        imagesli[x].style.display="block";
+    }
+    var run=function(){
+        currentLeft=currentWidth*j;
+        j++;
+        if(j===imagesli.length){
+            j=0;
+        }
+        for(var i=0;i<imagesli.length;i++){
+            imagesli[i].style.display="none";
+        }
+        imagesli[j].style.display="block";
+
+
+    };
+    imagesli[0].style.display="block";
+    clearInterval(timer);
+    timer=setInterval(run,1000);
+    for(var i=0;i<3;i++){
+        samllimgList[i].onmouseover=function(){
+            clearInterval(timer);
+            showImage(this.getAttribute("index"));
+        };
+        samllimgList[i].onmouseout=function(){
+            timer=setInterval(run,1000);
+        }
+    }
+
+</script>
+</body>
+</html>

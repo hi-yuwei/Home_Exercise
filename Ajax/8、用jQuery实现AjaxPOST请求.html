@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用jQuery实现AjaxPOST请求</title>
+    <script type="text/javascript" src="./jQ/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.ajax({
+                type:"POST",
+                url:"http://www.baidu.com",
+                dataType:"json",
+                //"POST"请求需要使用data来传递数据。
+                data:{
+                    name:"欧阳锋",
+                    age:27,
+                    sex:"男"
+                },
+                success:function(data){
+                    if(data.success){
+
+                    }
+                },
+                error:function(jqXHR){
+                    alert("发生错误：代码"+jqXHR.status);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

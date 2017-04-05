@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>左边固定右边自适应-position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+        }
+        
+        .bx-h5-box {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            padding: 14px;
+            background: gray;
+        }
+        
+        .bx-h5-box .bx-h5-box-left {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            width: 20%;
+            height: 72px;
+            background: green;
+        }
+        
+        .bx-h5-box-right {
+            height: 72px;
+            padding: 0 0 0 25%;
+        }
+        
+        .bx-h5-box-right h3 {
+            height: 72px;
+            background: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="bx-h5-box">
+        <div class="bx-h5-box-left">
+        </div>
+        <div class="bx-h5-box-right">
+            <h3>中国农业银行</h3>
+        </div>
+    </section>
+</body>
+
+</html>

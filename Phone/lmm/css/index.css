@@ -1,0 +1,271 @@
+		.cl{ clear: both;}
+
+		html{font-family: "microsoft yahei",Arial;}
+		header{
+			width: 100%;
+			height: 45px;
+			background-color: rgb(211,7,117);
+			position: relative;
+		}
+		header p{
+			color: #fff;
+			line-height: 16px;
+			font-weight: 700;
+			font-size: 20px;
+			text-align: left;
+			position: absolute;
+			top: 12px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		header div{
+			width: 36px;
+			height: 36px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		header div span{
+			position: absolute;
+			top: 6px;
+			background: url(../images/my1.png) no-repeat;
+			background-size: 25px;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+
+
+		/******* banner ********/
+		.swipe {
+		  overflow: hidden;
+		  visibility: hidden;
+		  position: relative;
+		  width: 100%;
+		}
+		.swipe img{
+			width: 100%;
+		}
+		.swipe-wrap {
+		  overflow: hidden;
+		  position: relative;
+		}
+		.swipe-wrap > div {
+		  	float:left;
+		  	width:100%;
+		  	position: relative;
+		}
+		.xiaoyuandian{
+			width: 80px;
+			height: 30px;
+			position: absolute;
+			bottom: -9px;
+			left: 50%;
+			-webkit-transform:translate(-50%,0);
+			transform:translate(-50%,0); 
+		}
+		.xiaoyuandian ul{
+			list-style: none;
+		}
+		.xiaoyuandian ul li{
+			float: left;
+			width: 10px;
+			height: 10px;
+			background-color: #fff;
+			opacity: 0.6;
+			margin-right: 5px;
+			border-radius:50%;
+		}
+		.xiaoyuandian ul li.cur{
+			background:#fff;
+			opacity: 1;
+		}
+		
+		/*导航*/
+		html{width: 100%;}
+		body{width: 100%;}
+		nav{
+			box-sizing:border-box;
+			width: 100%;
+			height: 180px;
+			padding-top: 5px;
+			border-bottom: 2px solid #ccc;
+			padding-left: 2.5px;
+			padding-right: 2.5px;
+		}
+		ul{width: 100%;}
+		nav ul li{
+			float: left;
+			width: 50%;
+			padding-left: 2.5px;
+			padding-right: 2.5px;
+			box-sizing:border-box;
+			margin-bottom: 5px;
+
+		}
+		nav ul li a{
+			text-decoration: none;
+			display: block;
+			width: 100%;
+			height: 80px;
+			background-color: #c672e1;
+			position: relative;
+		}
+		nav ul li:nth-child(2) a{background-color: #ff842b;}
+		nav ul li:nth-child(3) a{background-color: #5598dc;}
+		nav ul li:nth-child(4) a{background-color: #80c220;}
+
+		nav ul li a p{
+			color: #fff;
+			font-size: 12px;
+			padding-left: 46%;
+			box-sizing:border-box;
+			width:100%;
+			height: 42px;
+			position: absolute;
+			top: 50%;
+			transform:translateY(-50%);
+			right: 5px;
+		}
+		nav ul li a p::before{
+			position: absolute;
+			top: 50%;
+			left: 13%;
+			transform:translateY(-58%);
+			content:"";
+			width: 45px;
+			height: 45px;
+			background: url(../images/icons.png) no-repeat;
+			background-size: 240px;
+
+		}
+		nav ul li:nth-child(2) a p::before{
+			background: url(../images/icons.png) no-repeat -66px 0;
+			background-size: 240px;
+		}
+		nav ul li:nth-child(3) a p::before{
+			background: url(../images/icons.png) no-repeat -130px 0;
+			background-size: 240px;
+		}
+		nav ul li:nth-child(4) a p::before{
+			background: url(../images/icons.png) no-repeat -191px -3px;
+			background-size: 240px;
+		}
+		nav ul li a p span{
+			margin-bottom: 2px;
+			display: block;
+			font-size: 16px;
+			color: #fff;
+			
+		}
+
+
+		section ul li{
+			position: relative;
+			float: left;
+			width: 25%;
+			height: 70px;
+			box-sizing:border-box;
+			border-right:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+		}
+		section ul li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: #666;
+			font-size: 14px;
+			text-align: center;
+			line-height: 100px;
+		}
+		section ul li::before{
+			position: absolute;
+			left: 50%;
+			transform:translateX(-50%);
+			content: "";
+			width: 45px;
+			height: 45px;
+			background: url(../images/icons.png) no-repeat -4px -56px;
+			background-size: 240px;
+		}
+		section ul li:nth-child(2)::before{
+			background: url(../images/icons.png) no-repeat -66px -56px;
+			background-size: 240px;
+		}
+		section ul li:nth-child(3)::before{
+			background: url(../images/icons.png) no-repeat -128px -56px;
+			background-size: 240px;
+		}
+		section ul li:nth-child(4)::before{
+			background: url(../images/icons.png) no-repeat -192px -56px;
+			background-size: 240px;
+		}
+
+
+
+		div.tu ul{
+			width: 100%;
+			padding: 10px 0;
+		}
+		div.tu ul li{
+			float: left;
+			width: 50%;
+			box-sizing:border-box;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+			border-right:1px solid #ccc;
+		}
+		div.tu ul li img{
+			width: 100%;
+			
+		}
+
+		footer div.login{
+			width: 100%;
+			height: 30px;
+			margin-bottom: 5px;
+			background-color: #d30775;
+		}
+
+		footer div.login a{
+			float: left;
+			color: #fff;
+			text-decoration: none;
+			line-height: 30px;
+			margin: 0 10px;
+			font-size: 14px;
+		}
+		footer div.login span{
+			float: right;
+			color: #fff;
+			text-decoration: none;
+			line-height: 30px;
+			margin-right: 15px;
+			font-size: 14px;
+		}
+		body{height: 1000px;}
+		footer div.versions ul{ 
+			width: 100%;
+			font-size: 12px;
+			position: relative;
+			color: #999;
+		}
+		footer div.versions ul li:nth-child(1){
+			float: left;
+		}
+		footer div.versions ul li:nth-child(1) span{
+			margin: 0 3px;
+		}
+		footer div.versions ul li:nth-child(2){
+			position: absolute;
+			left: 50%;
+			transform:translateX(-50%);
+		}
+		footer div.versions ul li:nth-child(3){
+			float: right;
+			margin-right: 5px;
+		}
+
+		

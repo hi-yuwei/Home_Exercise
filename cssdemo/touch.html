@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+          id="viewport">
+    <title>touch</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+<section class="touchBox">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+</section>
+<script>
+
+    function load() {
+        var bodyTop = 0;
+        document.addEventListener("touchstart", touch, false);
+        document.addEventListener("touchmove", touch, false);
+        document.addEventListener("touchend", touch, false);
+
+        var statrTop,
+                moveTop,
+                endTop;
+
+        function touch(event) {
+            switch (event.type) {
+                case "touchstart":
+                    statrTop = event.touches[0].pageY;
+//                    console.log(statrTop);
+                    break;
+                case "touchmove":
+                    moveTop = event.touches[0].pageY;
+//                    console.log(moveTop);
+                    break;
+                case "touchend":
+                    bodyTop += statrTop - moveTop;
+                    bodyTop<0?bodyTop=0:bodyTop;
+                    console.log(bodyTop);
+                    document.querySelector(".touchBox").style.top = bodyTop + "px";
+                    break;
+            }
+
+        }
+
+    }
+    window.onload = load();
+</script>
+</body>
+</html>

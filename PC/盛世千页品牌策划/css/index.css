@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*服务项目开始*/
+.services{
+	width:1000px;
+	margin:0px auto;
+	padding-bottom:30px;
+	/*background:yellow;*/
+	}
+.services h2{
+	border-bottom:0px;
+	}
+.services ul li{
+	float:left;
+/*	margin-right:1px;*/
+	margin:0px 1px 1px 0px;
+	}
+/*.services ul li.noMargin{
+	float:right;
+	margin-right:0px;
+	}*/
+	
+.projects ul li.noMargin{
+	float:right;
+	margin-right:0px;
+	}
+/*服务项目结束*/
+
+/*关于我们开始*/
+.aboutUs{
+	/*height:500px;*/
+	background:#F2F2F2;
+	}
+.inAboutUs{
+	width:1000px;
+	margin:0px auto;
+	padding-bottom:30px;
+	/*border:1px solid #000;*/
+	}
+	
+.aboutUs .inAboutUs p{
+	width:550px;
+	font-size:12px;
+	text-indent:2em;
+	line-height:26px;
+	float:left;
+	}
+.aboutUs .inAboutUs p a{
+	width:96px;
+	height:37px;
+	display:block;
+	/*text-align:center;*/
+	line-height:37px;
+	color:#fff;
+	background:#EC3031;
+	float:right;
+	margin-top:32px;
+	}
+.aboutUs .inAboutUs img{
+	border:4px solid #fff;
+	float:right;
+	}
+/*关于我们结束*/
+
+
+/*项目展示开始*/
+
+.projects{
+	background:#F2F2F2;
+	}
+.proHt{
+	border-bottom:1px solid #ccc;
+	padding-bottom:0px;
+	margin-bottom:30px;
+	}
+.proHt h2{
+	float:left;
+	border-bottom:0px;
+	margin-bottom:0px;
+	}
+ .proHt a{
+	float:right;
+	width:48px;
+	height:16px;
+	background:#F12F2D;
+	font-size:8px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:16px;
+	text-align:center;
+	margin-top:30px;
+	}
+.projects ul{
+	width:950px;
+	margin:0px auto;
+	/*background:#9F3;*/
+	/*border:1px solid #000;*/
+	padding-bottom:30px;
+	}
+	
+.projects ul li{
+	float:left;
+	margin:0px 24px 24px 0px;
+	text-align:center;
+	}
+	
+.projects ul li img{
+	border:4px solid #fff;
+	margin-bottom:10px;
+	}
+.projects ul li a:hover img{
+	border:4px solid #F12F2D;
+
+	}
+.projects ul li a:hover{
+	color:#F12F2D;
+	text-decoration:none;
+	}
+/*项目展示结束*/
+
+/*行业新闻开始*/
+.news{
+	width:1000px;
+
+	margin:0px auto;
+	}
+	
+.news .newsList li{
+	width:482px;
+	height:96px;
+	float:left;
+
+	padding-bottom:10px;
+	margin-bottom:30px;
+	}
+.news .newsList li img{
+	float:left;
+	margin-right:9px;
+	}
+	
+.news .newsList li div{
+	float:left;
+	width:323px;
+	height:96px;
+	}
+.news .newsList li div p{
+	line-height:24px;
+	}
+.news .newsList li div a{
+	float:right;
+	color:red;
+	}
+.showCassList{
+	width:1000px;
+	padding-bottom:20px;
+/*	border:1px solid #000;*/
+	}
+.showCassList li{
+	float:left;
+	}
+.showCassList li a{
+	padding:0px 33px;
+	color:#666;
+	}
+.show{
+	padding-bottom:0px;
+	margin-top:20px;
+	}
+/*行业新闻结束*/
+

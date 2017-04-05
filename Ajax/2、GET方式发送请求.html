@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET方式发送请求</title>
+    <script type="text/javascript">
+        var request;
+        if(window.XMLHttpRequest){
+            request=new XMLHttpRequest();
+        }
+        else{
+            request=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        request.open("GET","get.php?id=1",true); //get方式异步请求get.php页面，
+        request.send(); //请求的内容以url传参方式提交，所以不需要参数
+    </script>
+</head>
+<body>
+
+</body>
+</html>

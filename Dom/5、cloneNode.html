@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>cloneNode()</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		
+		div p {
+			width: 50px;
+			height: 50px;
+			background: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box" id="box">
+		<p></p>
+	</div>
+	<div class="box2" id="box2"></div>
+</body>
+<script type="text/javascript">
+	var x = document.getElementById("box").cloneNode(true);
+	var y = document.getElementById("box2");
+	y.appendChild(x);
+</script>
+
+</html>

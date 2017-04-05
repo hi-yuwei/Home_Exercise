@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 微软雅黑;
+    font-size:12px;
+    line-height: 200%;
+    color: #fff;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.oncolumn {
+    color: #ff3b06;
+}
+
+.banner {
+    width: 100%;
+    background: #246b9f;
+    text-align: center;
+}
+
+.banner .banner-con {
+    width: 1320px;
+    height: 800px;
+    margin: 0 auto;
+    background: #246b9f;
+}
+
+.banner .banner-con h2 {
+    position: relative;
+    display: inline-block;
+    padding: 82px 0;
+    font-size: 30px;
+}
+
+.banner .banner-con h2:before, .banner h2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 83px;
+    height: 2px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.banner .banner-con h2:before {
+    left: 170px;
+}
+
+.banner .banner-con h2:after {
+    right: 170px;
+}
+
+.banner .banner-con .graph, .banner .banner-con .txt {
+    float: left;
+    width: 660px;
+    height: 396px;
+
+}
+
+.banner .banner-con .graph {
+}
+
+.banner .banner-con .graph .shape {
+    width: 416px;
+    margin: 0 auto;
+    background: url("../images/service-bg.png") no-repeat;
+}
+
+.banner .banner-con .graph .shape ul {
+    position: relative;
+    height: 396px;
+    font-size: 16px;
+    color: #003963;
+}
+
+.banner .banner-con .graph .shape ul li {
+    position: absolute;
+    cursor: pointer;
+}
+
+.banner .banner-con .graph .shape ul li:nth-child(1) {
+    top: 92px;
+    left: 99px;
+}
+
+.banner .banner-con .graph .shape ul li:nth-child(2) {
+    top: 92px;
+    right: 103px;
+}
+
+.banner .banner-con .graph .shape ul li:nth-child(3) {
+    top: 229px;
+    right: 48px;
+}
+
+.banner .banner-con .graph .shape ul li:nth-child(4) {
+    bottom: 42px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.banner .banner-con .graph .shape ul li:nth-child(5) {
+    top: 229px;
+    left: 24px;
+    transform: translateX(50%);
+}
+
+.banner .banner-con .txt {
+    text-align: left;
+    font-size: 36px;
+}
+
+.banner .banner-con .txt .txtlist {
+    padding: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.banner .banner-con .txt .txtlist li {
+    display: none;
+}
+
+.banner .banner-con .txt .txtlist li.showCon {
+    display: block;
+}
+
+.banner .banner-con .txt .txtConList {
+    position: relative;
+    height: 197px;
+    padding: 37px 0 40px;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+    overflow: hidden;
+
+}
+
+.banner .banner-con .txt .txtConList p {
+    position: absolute;
+    top: -225px;
+    opacity: 0;
+    overflow: hidden;
+    transition: top 1s ease 0s;
+}
+
+.banner .banner-con .txt .txtConList p.showTxt {
+    opacity: 1;
+    top: 37px;
+
+}
+
+.banner .banner-con .txt .btn {
+    display: block;
+    width: 60px;
+    height: 58px;
+    background: url("../images/border.png") no-repeat, url("../images/arrow.png") no-repeat center;
+    transition: all 1s ease 0s;
+}
+
+.banner .banner-con .txt .btn:hover {
+    opacity: .5;
+    background: url("../images/border.png") no-repeat, url("../images/arrow.png") no-repeat center 20px;
+}

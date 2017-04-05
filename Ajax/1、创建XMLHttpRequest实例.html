@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建XMLHttpRequest实例</title>
+    <script type="text/javascript">
+        var request;
+        if(window.XMLHttpRequest){
+            request=new XMLHttpRequest();   //IE7+,firefox,Chrome,Opera,Safari
+        }
+        else{
+            request=new ActiveXObject("Microsoft.XMLHTTP"); //IE6，IE5
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

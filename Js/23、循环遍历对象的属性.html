@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>循环遍历对象的属性</title>
+
+</head>
+
+<body>
+	<p id="txt"></p>
+
+</body>
+<script>
+	var person = {
+		firstname: "yu",
+		lastname: "wei",
+		age: 27
+	};
+	var txt = "";
+	for (var x in person) {
+		txt += person[x];
+	}
+	document.getElementById("txt").innerHTML = txt;
+</script>
+
+</html>

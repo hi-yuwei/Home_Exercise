@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery核心函数2</title>
+	<style type="text/css">
+		p {
+			line-height: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			//	$("p", document.forms[0]).css("background-color", "yellow");
+			$("p", $(".b")).css("background-color", "yellow");
+		})
+	</script>
+</head>
+
+<body>
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+	<form class="b">
+		<p>4</p>
+		<p>5</p>
+		<p>6</p>
+	</form>
+</body>
+
+
+</html>

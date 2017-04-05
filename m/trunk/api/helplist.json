@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "levelSettingId": 1 ,
+      "levelSettingGrowthLow": 0,
+      "levelSettingIcon": "./static/views/vip/src/crown-v1.png",
+      "levelSettingName": "小象"
+    },
+    {
+      "levelSettingId": 2,
+      "levelSettingGrowthLow": 1001,
+      "levelSettingIcon": "./static/views/vip/src/crown-v2.png",
+      "levelSettingName": "大象"
+    },
+    {
+      "levelSettingId": 3,
+      "levelSettingGrowthLow": 10001,
+      "levelSettingIcon": "./static/views/vip/src/crown-v3.png",
+      "levelSettingName": "银象"
+    },
+    {
+      "levelSettingId": 4,
+      "levelSettingGrowthLow": 100001,
+      "levelSettingIcon": "./static/views/vip/src/crown-v4.png",
+      "levelSettingName": "金象"
+    }
+  ],
+  "isSuccess":true
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>mobile-houver</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html,body{
+			height: 100%;
+			min-height: 100%;
+		}
+		.abc{
+			height: 50%;
+			background-color: #999;
+		}
+	</style>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="abc">
+		
+	</div>
+		<script type="text/javascript">
+		$('.abc').hover(function() {
+
+			$(this).css('background','red');
+		}, function() {
+			$(this).css('background','#000');
+		});
+	</script>
+</body>
+</html>

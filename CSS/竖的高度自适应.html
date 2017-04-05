@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>竖的高度自适应</title>
+
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		html,
+		body {
+			height: 100%;
+		}
+		
+		.fatherBox {
+			height: 100%;
+		}
+		
+		.box1 {
+			background: red;
+			height: 100px;
+			position: relative;
+		}
+		.box2,
+		.box3 {
+			box-sizing: border-box;
+			float: left;
+			height: 100%;
+			margin-top: -100px;
+			padding-top: 100px;
+		}
+		
+		.box2 {
+			width: 20%;
+			background: yellow;
+		}
+		
+		.box3 {
+			width: 80%;
+			background: green;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="fatherBox">
+		<div class="box1"></div>
+		<div class="box2">11</div>
+		<div class="box3"></div>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,3 @@
+$(document).ready(function(){var a="http://da.eqxiu.com/c.gif?",b=window,c=b.screen,d=c.availWidth+"x"+c.availHeight,e=encodeURIComponent,f=document;n=b.navigator;var g={lag:n.userLanguage||n.language};typeof scene!==scene&&(g.event_description=scene.description,g.event_id=scene.id,g.scene_type=scene.type,g.creator_id=scene.userId,g.creator_type=scene.userType);var h="action_name="+e(f.title)+"&idsite=2&url="+e(f.location)+"&urlref="+e(f.referrer)+"&res="+d+"&data="+e(JSON.stringify(g));h+="&cookie="+(n.cookieEnabled?1:0),h+="&ct="+(new Date).getTime(),a+=h;var i=f.createElement("img");i.setAttribute("src",a),i.setAttribute("height","0"),i.setAttribute("width","0"),i.setAttribute("style","display:none"),f.body.appendChild(i)});/**
+ * Created by yy on 2016/1/7.
+ */

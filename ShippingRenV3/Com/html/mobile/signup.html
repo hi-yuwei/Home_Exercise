@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+	<link rel="stylesheet" href="../../Content/mobile/jquery.mobile-1.4.5.min.css">
+	<style>
+		body, input, label, .ui-btn {font-family: microsoft yahei; font-size: 1.12em;}
+		#mobile_header {font-size: 1.2em;}
+		#mobile_header a {top: 0.9em;}
+		#agreeChk {color: #38c;}
+		#btnSignup {font-size: 1.2em; color: #fff; background: #3398da;}
+	</style>
+	<script src="../../Scripts/jquery-1.11.2.min.js"></script>
+	<script src="../../Scripts/mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+	<div data-role="header" id="mobile_header">
+		<a href="javascript:void(0)" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+		<h1>注册</h1>
+	</div>
+	<div role="main" class="ui-content" id="mobile_content">
+		<form>
+			<input name="email" id="email" placeholder="邮箱" value="" type="email">
+			<input name="password" id="password" placeholder="登录密码" value="" autocomplete="off" type="password">
+			<input name="passwordCon" id="passwordCon" placeholder="确认密码" value="" autocomplete="off" type="password">
+			<input name="phone" id="phone" placeholder="手机号码" value="" type="text">
+			<input name="jiaoyanma" id="jiaoyanma" placeholder="手机校验码" value="" type="text">
+			<a href="javascript:void(0)" class="ui-btn">发送校验码</a>
+			<div class="ui-btn">59秒</div>
+			<p style="color: #999;">校验码已发送至您的手机，15分钟内输入有效，请勿泄漏！</p>
+			<fieldset data-role="controlgroup">
+				<legend>用户类型</legend>
+				<label class="ui-btn-inline">
+					<input class="ui-mini" type="radio" name="zhuShang">货主
+				</label>
+				<label class="ui-btn-inline">
+					<input class="ui-mini" type="radio" name="zhuShang">物流商
+				</label>
+			</fieldset>
+			<input name="" id="" placeholder="姓" value="" type="text">
+			<input name="" id="" placeholder="名" value="" type="text">
+			<input name="" id="" placeholder="公司名称" value="" type="text">
+			<input name="" id="" placeholder="邀请码" value="" type="text">
+			<label id="agreeChk">
+				<input type="checkbox">同意 <a class="link" href="http://www.baidu.com" target="_blank">《运去哪服务协议》</a>
+			</label>
+			<a href="javascript:void(0)" id="btnSignup" data-role="button">马上注册</a>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+</head>
+<body>
+<p class="txt"></p>
+<script type="text/javascript">
+
+
+    var timer=null;
+//    var fun = function () {
+//        document.querySelector('.txt').innerHTML += 1;
+//    }
+     timer = setInterval('fun()', 1000);
+    function fun() {
+        document.querySelector('.txt').innerHTML+=1;
+    }
+</script>
+</body>
+</html>

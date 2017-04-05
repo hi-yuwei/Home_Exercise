@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>appendChild()</title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		ul {
+			width: 100px;
+			height: 150px;
+			/*			margin: 50px auto;*/
+			border: 1px solid #000;
+		}
+		
+		ul li {
+			list-style: none;
+			height: 20px;
+			line-height: 20px;
+			background: red;
+			margin-bottom: 5px;
+		}
+		
+		.add-li {
+			background: #ccc;
+		}
+		
+		.add {
+			width: 100px;
+			height: 30px;
+			/*
+
+*/
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="list" id="list">
+		<li>第一个子项</li>
+		<li>第二个子项</li>
+		<li>第三个子项</li>
+	</ul>
+	<button id="add" class="add">Add</button>
+</body>
+<script type="text/javascript">
+	function Add() {
+		var list = document.getElementById("list");
+		var lis = document.createElement("li"); //创建一个节点
+		//为节点添加属性和内容
+		lis.className = "add-li";
+		lis.id = "adlis";
+		lis.innerHTML = "js添加的子项";
+		list.appendChild(lis); //追加到ul子节点集合的末尾
+	}
+	document.getElementById("add").addEventListener("click", Add);
+</script>
+
+</html>

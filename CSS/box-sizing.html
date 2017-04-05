@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-sizing</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		.box{
+			margin:100px auto;
+			width:200px;
+			height:200px;
+			padding:10px;
+			background:green;
+			/*自动帮我们减去padding,border的宽高，而不需要我们去计算*/
+			box-sizing:border-box;	
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">Hello,Word!</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>31、设置单个或多个CSS属性值</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#append").click(function () {
+				//				$("#p1").css("color", "red"); //设置单个值
+				$("#p1").css({
+					"color": "red",
+					"font-size": "24px",
+					"width": "200px",
+					"height": "100px",
+					"border": "1px solid #000"
+				})
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<p id="p1">设置单个或多个css属性值</p>
+	<button id="append">Click Me</button>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>彩票效果</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 12px/1 "微软雅黑";
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .box {
+            position: relative;
+            margin: 100px auto;
+            padding: 2px 0;
+            overflow: hidden;
+            width: 300px;
+            height: 34px;
+            border: 1px solid #000;
+
+        }
+
+        .box ul {
+            position: absolute;
+            top: 2px;
+            left: 0px;
+        }
+
+        .box ul li {
+            margin-top: 10px;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            color: #fff;
+            border-radius: 50%;
+            background: red;
+        }
+
+        .box .no-blue li {
+            background: blue;
+        }
+
+        .box ul li:first-child {
+            margin-top: 0;
+        }
+
+        .btn {
+            width: 50px;
+            height: 28px;
+            float: right;
+        }
+
+        .box .no1 {
+            left: 5px;
+        }
+
+        .box .no2 {
+            left: 38px;
+        }
+
+        .box .no3 {
+            left: 71px;
+        }
+
+        .box .no4 {
+            left: 104px;
+        }
+
+        .box .no5 {
+            left: 137px;
+        }
+
+        .box .no6 {
+            left: 170px;
+        }
+
+        .box .no7 {
+            left: 203px;
+        }
+    </style>
+    <script type="text/javascript" src="./validation/lib/jquery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var roll, num = 0, nums, flg;
+            var clearR = [];
+
+            //随机数
+            function number() {
+                flg = true;
+                nums = $(".box ul").length;
+                var obj = {};
+                clearR = [];
+                while (flg) {
+                    if (clearR.length !== (nums - 1)) {
+                        var val = Math.floor(Math.random() * parseInt(33) + 1)
+                        if (!obj[val]) {
+                            obj[val] = true;
+                            clearR.push(val);
+                        }
+                    }
+                    else {
+                        clearR.sort(function (x, y) {
+                            return x - y;
+                        });
+                        flg = false;
+                    }
+                }
+//              特别数字
+                clearR.push(Math.floor(Math.random() * parseInt(16 - 1) + 1));
+            };
+
+            //特效
+            roll = function (x, y) {
+
+                num = (y - 1) * -38 + 2;
+                num = num >= -1216 ? num : 0;
+                $(".box ul").eq(x).animate({top: num + "px"},1000,function(){
+                    $(".box .btn").removeAttr("disabled");
+                });
+
+            };
+
+            //选号
+            $(".box .btn").on("click", function () {
+                $(this).attr("disabled",true);
+                number();
+
+                //回到默认位置
+                $(".box ul").each(function(){
+//                    console.log(1);
+                    $(this).css("top","2px");
+                });
+
+                for (var i = 0; i < clearR.length; i++) {
+                    roll(i, clearR[i]);
+                }
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul class="no1">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+    </ul>
+    <ul class="no2">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+    </ul>
+    <ul class="no3">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+    </ul>
+    <ul class="no4">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+    </ul>
+    <ul class="no5">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+    </ul>
+    <ul class="no6">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+    </ul>
+    <ul class="no7 no-blue">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+        <li>06</li>
+        <li>07</li>
+        <li>08</li>
+        <li>09</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+    </ul>
+    <button class="btn">刷新</button>
+</div>
+</body>
+</html>

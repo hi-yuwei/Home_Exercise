@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>validate-添加在Js中</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        fieldset {
+            padding-top: 10px;
+            height: 40px;
+            border: 0 none;
+            overflow: hidden;
+        }
+        
+        form {
+            margin: 50px auto;
+            width: 500px;
+            border: 1px solid #999;
+        }
+        
+        fieldset label {
+            float: left;
+            width: 100px;
+        }
+        
+        fieldset input {
+            float: left;
+        }
+        
+        //设置错误信息的样式
+        fieldset label.error {
+            width: 200px;
+            padding-left: 35px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: red;
+            background: url(./image/error.png) no-repeat 12px center;
+        }
+
+    </style>
+    <script type="text/javascript" src="validation/lib/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="validation/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="validation/dist/additional-methods.js"></script>
+    <script type="text/javascript" src="validation/dist/localization/messages_zh.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#register").validate({
+                debug: true, //只检测不提交
+                rules: {
+                    username: {
+                        required: true
+                    },
+                    password: {
+                        required: true,
+                    },
+                    confirm_password: {
+                        required: true,
+                        equalTo: "#password" //验证第一次密码和第二次是否一致
+                    },
+                    "mobile-phone": {
+                        required: true
+                    },
+                    email: {
+                        required: true
+                    },
+                    qq: {
+                        required: true,
+                        qq: true, //自己添加的验证规则
+                        minlength: 5
+
+                    },
+                    address: {
+                        required: true
+                    }
+                },
+                messages: { //修改错误信息
+                    confirm_password: {
+                        equalTo: "两次密码输入不一致"
+                    }
+                }
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <form id="register">
+            <fieldset>
+                <label for="useranme">用户名：</label>
+                <input type="text" id="username" name="username" />
+            </fieldset>
+            <fieldset>
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" />
+            </fieldset>
+            <fieldset>
+                <label for="confirm_password">确认密码：</label>
+                <input type="password" id="confirm_password" name="confirm_password" />
+            </fieldset>
+            <fieldset>
+                <label for="mobile-phone">手机：</label>
+                <input type="text" id="mobile-phone" name="mobile-phone" />
+            </fieldset>
+            <fieldset>
+                <label for="email">Email：</label>
+                <input type="text" id="email" name="email" />
+            </fieldset>
+            <fieldset>
+                <label for="qq">QQ：</label>
+                <input type="text" id="qq" name="qq" />
+            </fieldset>
+            <fieldset>
+                <label for="address">地址：</label>
+                <input type="text" id="address" name="address" />
+            </fieldset>
+            <button type="submit">注册</button>
+        </form>
+    </div>
+</body>
+
+</html>

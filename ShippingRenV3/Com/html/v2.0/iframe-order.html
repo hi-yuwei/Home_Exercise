@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>添加商品</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="../../Content/global.css" />
+	<link rel="stylesheet" href="../../Content/page.css" />
+	<script>!window.jQuery && document.write('<script src="../../Scripts/jquery-1.11.2.min.js"><\/script >');</script>
+</head>
+
+<body style="padding: 0;">
+<div class="customsFormOrd">
+	<ul class="clearfix">
+    	<li>
+            <span class="inputTitle"><em>*</em>商品编号：</span>
+            <div class="inputMDSM1">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <div class="MDSMbtn">确定商品编码</div>
+            <span class="inputTitle">附加编号：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li style="padding-bottom: 40px; border-bottom: 1px solid #bfbfbf;">
+            <span class="inputTitle"><em>*</em>商品名称：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle"><em>*</em>规格型号：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li style="padding-top: 25px;">
+            <span class="inputTitle"><em>*</em>申报数量：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle"><em>*</em>申报单位：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">单价：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li>
+            <span class="inputTitle"><em>*</em>法定数量：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle"><em>*</em>法定单位：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">总价：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li>
+            <span class="inputTitle">第二数量：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">第二单位：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">币制：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li>
+            <span class="inputTitle">目的国地：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">征免方式：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">工缴费：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li>
+            <span class="inputTitle">版本号：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">货号：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+            <span class="inputTitle">生产厂：</span>
+            <div class="inputMDSM">
+                <input type="text" value="" class="inputArea"/>
+            </div>
+    	</li>
+        <li>
+			<a class="btnMid150" style="margin-left:430px; margin-top:20px;" href="javascript:void(0)">确定</a>
+		</li>
+    </ul>
+</div>
+
+<!-- 确定商品编码弹出层 -->
+<div id="commodityCodeDiv" class="pageDialogDiv commodityCodeDiv">
+	<div class="top cf">
+		<div class="topLeft"></div>
+		<div class="topRight"></div>
+		<div class="topCenter"></div>
+	</div>
+	<div class="middle">
+		<div class="middleInner">
+			<div class="title cf">
+				<h3>商品编码</h3>
+				<a class="close" href="javascript:void(0)"></a>
+			</div>
+			<ul class="orderForm clearfix">
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">申报要素：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">品名：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">用途：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">材质：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">种类：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">品牌：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">其它：</span>
+					<div class="inputMD" style="width: 288px;">
+						<input class="inputArea" style="width: 268px;" type="text" />
+					</div>
+				</li>
+				<li class="list">
+					<span class="inputTitle" style="width: 170px;">&nbsp;</span>
+					<a class="btnMid" href="javascript:void(0)">确定</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="bottom cf">
+		<div class="bottomLeft"></div>
+		<div class="bottomRight"></div>
+		<div class="bottomCenter"></div>
+	</div>
+</div>
+
+<script src="../../Scripts/global.js"></script>
+<script src="../../Scripts/page.js"></script>
+</body>
+</html>

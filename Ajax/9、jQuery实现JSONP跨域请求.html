@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现JSONP跨域请求</title>
+    <script type="text/javascript" src="./jQ/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.ajax({
+                type:"POST",
+                url:"http://www.baidu.com?id=1",
+                dataType:"JSONP",
+                jsonp:"callback",
+                success:function(data){
+                    if(data.success){
+
+                    }
+                },
+                error:function(jqXHR){
+                    alert("发生错误：代码"+jqXHR.status);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

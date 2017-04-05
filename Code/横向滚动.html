@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>横向滚动</title>
+    <style type="text/css">
+        .leftBox{
+            float:left;
+            width:50px;
+            height:400px;
+            background:#000;
+        }
+        .rightBox{
+            float: left;
+            height: 100%;
+        }
+        .left{
+            width:30%;
+            height: 400px;
+            background:red;
+        }
+        .center{
+            width:20%;
+            height:400px;
+            background:yellow;
+        }
+        .right{
+            width:50%;
+            height:400px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="leftBox"></div>
+        <div class="rightBox">
+            <iframe style="overflow:auto;width:2000px;">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </iframe>
+        </div>
+    </section>
+</body>
+</html>

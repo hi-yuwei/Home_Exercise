@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>js冒泡算法-方法1</title>
+
+</head>
+
+<body>
+
+</body>
+<script type="text/javascript">
+	var arr = [9,7,4,2];
+	for (var i = 0, len = arr.length; i < len; i++) {
+		for (var j = 0; j < arr.length; j++) {
+			if (arr[i] < arr[j]) {
+				var temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+		}
+	}
+	document.write(arr);
+</script>
+
+</html>
